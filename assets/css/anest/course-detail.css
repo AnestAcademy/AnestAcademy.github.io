@@ -1,0 +1,549 @@
+/* ----- Common ----- */
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  position: absolute;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
+}
+
+@media (max-width: 991.98px) {
+  .text-left,
+  .text-right {
+    text-align: center !important;
+  }
+}
+
+.one-ui {
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.one-ui h5 {
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: .65rem;
+  border-top: 1px solid #555;
+}
+
+.modal-body span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* ----- Section cover ----- */
+
+#cover {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+#cover .container {
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 120px 100px;
+  border-radius: 32px;
+  max-width: 80%;
+}
+
+#cover h1 {
+  font-size: 65px;
+  margin-top: 12px;
+  letter-spacing: 1px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#cover p {
+  margin: 30px 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#cover .wrap {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#cover img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#cover .image-1 {
+  left: -75px;
+  bottom: 20px;
+}
+
+#cover .image-2 {
+  left: -33px;
+  top: 195px;
+}
+
+#cover .image-3 {
+  left: -11px;
+  bottom: -141px;
+}
+
+#cover .image-4 {
+  left: auto;
+  right: -91px;
+  bottom: -312px;
+}
+
+#cover .image-5 {
+  left: 7px;
+  top: 35px;
+}
+
+#cover .image-6 {
+  left: -155px;
+  top: 40px;
+}
+
+@media (max-width: 1199.98px) {
+  #cover .container {
+    max-width: 930px;
+  }
+  #cover .image-1 {
+    left: 320px;
+    bottom: -280px;
+  }
+  #cover .image-2 {
+    left: 277px;
+    top: 95px;
+  }
+  #cover .image-3 {
+    left: 630px;
+    bottom: 36px;
+  }
+  #cover .image-4 {
+    right: 99px;
+    bottom: -192px;
+  }
+  #cover .image-5 {
+    left: 7px;
+    top: 35px;
+  }
+  #cover .image-6 {
+    left: 380px;
+    top: -100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #cover {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  #cover .container {
+    padding: 100px 80px;
+    border-radius: 30px;
+  }
+  #cover .container {
+    max-width: 690px;
+  }
+  #cover .image-1 {
+    bottom: -213px;
+  }
+  #cover .image-2 {
+    top: 115px;
+  }
+  #cover .image-4 {
+    right: 49px;
+    bottom: -102px;
+  }
+  #cover .image-6 {
+    left: -295px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #cover {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  #cover .container {
+    max-width: 540px;
+    padding: 80px 60px 60px;
+    border-radius: 30px;
+  }
+  #cover h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  #cover .image-1 {
+    bottom: -280px;
+  }
+  #cover .image-3 {
+    left: 110px;
+    bottom: -50px;
+  }
+  #cover .image-4 {
+    bottom: -200px;
+    right: -80px;
+  }
+  #cover .image-6 {
+    left: -100px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #cover {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #cover .container {
+    max-width: 92%;
+    border-radius: 18px;
+    padding: 100px 40px 60px;
+  }
+  #cover h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  #cover p {
+    text-align: center;
+  }
+  #cover .btn-view-more {
+    padding: 10px 50px;
+    margin: 30px 0;
+  }
+  #cover .text-left {
+    text-align: center !important;
+  }
+}
+
+
+/* ----- Section course detail ----- */
+
+#course-detail h5 {
+  font-size: 20px;
+}
+
+#course-detail p {
+  margin-bottom: 0;
+}
+
+#course-detail .course-overview i {
+  font-size: 48px;
+  margin-right: 15px;
+}
+
+#course-detail .course-overview h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#course-detail .course-overview p {
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+#course-detail .course-mentor i {
+  font-size: 48px;
+  margin-right: 15px;
+}
+
+#course-detail .course-mentor h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#course-detail .course-mentor a {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #dfdfdf;
+}
+
+#course-detail .course-mentor a:hover {
+  text-decoration: none;
+  color: #ffcf5c;
+}
+
+#course-detail .course-price p {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+#course-detail .course-find-mentor a {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.course-recommend .media {
+  margin: 20px 0;
+}
+
+.course-recommend .media:last-child {
+  margin-bottom: 0;
+}
+
+.course-recommend .media a {
+  font-weight: 500;
+}
+
+.course-recommend .media a:hover {
+  color: #ffcf5c;
+  text-decoration: none;
+}
+
+.course-recommend .media p {
+  font-size: 16px;
+  margin-top: -2px;
+}
+
+@media (max-width: 991.98px) {
+  #course-detail .course-mentor {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #course-detail .course-overview .overview {
+    margin-top: 20px;
+  }
+}
+
+
+/* ----- Section faq ----- */
+
+#faq {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#faq .text-left h1 {
+  font-size: 55px;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+#faq .text-left h1 span {
+  font-size: 38px;
+}
+
+#faq .text-left p {
+  margin-bottom: 30px;
+}
+
+#faq a {
+  padding: 9px 16px;
+  border: 2px solid #333;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  color: #03bb65;
+  border-radius: 14px;
+  background-color: #1d1d1d;
+}
+
+#faq a:hover {
+  text-decoration: none;
+}
+
+#faq .collapsed i {
+  transform: rotate(-90deg);
+  transition: .6s;
+  margin-top: 6px;
+}
+
+#faq a i {
+  transition: .6s;
+  margin-top: 6px;
+}
+
+#faq .collapse-panel {
+  margin-bottom: 16px;
+}
+
+#faq .card {
+  border-radius: 0;
+}
+
+#faq .card-body {
+  padding: 10px 16px;
+  border: 2px solid #444;
+  border-top: none;
+  background: transparent;
+  border-radius: 14px;
+}
+
+@media (max-width: 991.98px) {
+  #faq .text-left p {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #faq {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+
+
+/* ----- Register ----- */
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.divider:before,
+.divider:after {
+  content: '';
+  height: 2px;
+  background-color: #544e45;
+  flex: 1;
+}
+
+.divider:before {
+  margin-right: 20px;
+}
+
+.divider:after {
+  margin-left: 20px;
+}
+
+.modal {
+  padding: 0 !important;
+}
+
+#registerModal .modal-dialog {
+  max-width: 100%;
+}
+
+
+/* #registerModal .modal-backdrop.show {
+  opacity: 1 !important;
+} */
+
+#registerModal .modal-content {
+  border-radius: 0;
+  background-color: #1d1d1d;
+  border: none;
+}
+
+#registerModal .modal-header {
+  border-bottom: 1px solid transparent !important;
+  padding: 20px;
+}
+
+#registerModal .modal-header .close {
+  font-size: 45px;
+  padding: 5px 16px;
+  color: #d4d4d4;
+  text-shadow: none;
+}
+
+#registerModal .modal-header .close:hover {
+  color: #ffcf5c;
+}
+
+#registerModal .modal-header .close:focus {
+  outline: none;
+}
+
+#registerModal .modal-body p {
+  line-height: 25px;
+}
+
+#registerModal .modal-body form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+#registerModal .modal-body .form-control {
+  border: 1px solid #333;
+  background-color: #151515;
+  border-radius: 0 5px 5px 0;
+  color: #aaa;
+}
+
+#registerModal .modal-body .form-control:focus {
+  box-shadow: none;
+  border-color: #6f6350;
+}
+
+#registerModal .modal-body .input-group-text {
+  border-radius: 5px 0 0 5px;
+  padding: .375rem 1rem;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  font-size: 20px;
+  color: #c7af8b;
+}
+
+#registerModal .modal-body input.form-control {
+  border-radius: 0 5px 5px 0;
+}
+
+#registerModal .modal-body textarea.form-control {
+  border-radius: 5px;
+}
+
+#registerModal .modal-body .btn-submit {
+  border: none;
+  font-size: 1.15rem;
+  border: 1px solid #333;
+  background-color: #151515;
+  border-radius: .25rem;
+  padding: 0 1.25rem;
+  height: calc(2.25em + 7px);
+  width: 100%;
+  font-weight: 500;
+  color: #c7af8b;
+}
+
+.text label {
+  font-size: 1.25rem;
+}
+
+#registerModal .modal-body .btn-submit:hover {
+  outline: 0;
+  color: #ffcf5c;
+  box-shadow: none;
+  background-color: #282828;
+}
+
+@media (max-width: 575.98px) {
+  #registerModal .modal-dialog {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #registerModal .modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  #registerModal .modal-body form {
+    margin-top: 40px;
+  }
+}

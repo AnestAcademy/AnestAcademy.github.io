@@ -1,0 +1,75 @@
+.course {
+  width: 900px;
+  height: 400px;
+  background-color: #121212;
+}
+
+/* JAVASCRIPT */
+
+/* .course .x {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+.course .x i {
+  font-size: 180px;
+  color: #fff;
+  margin-right: 50px;
+}
+
+.course .x span {
+  font-size: 130px;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 400;
+} */
+
+
+/* JAVA */
+
+/* .course .x {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+
+.course .x i {
+  font-size: 250px;
+  color: #fff;
+  margin-right: 50px;
+  margin-bottom: 70px;
+}
+
+.course .x span {
+  font-size: 180px;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 400;
+} */
+
+/* C */
+
+.course .x {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+
+.course .x i:first-child {
+  margin-right: 25px;
+}
+
+.course .x i {
+  font-size: 150px;
+  color: #fff;
+  margin-right: 30px;
+  margin-bottom: 70px;
+}
+
+.course .x span {
+  font-size: 70px;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 900;
+}

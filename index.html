@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="assets/images/cover/favicon.ico">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/anest/common.css">
+  <link rel="stylesheet" href="assets/css/anest/index.css">
+
+  <title>Anest - Home</title>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
+  <!-- Start hero -->
+
+  <section id="menu">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg justify-content">
+        <div class="site-branding">
+          <a href="index.html">
+            <img src="assets/images/cover/logo.png">
+          </a>
+        </div>
+        <div class="site-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-tasks"></i>Khoá học
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#course"><i class="far fa-edit"></i>Đang mở đơn đăng ký </a>
+                <a class="dropdown-item" href="#"><i class="fas fa-bars"></i>Tất cả khóa học</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#findMentorModal"><i class="fas fa-user-plus"></i>Tìm gia sư</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-while btn-register" href="javascript:void(0)" data-toggle="modal" data-target="#logoutModal">Đăng ký</a>
+            </li>
+          </ul>
+          <div id="btn-collapse" class="hamburger-menu d-lg-none rotate">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="cover">
+    <div class="container bg-dark-1d text-left">
+      <div class="row">
+        <div class="col-lg-9">
+          <h1>WE ARE <span class="highlight">ANEST.</span></h1>
+          <p>TIẾT KIỆM THỜI GIAN VÀ TIỀN BẠC CỦA BẠN BẰNG SỰ LỰA CHỌN ĐÚNG ĐẮN_</p>
+        </div>
+        <div class="col-lg-3 text-left">
+          <div class="align-left"><a class="btn btn-view-more" href="javascript:void(0)" data-toggle="modal" data-target="#aboutModal">Xem thêm</a></div>
+          <div class="wrap">
+            <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
+            <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
+            <img src="assets/images/3.svg" alt="Mobirise" class="image-3 animated-elements3">
+            <img src="assets/images/4.svg" alt="Mobirise" class="image-4 animated-elements4">
+            <img src="assets/images/5.svg" alt="Mobirise" class="image-5 animated-elements5">
+            <img src="assets/images/6.svg" alt="Mobirise" class="image-6 animated-elements6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="description">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <h1>Why <span class="highlight">ANEST?</span></h1>
+          <h6><span class="highlight">WE CREATE</span> AWESOME COURSE</h6>
+          <p>
+            <i class="fas fa-quote-left"></i> &nbsp;&nbsp; Chúng tôi giảng dạy dựa trên kinh nghiệm thực tế.
+            </br>Bạn đang ở đúng nơi cần lựa chọn.&nbsp;
+            <i class="fas fa-quote-right"></i>
+          </p>
+          <div class="align-left">
+            <a class="btn btn-show-more btn-success" href="javascript:void(0)" onclick="showMore()">Xem thêm</a>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box bg-dark-1d d-flex">
+                <div>
+                  <i class="fas fa-users fa-fw color-violet-red"></i>
+                </div>
+                <div class="title">
+                  <h5>Giảng viên</h5>
+                </div>
+                <div class="overlay">
+                  <div class="text">
+                    Có nhiều kinh nghiệm chuyên môn thực tế, giảng dạy và truyền đạt. Nhiệt tình và tận tâm với học viên, giúp bạn học tập hiệu quả nhất.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-dark-1d d-flex w-85">
+                <div>
+                  <i class="fas fa-file-alt fa-fw color-orange"></i>
+                </div>
+                <div class="title">
+                  <h5>Giáo trình</h5>
+                </div>
+                <div class="overlay">
+                  <div class="text">
+                    Tất cả giáo trình do ANEST tự biên soạn, phù hợp với học viên và có tính thực tiễn, cân bằng giữa lý thuyết và thực hành.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-dark-1d d-flex w-70">
+                <div>
+                  <i class="fas fa-hand-holding-usd fa-fw color-yellow"></i>
+                </div>
+                <div class="title">
+                  <h5>Học phí</h5>
+                </div>
+                <div class="overlay">
+                  <div class="text">
+                    Chỉ cần trả tiền một lần bạn có thể học lại bao nhiêu lần tùy ý. Giảm giá cho các khóa học nâng cao tiếp theo của khóa học đã tham gia.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-dark-1d d-flex w-55">
+                <div>
+                  <i class="fas fa-question-circle fa-fw color-aquamarine"></i>
+                </div>
+                <div class="title">
+                  <h5>Hỗ trợ</h5>
+                </div>
+                <div class="overlay">
+                  <div class="text">
+                    Sẵn sàng hỗ trợ 24/7 cho học viên qua các kênh online hoặc trực tiếp ngoài giờ lên lớp.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="course-ready">
+    <div class="container">
+
+    </div>
+  </section> -->
+
+  <section class="course-intro">
+    <div class="container align-center">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 relative align-right">
+          <div class="wrap-1">
+            <div class="mbr-parallax-background img1">
+            </div>
+            <div class="mbr-parallax-background img2">
+            </div>
+            <div class="mbr-parallax-background img3">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 m-auto text-right">
+          <h1><span class="highlight">Everything</span> you need.</h1>
+          <h6><span class="highlight">WE ARE HERE</span> FOR YOU</h6>
+          <p>ANEST có tất cả các khóa học mà bạn cần từ cơ bản đến nâng cao.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="course">
+    <div class="container row-list">
+      <dic class="row">
+        <div class="col-lg-5">
+          <div class="text-left">
+            <h1>Courses</h1>
+            <h6><span class="highlight">READY</span> FOR YOU</h6>
+            <p>Những khóa học sẵn sàng cho bạn tham gia và khám phá.</p>
+            <a class="btn btn-show-more btn-success" href="javascript:void(0)">Xem thêm</a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="list-course" id="style-course">
+            <div class="box text-center">
+              <div class="box-body">
+                <i style="font-size: 80px;" class="fas fa-copyright color-blue"></i>
+                <h5>C Fundamentals</h5>
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+                </div>
+              </div>
+            </div>
+            <div class="box text-center">
+              <div class="box-body">
+                <i style="font-size: 90px;" class="fab fa-java color-red"></i>
+                <h5>Java Core</h5>
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Nâng cao</div>
+                </div>
+              </div>
+            </div>
+            <div class="box text-center">
+              <div class="box-body">
+                <i style="font-size: 75px;" class="fas fa-file-code color-green"></i>
+                <h5>Java Web</h5>
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+                </div>
+              </div>
+            </div>
+            <div class="box text-center">
+              <div class="box-body">
+                <i style="font-size: 85px;" class="fab fa-html5 mr-2 color-orange"></i>
+                <i style="font-size: 85px;" class="fab fa-css3-alt color-blue"></i>
+                <h5>HTML/CSS</h5>
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Nâng cao</div>
+                </div>
+              </div>
+            </div>
+            <div class="box text-center">
+              <div class="box-body">
+                <i style="font-size: 80px;" class="fab fa-js-square color-yellow"></i>
+                <h5>JavaScript</h5>
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Nâng cao</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dic>
+    </div>
+  </section>
+
+  <section id="follow">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-right">
+            <h1>Follow <span class="highlight">US</span></h1>
+            <h6><span class="highlight">KEEP</span> IN TOUCH</h6>
+            <p>Cập nhật những tin tức - bài học miễn phí nhanh nhất.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <div class="box">
+              <div class="media">
+                <i class="fab fa-facebook color-blue"></i>
+                <div class="media-body">
+                  <h4>Facebook</h4>
+                  <p>NEWS FEED</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <div class="box">
+              <div class="media">
+                <i class="fab fa-youtube color-red"></i>
+                <div class="media-body">
+                  <h4>YouTube</h4>
+                  <p>VIDEO</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <div class="box">
+              <div class="media">
+                <i class="far fa-envelope color-gg"></i>
+                <div class="media-body">
+                  <h4>Gmail</h4>
+                  <p>ANEST.ACADEMY</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <div class="box">
+              <div class="media">
+                <i class="fas fa-phone-square-alt color-green"></i>
+                <div class="media-body">
+                  <h4>Mobile</h4>
+                  <p>0973 876 107</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-left">
+            <h1>Q <span class="highlight">&</span> A</h1>
+            <h6><span class="highlight">KNOW</span> US BETTER</h6>
+            <p>Những câu hỏi thường gặp. Bạn hỏi - chúng tôi trả lời.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="accordion" id="accordion">
+            <div class="collapse-panel">
+              <a data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse1" class="collapsed">
+                Đối tượng của ANEST là những ai? <i class="fas fa-angle-down float-right"></i>
+              </a>
+              <div class="collapse" id="collapse-1" data-parent="#accordion">
+                <div class="card card-body">
+                  ANEST có tất cả các khóa học dành cho mọi đối tượng, những người mới bắt đầu học lập trình, những người đã có kiến thức căn bản hay là những người muốn học để đi làm. Hãy liên hệ với ANEST để được tư vấn khóa học phù hợp nhất với bạn.
+                </div>
+              </div>
+            </div>
+            <div class="collapse-panel">
+              <a data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse2" class="collapsed">
+                Khi đi học cần chuẩn bị những gì? <i class="fas fa-angle-down float-right"></i>
+              </a>
+              <div class="collapse" id="collapse-2" data-parent="#accordion">
+                <div class="card card-body">
+                  Bạn chỉ cần chuẩn bị máy tính xách tay để thực hành code và giấy bút để ghi chép lại những kiến thức quan trọng.
+                </div>
+              </div>
+            </div>
+            <div class="collapse-panel">
+              <a data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse3" class="collapsed">
+                Nếu trong quá trình học có việc bận đột xuất thì có được học bù không? <i class="fas fa-angle-down float-right"></i>
+              </a>
+              <div class="collapse" id="collapse-3" data-parent="#accordion">
+                <div class="card card-body">
+                  Bạn hoàn toàn có thể đi học bù vào các lớp cùng khóa đang mở. Nếu không có lớp - ANEST sẽ sắp xếp mentor dạy bù riêng cho bạn vào thời gian thích hợp. Trong trường hợp bạn có việc phải nghỉ cả khóa học, bạn hoàn toàn có thể học lại khóa học đó hoàn toàn
+                  miễn phí. Ở ANEST - bạn chỉ cần bỏ tiền duy nhất cho một khóa học và có thể học lại bao nhiêu lần không giới hạn.
+                </div>
+              </div>
+            </div>
+            <div class="collapse-panel">
+              <a data-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false" aria-controls="collapse4" class="collapsed">
+                Khi có câu hỏi hoặc thắc mắc liên quan đến bài học thì học viên sẽ được hỗ trợ qua kênh nào? <i class="fas fa-angle-down float-right"></i>
+              </a>
+              <div class="collapse" id="collapse-4" data-parent="#accordion">
+                <div class="card card-body">
+                  Bạn sẽ được hỗ trợ 24/7 qua các kênh online như facebook... hoặc được hỗ trợ trực tiếp tại trung tâm.
+                </div>
+              </div>
+            </div>
+            <div class="collapse-panel">
+              <a data-toggle="collapse" href="#collapse-5" role="button" aria-expanded="false" aria-controls="collapse5" class="collapsed">
+                Ngoài những khóa học đang có, trung tâm có dự định mở thêm những khóa học nào khác nữa không? <i class="fas fa-angle-down float-right"></i>
+              </a>
+              <div class="collapse" id="collapse-5" data-parent="#accordion">
+                <div class="card card-body">
+                  Ngoài những khóa đang giảng dạy, ANEST sẽ mở thêm các khóa học lập trình khác nếu học viên mong muốn và đủ số lượng mở lớp. ANEST luôn luôn lắng nghe các phản hồi và mong muốn của học viên để mang lại những trải nghiệm tốt nhất khi học tại ANEST.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container bg-dark-1d">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <h1>Contact <span class="highlight">US</span></h1>
+          <p>Hãy nói với chúng tôi suy nghĩ, mong muốn - góp ý của bạn.</p>
+          <div class="wrap">
+            <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
+            <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
+            <img src="assets/images/3.svg" alt="Mobirise" class="image-3 animated-elements3">
+            <img src="assets/images/4.svg" alt="Mobirise" class="image-4 animated-elements4">
+            <img src="assets/images/5.svg" alt="Mobirise" class="image-5 animated-elements5">
+            <img src="assets/images/6.svg" alt="Mobirise" class="image-6 animated-elements6">
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <form>
+            <div class="form-contact">
+              <div class="form-row">
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Họ và tên">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Số điện thoại">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Nhập nội dung"></textarea>
+              </div>
+              <div class="text-center">
+                <a href="" class="btn btn-contact btn-success"><i class="fab fa-telegram-plane fa-fw mr-1"></i>Gửi thông tin</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" onmouseover="x()" onmouseout="y()">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div id="gmap"></div>
+          <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(21.012942, 105.518902);
+              var mapCanvas = document.getElementById("gmap");
+              var mapOptions = {
+                center: myCenter,
+                zoom: 16
+              };
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              var marker = new google.maps.Marker({
+                position: myCenter
+              });
+              marker.setMap(map);
+              infowindow.open(map, marker);
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2LlIj3sk2akFpnpNcXzX9_NS08Xda1sE&callback=myMap"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row f-top">
+        <div class="col-12 col-sm-12 col-md-4 info">
+          <img src="assets/images/cover/logo.png">
+          <p>Học lập trình cùng <span class="highlight">ANEST</span></p>
+          <ul>
+            <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
+            <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 876 107</li>
+            <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>Thôn 8 - Thạch Hoà - Thạch Thất - Hà Nội</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 course">
+          <h6>KHÓA HỌC</h6>
+          <p>Các khóa học lập trình sẵn sàng</p>
+          <ul>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Database</li>
+            <li>HTML/CSS</li>
+            <li>Angular</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 social">
+          <h6>FOLLOW US</h6>
+          <p>Cập nhật những tin tức - bài học nhanh nhất</p>
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="javascript:void(0)">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="btn btn-lg btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="signature">
+    <div class="container">
+      <div class="row f-bot">
+        <div class="col-12 col-sm-12 col-md-6 clock">
+          <i class="far fa-clock fa-fw mr-1"></i><span id=clock></span>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 copyright">
+          <span>Copyright © 2020 ANEST ACADEMY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Modal logout-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-danger mb-4">
+              <i class="fas fa-exclamation-triangle fa-3x"></i>
+            </div>
+            <h4>Tính năng đang phát triển. Vui lòng quay lại sau!</h4>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-dark-3" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal about-->
+  <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Về chúng tôi</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p>–&nbsp; <span>ANEST</span> là nơi không chỉ để lập trình, chúng tôi thành lập với tầm nhìn tạo nên một môi trường học tập thú vị - tốt nhất cho học viên. Biến việc học lập trình khô khan trở nên thú vị và dễ tiếp thu hơn bằng sự nỗ lực và
+              tâm huyết của người giảng dạy. Bên cạnh đó kiến thức giảng dạy phải luôn mang tính thực tiễn, cập nhật theo xu hướng phát triển không ngừng của công nghệ trong thời đại cách mạng công nghiệp 4.0 đang diễn ra.
+            </p>
+            <p>–&nbsp; <span>ANEST</span> không định hướng giảng dạy những thứ quá to lớn, những công nghệ mới ra ngay vì cái gì mới cũng cần được kiểm chứng và tiếp nhận từ thực tế và thời gian. Chúng tôi tập trung vào những cái cơ bản - cốt lõi nhất của
+              lập trình, đó là tư duy và cảm hứng học tập. <span>ANEST</span> là nơi dạy tư duy, định hướng cho bản thân mỗi học viên khi bước chân vào con đường trở thành một lập trình viên. Chúng tôi mong muốn mang lại cho học viên những thứ thực tiễn
+              và có nền tảng nhất trong lập trình, để từ đó các bạn có thể lựa chọn con đường đi sau này.
+            </p>
+            <p class="mb-0">–&nbsp; <span>ANEST</span> còn tập trung vào môi trường học tập, cung cấp cho học viên không gian tốt nhất để học và thư giãn sau những giờ code căng thẳng, để học viên cảm thấy
+              <span>ANEST</span> như là nhà, là nơi đến học một lần sẽ muốn trờ lại thêm nhiều lần nữa.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-dark-3" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal find mentor -->
+  <div class="modal fade" id="findMentorModal" tabindex="-1" role="dialog" aria-labelledby="findMentorModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Thông tin liên hệ</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body px-3 py-0">
+          <div class="row">
+            <div class="col-12">
+              <p class="mb-3">Bạn có nhu cầu tìm gia sư riêng hoặc cho nhóm từ 3 - 5 người để đạt chất lượng, hiệu quả tốt nhất vui lòng liên hệ:</p>
+              <i class="fab fa-facebook-messenger fa-fw mr-3"></i><a href="https://www.facebook.com/s2.mask" target="_blank" class="color-yellow">&nbsp;Đinh Tuấn Anh</a><br />
+              <i class="fas fa-phone fa-fw mr-3"></i>(+84) 0973 876 107<br />
+              <i class="far fa-envelope fa-fw mr-3"></i>anhdt0407@gmail.com
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-danger">Đăng xuất</button> -->
+          <button type="button" class="btn btn-sm btn-dark-3" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap/popper.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="assets/js/anest/jarallax.min.js"></script>
+  <script src="assets/js/anest/index.js"></script>
+  <script src="assets/js/anest/anest.js"></script>
+</body>
+
+</html>
