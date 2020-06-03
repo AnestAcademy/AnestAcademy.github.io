@@ -474,6 +474,7 @@
           <div class="container">
             <div class="divider color-tan">ĐĂNG KÝ</div>
             <form id="register-form">
+              <input type="hidden" name="time" id="time" />
               <div class="form-group">
                 <div class="input-group">
                   <div class="custom-control custom-switch">
@@ -557,6 +558,8 @@
   <!-- Custom scripts for all pages-->
   <script src="assets/js/anest/anest.js"></script>
   <script>
+    document.getElementById('time').value = new Date().toLocaleString();
+
     var $form = $('form#register-form');
     var url = 'https://script.google.com/macros/s/AKfycbw-FFWNPgU8Z35l--_4EZ59PJZdkHUgdqGbCZQoB74XatNjZI6-/exec';
 
@@ -570,7 +573,7 @@
           dataType: "json",
           data: $form.serialize()
         }).success(
-          alert('Đăng ký thành công. Email xác nhận sẽ được gửi đến email đăng ký của bạn trong 1-3 ngày làm việc. Xin cảm ơn!')
+          alert('Đăng ký THÀNH CÔNG. Email xác nhận sẽ được gửi đến email đăng ký của bạn trong 1-3 ngày làm việc. Xin cảm ơn!')
         );
 
         $('#registerModal').modal('hide');
