@@ -262,7 +262,7 @@ section,
 #footer {
   background-color: #1d1d1d;
   color: #bdbdbd;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 #footer .f-top {
@@ -279,6 +279,10 @@ section,
   margin-bottom: 10px;
   margin-top: 20px;
   font-size: 1.15rem;
+}
+
+#footer h6:hover {
+  color: #ffcf5c;
 }
 
 #footer .info ul,
@@ -305,6 +309,11 @@ section,
   margin-right: 20px;
 }
 
+#footer .social ul li a:hover {
+  color: #ffcf5c;
+  text-decoration: none;
+}
+
 #footer .social ul li a i {
   font-size: 40px;
 }
@@ -320,7 +329,7 @@ section,
 #signature {
   background-color: #121212;
   color: #bdbdbd;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #signature .f-bot {
@@ -518,13 +527,13 @@ section,
 }
 
 .btn-md {
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 16px;
   padding: 8px 16px;
 }
 
 .btn-lg {
-  border-radius: 12px;
+  border-radius: 10px;
   font-size: 18px;
   padding: 10px 35px;
 }

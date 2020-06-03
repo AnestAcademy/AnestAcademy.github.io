@@ -285,7 +285,7 @@
 
 #description .box {
   padding: 25px 50px;
-  border-radius: 16px;
+  border-radius: 20px;
   margin-top: 20px;
   position: relative;
   transition: .5s;
@@ -328,7 +328,7 @@
   opacity: 0;
   transition: .5s ease;
   background-color: #252525;
-  border-radius: 16px;
+  border-radius: 20px;
   line-height: 1.5;
 }
 
@@ -586,25 +586,25 @@
   flex-grow: 0;
   flex-shrink: 0;
   height: 350px;
-  margin-right: 5px;
-  border-radius: 16px;
+  margin-right: 4px;
+  border-radius: 20px;
   position: relative;
-  transition: .5s;
+  transition: .3s;
   background-color: #1d1d1d;
   box-shadow: -15px 15px 20px 0px #121212;
-  margin-left: -50px;
+  margin-left: -100px;
 }
 
 #course .list-course .box:focus-within,
 #course .list-course .box:hover {
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 #course .list-course .box:focus-within~.box,
 #course .list-course .box:hover~.box {
-  -webkit-transform: translateX(50px);
-  transform: translateX(50px);
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
 }
 
 #course .list-course .box:hover {
@@ -678,6 +678,16 @@
   }
   #course .list-course .box {
     margin-left: 0;
+  }
+  #course .list-course .box:focus-within,
+  #course .list-course .box:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+  #course .list-course .box:focus-within~.box,
+  #course .list-course .box:hover~.box {
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
