@@ -308,6 +308,58 @@ hr {
   letter-spacing: 1px;
 }
 
+.pay-method {
+  font-size: 16px;
+}
+
+.pay-method strong {
+  font-weight: 500;
+}
+
+.pay-method .card {
+  background-color: #1d1d1d;
+  border: 1px solid #1d1d1d;
+}
+
+.pay-method .card-header {
+  padding: 0;
+  background-color: #1d1d1d;
+  border-bottom: none;
+}
+
+.pay-method .card-header .btn:hover {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+}
+
+.pay-method .card-header .btn:hover.btn-link,
+.pay-method .card-header .btn:focus.btn-link {
+  text-decoration: none;
+}
+
+.pay-method .card-header .btn-link {
+  color: #dfdfdf;
+}
+
+.pay-method .card-body {
+  margin-top: 3px;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+.pay-method i {
+  color: #c7af8b;
+  transition: .6s;
+  margin-top: 4px;
+}
+
+.pay-method .collapsed i {
+  transform: rotate(-90deg);
+  transition: .6s;
+  margin-top: 4px;
+}
+
 .course-recommend .media {
   margin: 20px 0;
 }
