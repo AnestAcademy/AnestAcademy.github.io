@@ -367,7 +367,7 @@ section,
 }
 
 #page-top::-webkit-scrollbar {
-  width: .5rem;
+  width: .75rem;
   background-color: #1d1d1d;
 }
 

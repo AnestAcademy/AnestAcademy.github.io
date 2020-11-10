@@ -13,6 +13,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/anest/common.css">
   <link rel="stylesheet" href="assets/css/anest/index.css">
+  <link rel="stylesheet" href="assets/css/anest/animation.css">
 
   <title>Anest - Home</title>
 </head>
@@ -200,57 +201,89 @@
             <h1>Courses</h1>
             <h6><span class="highlight">READY</span> FOR YOU</h6>
             <p>Những khóa học sẵn sàng cho bạn tham gia và khám phá.</p>
-            <a class="btn btn-show-more btn-success" href="javascript:void(0)">Xem thêm</a>
+            <a class="btn btn-show-more btn-success" href="courses.html">Xem thêm</a>
           </div>
         </div>
         <div class="col-lg-7">
-          <div class="list-course" id="style-course">
-            <div class="box text-center">
-              <div class="box-body">
-                <i style="font-size: 80px;" class="fas fa-copyright color-blue"></i>
-                <h5>C Fundamentals</h5>
-                <div class="tags">
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+          <div class="row list-course">
+            <div class="col-md-4">
+              <div class="box text-center">
+                <div class="box-body">
+                  <div class="icon">
+                    <i style="font-size: 60px;" class="fas fa-copyright color-blue center-icon"></i>
+                  </div>
+                  <h5>C Fundamentals</h5>
+                  <div class="tags">
+                    <div class="tag">Cơ bản</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="box text-center">
-              <div class="box-body">
-                <i style="font-size: 90px;" class="fab fa-java color-red"></i>
-                <h5>Java Core</h5>
-                <div class="tags">
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Nâng cao</div>
+            <div class="col-md-4">
+              <div class="box text-center">
+                <div class="box-body">
+                  <div class="icon">
+                    <i style="font-size: 60px;" class="fab fa-node-js color-yellow center-icon"></i>
+                  </div>
+                  <h5>Javascript</h5>
+                  <div class="tags">
+                    <div class="tag">Cơ bản</div>
+                    <div class="tag">Nâng cao</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="box text-center">
-              <div class="box-body">
-                <i style="font-size: 75px;" class="fas fa-file-code color-green"></i>
-                <h5>Java Web</h5>
-                <div class="tags">
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
+            <div class="col-md-4">
+              <div class="box text-center">
+                <div class="box-body">
+                  <div class="icon">
+                    <i style="font-size: 65px;" class="fab fa-html5 mr-2 color-orange center-icon"></i>
+                  </div>
+                  <h5>HTML/CSS</h5>
+                  <div class="tags">
+                    <div class="tag">Cơ bản</div>
+                    <div class="tag">Nâng cao</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="box text-center">
-              <div class="box-body">
-                <i style="font-size: 85px;" class="fab fa-html5 mr-2 color-orange"></i>
-                <i style="font-size: 85px;" class="fab fa-css3-alt color-blue"></i>
-                <h5>HTML/CSS</h5>
-                <div class="tags">
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Nâng cao</div>
+            <div class="col-md-4">
+              <div class="box text-center">
+                <div class="box-body">
+                  <div class="icon">
+                    <i style="font-size: 70px;" class="fab fa-java color-red center-icon"></i>
+                  </div>
+                  <h5>Java Core</h5>
+                  <div class="tags">
+                    <div class="tag">Cơ bản</div>
+                    <div class="tag">Nâng cao</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="box text-center">
-              <div class="box-body">
-                <i style="font-size: 80px;" class="fab fa-js-square color-yellow"></i>
-                <h5>JavaScript</h5>
-                <div class="tags">
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Cơ bản</div>
-                  <div class="tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="Hello">Nâng cao</div>
+            <div class="col-md-4">
+              <div class="box text-center">
+                <div class="box-body">
+                  <div class="icon">
+                    <i style="font-size: 58px;" class="fab fa-uikit text-info center-icon"></i>
+                  </div>
+                  <h5>Java Desktop</h5>
+                  <div class="tags">
+                    <div class="tag">Cơ bản</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box text-center">
+                <div class="box-body">
+                  <div class="icon">
+                    <i style="font-size: 55px;" class="fas fa-file-code color-green center-icon"></i>
+                  </div>
+                  <h5>Java Web</h5>
+                  <div class="tags">
+                    <div class="tag">Cơ bản</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -626,6 +659,7 @@
   <script src="assets/js/anest/jarallax.min.js"></script>
   <script src="assets/js/anest/index.js"></script>
   <script src="assets/js/anest/anest.js"></script>
+  <script src="assets/js/anest/animation.js"></script>
 </body>
 
 </html>
