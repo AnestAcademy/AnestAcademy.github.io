@@ -1,17 +1,5 @@
 /* ----- Common ----- */
 
-.image-1,
-.image-2,
-.image-3,
-.image-4,
-.image-5,
-.image-6 {
-  position: absolute;
-  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  will-change: transform;
-}
-
 @media (max-width: 991.98px) {
   .text-left,
   .text-right {
@@ -71,6 +59,7 @@ hr {
   font-size: 20px;
   font-style: normal;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 #cover .wrap {
@@ -477,7 +466,7 @@ hr {
 .divider {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -566,7 +555,7 @@ input:-webkit-autofill {
 #registerModal .modal-body form {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 90px;
 }
 
