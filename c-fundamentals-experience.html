@@ -166,6 +166,7 @@
             <p>
               – Trước khi đăng ký hay có câu hỏi nào, hãy đọc qua mục "Những câu hỏi thường gặp" để biết thêm thông tin chung.
               <br />– Bạn nào đã đăng ký đi học thì cần có trách nhiệm với bản thân và tham gia đi học đầy đủ.
+              <br />– Đơn đăng ký sẽ đóng bất kỳ khi nào đủ số lượng đăng ký lớp.
               <br />
               <span class="text-danger">
                 – Sau ngày hết hạn đăng ký, lịch học chi tiết và địa điểm sẽ được gửi qua email, các bạn vui lòng kiểm
@@ -205,9 +206,9 @@
             <p>
               – Thời lượng: 5 ~ 6 buổi (50% giáo trình)
               <br />– Thời gian: 19h45 đến 21h30
-              <br />– Mỗi tuần 2 buổi: thứ 2 - 4
-              <br />– Hạn đăng ký: --/11/2020
-              <br />– Bắt đầu học: --/11/2020
+              <br />– Mỗi tuần 2 buổi
+              <br />– Hạn đăng ký: 17/11/2020
+              <br />– Bắt đầu học: 18/11/2020
             </p>
             <a class="btn btn-lg btn-success mt-3 w-100 font-weight-500" href="javascript:void(0)" data-toggle="modal" data-target="#registerModal">ĐĂNG KÝ</a>
           </div>
@@ -253,6 +254,10 @@
                         <td>– Chi nhánh:</td>
                         <td class="color-tan">Phạm Hùng - HN</td>
                       </tr>
+                      <tr>
+                        <td>– Nội dung:</td>
+                        <td class="color-tan">Tên khoá học - SĐT</td>
+                      </tr>
                     </table>
                   </div>
                 </div>
@@ -277,6 +282,10 @@
                       <tr>
                         <td>– Chi nhánh:</td>
                         <td class="color-tan">Thành Công - HN</td>
+                      </tr>
+                      <tr>
+                        <td>– Nội dung:</td>
+                        <td class="color-tan">Tên khoá học - SĐT</td>
                       </tr>
                     </table>
                   </div>
@@ -556,7 +565,13 @@
                     <label class="custom-control-label" for="customSwitch">Tôi đã đọc</label>
                   </div>
                   <small class="form-text text-muted">
-                    Trước khi điền vào đơn đăng ký, hãy chắc chắn bạn đã đọc rõ các thông tin về Mentor, FAQ và tất cả thông tin khoá học.
+                    – Trước khi điền vào đơn đăng ký, hãy chắc chắn bạn đã đọc rõ các thông tin về Mentor, FAQ và tất cả thông tin khoá học.
+                  </small>
+                  <small class="form-text text-muted">
+                    – Đơn đăng ký sẽ đóng bất kỳ khi nào đủ số lượng đăng ký lớp.
+                  </small>
+                  <small class="form-text text-muted">
+                    – Sau ngày hết hạn đăng ký, lịch học chi tiết và địa điểm sẽ được gửi qua email, các bạn vui lòng kiểm tra email để không bỏ qua thông tin.
                   </small>
                 </div>
               </div>
@@ -595,15 +610,27 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fab fa-kaggle fa-fw"></i></div>
+                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                   </div>
                   <select class="custom-select form-control form-control-lg" name="k" id="k">
-                    <option value="none">Khoá...</option>
-                    <option value="K15">K15</option>
-                    <option value="K15">K16</option>
+                    <option value="none">Chọn lịch học</option>
+                    <option value="K15">Thứ 2 - 4</option>
+                    <option value="K15">Thứ 3 - 5</option>
                   </select>
                 </div>
               </div>
+              <!-- <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fab fa-kaggle fa-fw"></i></div>
+                  </div>
+                  <select class="custom-select form-control form-control-lg" name="k" id="k">
+                    <option value="none">Lịch học</option>
+                    <option value="K15">Thứ 2 - 4</option>
+                    <option value="K15">Thứ 3 - 5</option>
+                  </select>
+                </div>
+              </div> -->
               <div class="form-group text">
                 <label class="color-tan">Mong muốn - kỳ vọng của bạn về khoá học<sup><i class="far fa-comment ml-1"></i></sup></label>
                 <textarea class="form-control form-control-lg" name="your_expectations_for_this_course" rows="2"></textarea>
