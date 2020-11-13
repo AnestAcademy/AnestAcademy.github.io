@@ -363,33 +363,33 @@ section,
 #page-top::-webkit-scrollbar-track {
   background-color: #121212;
   border-radius: 0;
-  border: 1px solid #222;
+  border: 1px solid #1d1d1d;
 }
 
 #page-top::-webkit-scrollbar {
-  width: .75rem;
-  background-color: #222;
+  width: .7rem;
+  background-color: #1d1d1d;
 }
 
 #page-top::-webkit-scrollbar-thumb {
-  background-color: #222;
+  background-color: #1d1d1d;
   border-radius: 0;
 }
 
 #style-modal::-webkit-scrollbar-track {
-  background-color: #121212;
+  background-color: #1d1d1d;
   border-radius: .5rem;
-  border: 1px solid #444;
+  border: 1px solid #333;
 }
 
 #style-modal::-webkit-scrollbar {
   width: .55rem;
-  background-color: #444;
+  background-color: #333;
   border-radius: .5rem;
 }
 
 #style-modal::-webkit-scrollbar-thumb {
-  background-color: #444;
+  background-color: #333;
   border-radius: 10px;
 }
 
