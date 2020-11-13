@@ -610,12 +610,12 @@
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                    <div class="input-group-text"><i class="far fa-calendar-alt fa-fw"></i></div>
                   </div>
                   <select class="custom-select form-control form-control-lg" name="k" id="k">
                     <option value="none">Chọn lịch học</option>
-                    <option value="K15">Thứ 2 - 4</option>
-                    <option value="K15">Thứ 3 - 5</option>
+                    <option value="Thứ 2 - 4">Thứ 2 - 4</option>
+                    <option value="Thứ 3 - 5">Thứ 3 - 5</option>
                   </select>
                 </div>
               </div>
@@ -668,8 +668,8 @@
       e.preventDefault();
 
       if ($('#customSwitch').is(":checked")) {
-        if ($('#full_name').val() === '' || $('#email').val() === '' || $('#mobile').val() === '') {
-          alert('Vui lòng không để trống trường bắt buộc. \nTên - Email - Số điện thoại');
+        if ($('#full_name').val() === '' || $('#email').val() === '' || $('#mobile').val() === '' || $('#k').val() === 'none') {
+          alert('Vui lòng không để trống trường bắt buộc. \nTên - Email - Số điện thoại - Lịch học');
         } else {
           $.ajax({
             url: url,
@@ -681,6 +681,10 @@
           );
 
           $('#registerModal').modal('hide');
+          $('#full_name').val('');
+          $('#email').val('');
+          $('#mobile').val('');
+          $('#k').prop('selectedIndex', 0);
         }
       } else {
         alert('Vui lòng xác nhận "Tôi đã đọc".');
