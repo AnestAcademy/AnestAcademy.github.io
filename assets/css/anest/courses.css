@@ -215,6 +215,7 @@
 #courses .card-text .tags .tag {
   display: inline-block;
   margin-top: .35rem;
+  margin-right: 2px;
   padding: .15rem .5rem;
   border-radius: 1rem;
   text-transform: uppercase;
