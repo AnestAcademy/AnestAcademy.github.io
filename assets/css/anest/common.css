@@ -408,7 +408,7 @@ section,
   background-color: #222;
   line-height: 38px;
   font-size: 22px;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .scroll-to-top:focus,
@@ -509,6 +509,28 @@ section,
 
 
 /* ----- Button ----- */
+
+.toast-error {
+  background-color: #dc3545;
+  border-radius: 12px;
+}
+
+.toast-success {
+  background-color: #28a745;
+  border-radius: 12px;
+}
+
+.toast-body {
+  padding: .75rem 1rem;
+  color: #fff;
+}
+
+
+/* ----- Button ----- */
+
+button:focus {
+  outline: none;
+}
 
 .btn {
   line-height: 1.5;

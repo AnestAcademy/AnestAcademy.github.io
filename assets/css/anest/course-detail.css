@@ -491,9 +491,10 @@ hr {
   padding: 0 !important;
 }
 
-#registerModal .modal-dialog {
+
+/* #registerModal .modal-dialog {
   max-width: 100%;
-}
+} */
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -515,19 +516,19 @@ input:-webkit-autofill {
 } */
 
 #registerModal .modal-content {
-  border-radius: 0;
+  border-radius: 12px;
   background-color: #1d1d1d;
   border: none;
 }
 
 #registerModal .modal-header {
   border-bottom: 1px solid transparent !important;
-  padding: 20px;
+  padding: 20px 20px 18px 20px;
 }
 
 #registerModal .modal-header .close {
-  font-size: 45px;
-  padding: 5px 16px;
+  font-size: 35px;
+  padding: 4px 5px;
   color: #d4d4d4;
   text-shadow: none;
 }
@@ -538,6 +539,11 @@ input:-webkit-autofill {
 
 #registerModal .modal-header .close:focus {
   outline: none;
+}
+
+#registerModal .modal-body {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 #registerModal .modal-body .custom-control-input:checked~.custom-control-label::before {
@@ -553,14 +559,14 @@ input:-webkit-autofill {
 #registerModal .modal-body form {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 90px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #registerModal .modal-body .form-control {
   border: 1px solid #333;
   background-color: #151515;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 8px 8px 0;
   color: #aaa;
 }
 
@@ -582,7 +588,7 @@ input:-webkit-autofill {
 }
 
 #registerModal .modal-body .input-group-text {
-  border-radius: 5px 0 0 5px;
+  border-radius: 8px 0 0 8px;
   padding: .375rem 1rem;
   border: 1px solid #333;
   background-color: #1c1c1c;
@@ -591,11 +597,11 @@ input:-webkit-autofill {
 }
 
 #registerModal .modal-body input.form-control {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 8px 8px 0;
 }
 
 #registerModal .modal-body textarea.form-control {
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 #registerModal .modal-body .btn-submit {
@@ -603,7 +609,7 @@ input:-webkit-autofill {
   font-size: 1rem;
   border: 1px solid #333;
   background-color: #151515;
-  border-radius: .25rem;
+  border-radius: .5rem;
   padding: 0 1.25rem;
   height: calc(2.25em + 7px);
   width: 100%;

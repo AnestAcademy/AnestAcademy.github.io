@@ -27,6 +27,12 @@
   }
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: .65rem;
+  border-top: 1px solid #555;
+}
+
 
 /* ----- Section cover ----- */
 
