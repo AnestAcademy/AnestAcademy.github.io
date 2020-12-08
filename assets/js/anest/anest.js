@@ -42,7 +42,7 @@ $(document).ready(function() {
   });
 
   // Smooth Scrolling
-  $(".navbar-nav a, .entry-footer a").on('click', function(event) {
+  $(".navbar-nav a, .entry-footer a, #footer a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;

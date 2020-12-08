@@ -510,6 +510,10 @@ section,
 
 /* ----- Button ----- */
 
+.toast {
+  font-size: .925rem;
+}
+
 .toast-error {
   background-color: #dc3545;
   border-radius: 12px;
