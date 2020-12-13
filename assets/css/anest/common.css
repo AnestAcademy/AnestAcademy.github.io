@@ -529,6 +529,12 @@ section,
   color: #fff;
 }
 
+@media (max-width: 575.98px) {
+  .toast {
+    max-width: 300px;
+  }
+}
+
 
 /* ----- Button ----- */
 
