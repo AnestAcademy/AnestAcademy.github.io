@@ -597,6 +597,7 @@ button:focus {
   background-color: transparent !important;
   border: 2px solid #c7af8b !important;
   color: #c7af8b !important;
+  box-shadow: 0 4px 0 currentColor;
 }
 
 .btn-success:hover {

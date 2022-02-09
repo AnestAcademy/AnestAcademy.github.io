@@ -181,6 +181,7 @@
   padding: 10px 35px;
   margin: 0 0 80px;
   font-weight: 500;
+  box-shadow: 0 4px 0 currentColor;
 }
 
 #description .box {
@@ -458,6 +459,7 @@
   padding: 10px 35px;
   margin: 0 0 80px;
   font-weight: 500;
+  box-shadow: 0 4px 0 currentColor;
 }
 
 #course .text-left p {
@@ -845,6 +847,7 @@
   margin-top: 5px;
   padding: 9px 25px;
   font-size: 17px;
+  box-shadow: 0 4px 0 currentColor;
 }
 
 #contact .form-contact .btn-contact:hover {
