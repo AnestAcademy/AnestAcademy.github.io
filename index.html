@@ -444,30 +444,33 @@
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-          <form>
+          <form id="contact-form">
+            <input type="hidden" name="time" id="time" />
             <div class="form-contact">
               <div class="form-row">
                 <div class="col-md-12">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Họ và tên">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Họ và tên">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Số điện thoại">
+                    <input type="text" class="form-control" name="phone-number" id="phone-number" placeholder="Số điện thoại">
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="4" placeholder="Nhập nội dung"></textarea>
+                <textarea class="form-control" rows="4" name="content" id="content" placeholder="Nhập nội dung"></textarea>
               </div>
               <div class="text-center">
-                <a href="" class="btn btn-contact btn-success"><i class="fab fa-telegram-plane fa-fw mr-1"></i>Gửi thông tin</a>
+                <button type="submit" class="btn btn-contact btn-success" id="submit-form">
+                  <i class="fab fa-telegram-plane fa-fw mr-1"></i>Gửi thông tin
+                </button>
               </div>
             </div>
           </form>
@@ -649,6 +652,24 @@
     </div>
   </div>
 
+  <!-- Toast error -->
+  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
+    <div id="toastError" class="toast toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+      <div class="toast-body">
+        Vui lòng điền đầy đủ tất cả thông tin.
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast success -->
+  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
+    <div id="toastSuccess" class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
+      <div class="toast-body">
+        Gửi thông tin thành công, chúng tôi sẽ phản hồi lại nhanh nhất có thể. Xin cảm ơn!
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript-->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -660,6 +681,7 @@
   <script src="assets/js/anest/anest.js"></script>
   <script src="assets/js/anest/jarallax.min.js"></script>
   <script src="assets/js/anest/animation.js"></script>
+  <script src="assets/js/anest/contact.js"></script>
 </body>
 
 </html>
