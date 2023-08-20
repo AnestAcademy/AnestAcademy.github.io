@@ -46,7 +46,7 @@ h6.sub-title {
 
 .btn-show-more {
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 36px;
   margin: 0 0 80px;
   font-weight: 500;
@@ -57,7 +57,7 @@ h6.sub-title {
 /* ----- Section cover ----- */
 
 #cover {
-  padding-top: 90px;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -65,9 +65,9 @@ h6.sub-title {
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  padding: 150px 100px;
+  padding: 120px 100px;
   border-radius: 32px;
-  max-width: 80%;
+  max-width: 82%;
 }
 
 #cover h1 {
@@ -87,10 +87,17 @@ h6.sub-title {
   font-weight: 500;
 }
 
+#cover .align-left {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+}
+
 #cover .btn-view-more {
   border-radius: 10px;
-  font-size: 18px;
-  padding: 15px 50px;
+  font-size: 16px;
+  padding: 16px 50px;
   margin: 25px 0;
   font-weight: 500;
   background-color: #333;
@@ -208,7 +215,7 @@ h6.sub-title {
 
 #description .box h5 {
   display: inline;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -448,7 +455,7 @@ h6.sub-title {
 
 #course .list-course .box:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 #course .list-course .box:hover h5 {
@@ -577,7 +584,7 @@ h6.sub-title {
 }
 
 #follow .box:hover {
-  transform: translateY(15px);
+  transform: translateY(12px);
 }
 
 #follow .box .media i {
@@ -592,7 +599,6 @@ h6.sub-title {
 
 #follow .box .media .media-body p {
   margin-bottom: 0;
-  font-size: 16px;
 }
 
 @media (max-width: 991.98px) {
@@ -715,7 +721,7 @@ h6.sub-title {
   margin-left: auto;
   padding: 60px 100px 80px;
   border-radius: 32px;
-  max-width: 80%;
+  max-width: 82%;
 }
 
 #contact .container h1 {
@@ -770,7 +776,7 @@ h6.sub-title {
 }
 
 #contact .form-control {
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 12px;
   background-color: #222;
   padding: 10px 16px;
@@ -792,7 +798,7 @@ h6.sub-title {
   border-radius: 10px;
   margin-top: 6px;
   padding: 10px 24px;
-  font-size: 18px;
+  font-size: 16px;
   box-shadow: 0 4px 0 currentColor;
 }
 

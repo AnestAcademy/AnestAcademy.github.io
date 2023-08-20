@@ -1,6 +1,6 @@
 body {
   color: #dfdfdf;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.75;
   background-color: #121212;
 }
@@ -18,7 +18,7 @@ h6 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .font-weight-500 {
@@ -204,7 +204,7 @@ section,
 }
 
 #menu .site-navigation ul li .nav-link {
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   padding: 9px 15px;
   color: #c7af8b;
@@ -231,7 +231,7 @@ section,
 
 #menu .btn-register {
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 9px 32px;
   font-weight: 500;
   border: 2px solid;
@@ -262,7 +262,7 @@ section,
 #footer {
   background-color: #1d1d1d;
   color: #bdbdbd;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #footer .f-top {
@@ -479,7 +479,7 @@ section,
 }
 
 .modal-body h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #ccc;
 }
 
@@ -554,13 +554,13 @@ button:focus {
 
 .btn-sm {
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
   padding: 4px 14px;
 }
 
 .btn-md {
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 6px 16px;
 }
 
