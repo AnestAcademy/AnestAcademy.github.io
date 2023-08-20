@@ -1,6 +1,6 @@
 body {
   color: #dfdfdf;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.75;
   background-color: #121212;
 }
@@ -204,7 +204,7 @@ section,
 }
 
 #menu .site-navigation ul li .nav-link {
-  font-size: 17px;
+  font-size: 18px;
   display: block;
   padding: 9px 15px;
   color: #c7af8b;
@@ -231,7 +231,7 @@ section,
 
 #menu .btn-register {
   border-radius: 8px;
-  font-size: 17px;
+  font-size: 18px;
   padding: 9px 32px;
   font-weight: 500;
   border: 2px solid;
@@ -262,7 +262,7 @@ section,
 #footer {
   background-color: #1d1d1d;
   color: #bdbdbd;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 #footer .f-top {
@@ -553,21 +553,21 @@ button:focus {
 }
 
 .btn-sm {
-  border-radius: 8px;
-  font-size: 15px;
-  padding: 5px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 4px 14px;
 }
 
 .btn-md {
   border-radius: 8px;
-  font-size: 16px;
-  padding: 8px 16px;
+  font-size: 18px;
+  padding: 6px 16px;
 }
 
 .btn-lg {
   border-radius: 10px;
   font-size: 18px;
-  padding: 10px 35px;
+  padding: 8px 20px;
 }
 
 .btn-white {
@@ -615,17 +615,6 @@ button:focus {
 .btn-success:not(:disabled):not(.disabled):active:focus,
 .show>.btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 207, 92, 0.25);
-}
-
-.btn-light {
-  background-color: transparent !important;
-  border: 2px solid #fc643f !important;
-  color: #fc643f !important;
-}
-
-.btn-light:hover {
-  color: #fff !important;
-  background-color: #fc643f !important;
 }
 
 .btn-outline-while {
