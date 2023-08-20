@@ -508,10 +508,10 @@ section,
 }
 
 
-/* ----- Button ----- */
+/* ----- Toast ----- */
 
 .toast {
-  font-size: .925rem;
+  font-size: 1rem;
 }
 
 .toast-error {
@@ -554,7 +554,7 @@ button:focus {
 
 .btn-sm {
   border-radius: 6px;
-  font-size: 15px;
+  font-size: 14px;
   padding: 4px 14px;
 }
 
@@ -568,11 +568,6 @@ button:focus {
   border-radius: 10px;
   font-size: 18px;
   padding: 8px 20px;
-}
-
-.btn-white {
-  background-color: #f1f1f1;
-  border: 1px solid #cccccc;
 }
 
 .btn-dark-2 {
@@ -595,9 +590,7 @@ button:focus {
 
 .btn-success {
   background-color: transparent !important;
-  border: 2px solid #c7af8b !important;
   color: #c7af8b !important;
-  box-shadow: 0 4px 0 currentColor;
 }
 
 .btn-success:hover {
@@ -606,9 +599,9 @@ button:focus {
   border-color: #ffcf5c !important;
 }
 
-.btn-success.focus,
+.btn-success:target,
 .btn-success:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 207, 92, 0.25);
+  box-shadow: 0 4px 0 currentColor;
 }
 
 .btn-success:not(:disabled):not(.disabled).active:focus,
@@ -617,9 +610,26 @@ button:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 207, 92, 0.25);
 }
 
-.btn-outline-while {
+.btn-outline {
   color: #c7af8b;
   border-color: #c7af8b;
+}
+
+.btn-outline-bottom-bold {
+  color: #c7af8b;
+  border: 2px solid #c7af8b !important;
+}
+
+.btn-highlight {
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 36px;
+  font-weight: 400;
+  box-shadow: 0 4px 0 currentColor;
+}
+
+.btn-highlight-icon {
+  padding: 10px 24px !important;
 }
 
 .btn-white:hover,

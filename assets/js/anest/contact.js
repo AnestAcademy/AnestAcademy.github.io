@@ -1,7 +1,7 @@
 document.getElementById('time').value = new Date().toLocaleString();
 
 var $form = $('form#contact-form');
-var url = 'https://script.google.com/macros/s/AKfycbxB7kD-wLwWCbpwDEUcHjC3Oj5Vek-9Qa7Se0SvDWvYpov1DaTx/exec';
+var url = 'https://script.google.com/macros/s/AKfycbx0aX5F-SeTaeW13f1pzKQwFgHW0bdhMYBkyACids4FsESBUlkfnqrM2HZ1h6YCHxR6nA/exec';
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
