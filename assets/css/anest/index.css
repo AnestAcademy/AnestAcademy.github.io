@@ -1,32 +1,5 @@
 /* ----- Common ----- */
 
-@media (max-width: 991.98px) {
-  .text-left,
-  .text-right {
-    text-align: center !important;
-  }
-}
-
-.w-85 {
-  width: 85%;
-}
-
-.w-70 {
-  width: 70%;
-}
-
-.w-55 {
-  width: 55%;
-}
-
-@media (max-width: 767.98px) {
-  .w-85,
-  .w-70,
-  .w-55 {
-    width: 100%;
-  }
-}
-
 h1.title {
   font-size: 55px;
   letter-spacing: 1px;
@@ -89,7 +62,6 @@ h6.sub-title {
   border-radius: 10px;
   font-size: 16px;
   padding: 16px 50px;
-  margin: 25px 0;
   font-weight: 500;
   background-color: #333;
   border: 2px solid #333;
@@ -884,7 +856,21 @@ h6.sub-title {
 }
 
 
-/* ---- */
+/* ----- About modal ----- */
+
+#aboutModal .modal-body p span {
+  color: #ffcf5c;
+}
+
+@media (max-width: 575.98px) {
+  #aboutModal .modal-body {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+}
+
+
+/* ----- Col ----- */
 
 #course .col,
 #course .col-1,

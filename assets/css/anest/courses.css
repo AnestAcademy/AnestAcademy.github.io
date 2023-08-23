@@ -1,32 +1,5 @@
 /* ----- Common ----- */
 
-@media (max-width: 991.98px) {
-  .text-left,
-  .text-right {
-    text-align: center !important;
-  }
-}
-
-.w-85 {
-  width: 85%;
-}
-
-.w-70 {
-  width: 70%;
-}
-
-.w-55 {
-  width: 55%;
-}
-
-@media (max-width: 767.98px) {
-  .w-85,
-  .w-70,
-  .w-55 {
-    width: 100%;
-  }
-}
-
 hr {
   margin-top: 1rem;
   margin-bottom: .65rem;
@@ -37,7 +10,7 @@ hr {
 /* ----- Section cover ----- */
 
 #cover {
-  padding-top: 90px;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -65,25 +38,6 @@ hr {
   font-style: normal;
   text-transform: uppercase;
   font-weight: 500;
-}
-
-#cover .btn-view-more {
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 15px 50px;
-  margin: 25px 0;
-  font-weight: 500;
-  background-color: #333;
-  border: 2px solid #333;
-  text-transform: uppercase;
-  color: #ddd;
-  transition: .5s;
-}
-
-#cover .btn-view-more:hover {
-  color: #ffcf5c !important;
-  border-color: #ffcf5c;
-  background-color: #333;
 }
 
 #cover .wrap {

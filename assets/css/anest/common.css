@@ -21,9 +21,43 @@ h4 {
   font-size: 18px;
 }
 
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+
 .font-weight-500 {
   font-weight: 500 !important;
 }
+
+.w-85 {
+  width: 85%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+@media (max-width: 767.98px) {
+  .w-85,
+  .w-70,
+  .w-55 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .text-left,
+  .text-right {
+    text-align: center !important;
+  }
+}
+
+
+/*----- Background color -----*/
 
 .bg-dark-2 {
   background-color: #222 !important;
@@ -36,6 +70,9 @@ h4 {
 .bg-dark-3 {
   background-color: #333 !important;
 }
+
+
+/*----- Color -----*/
 
 .highlight {
   color: #fff;
@@ -89,9 +126,8 @@ h4 {
   -webkit-background-clip: text;
 }
 
-.flex {
-  display: flex !important;
-}
+
+/*----- Section -----*/
 
 section {
   background-position: 50% 50%;
@@ -252,9 +288,6 @@ section,
     padding: 8px 43px;
   }
 }
-
-
-/* ----- Title ----- */
 
 
 /* ----- Footer ----- */
@@ -486,24 +519,6 @@ section,
 @media (min-width: 575.98px) {
   #logoutModal .modal-dialog {
     max-width: 500px;
-  }
-}
-
-
-/* ----- About modal ----- */
-
-#aboutModal .modal-body p i {
-  font-size: 12px;
-}
-
-#aboutModal .modal-body p span {
-  color: #ffcf5c;
-}
-
-@media (max-width: 575.98px) {
-  #aboutModal .modal-body {
-    max-height: 450px;
-    overflow-y: auto;
   }
 }
 
