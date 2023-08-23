@@ -3,7 +3,7 @@
 h1.title {
   font-size: 55px;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-style: normal;
 }
 
@@ -277,7 +277,7 @@ h6.sub-title {
 .course-intro .img1 {
   position: absolute !important;
   height: 450px;
-  width: 47%;
+  width: 52%;
   left: 15px;
   top: 80px;
   border-radius: 30px !important;
@@ -326,7 +326,7 @@ h6.sub-title {
 .course-intro .img3 {
   position: absolute !important;
   height: 450px;
-  width: 45%;
+  width: 42%;
   right: 165px;
   bottom: 0;
   border-radius: 30px !important;
@@ -835,7 +835,7 @@ h6.sub-title {
 /* ----- Section location ----- */
 
 #gmap {
-  height: 45vh;
+  height: 40vh;
   width: 100%;
   overflow: hidden;
   -webkit-filter: grayscale(100%);
