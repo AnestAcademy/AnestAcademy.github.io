@@ -51,7 +51,7 @@ h6.sub-title {
   margin-left: auto;
   padding: 120px 100px;
   border-radius: 32px;
-  max-width: 80%;
+  max-width: 82%;
 }
 
 #cover h1 {
@@ -410,6 +410,72 @@ h6.sub-title {
 @media (max-width: 575.98px) {}
 
 
+/*----- Section course -----*/
+
+#course {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+#course .text-left p {
+  margin: 30px 50px 30px 0;
+}
+
+#course .list-course .box {
+  border-radius: 20px;
+  background-color: #1d1d1d;
+  margin-bottom: 24px;
+  transition: 0.5s;
+}
+
+#course .list-course .box:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+#course .list-course .box .icon-cover {
+  background-color: #252525;
+  border-radius: 20px 20px 0 0;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#course .list-course .box .icon-cover i {
+  font-size: 48px;
+}
+
+#course .list-course .box .box-body {
+  padding: 20px;
+  width: 100%;
+}
+
+#course .list-course .box .box-body h4 {
+  font-size: 17px;
+}
+
+#course .list-course .box .box-body p {
+  font-size: 14px;
+}
+
+#course .list-course .box .box-body .icon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 75px;
+  position: relative;
+}
+
+#course .list-course .box .box-body .icon .center-icon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
 /* ----- Section faq ----- */
 
 #faq {
@@ -755,81 +821,81 @@ input:-webkit-autofill {
 
 /* ----- Col ----- */
 
-#benefit .col,
-#benefit .col-1,
-#benefit .col-10,
-#benefit .col-11,
-#benefit .col-12,
-#benefit .col-2,
-#benefit .col-3,
-#benefit .col-4,
-#benefit .col-5,
-#benefit .col-6,
-#benefit .col-7,
-#benefit .col-8,
-#benefit .col-9,
-#benefit .col-auto,
-#benefit .col-lg,
-#benefit .col-lg-1,
-#benefit .col-lg-10,
-#benefit .col-lg-11,
-#benefit .col-lg-12,
-#benefit .col-lg-2,
-#benefit .col-lg-3,
-#benefit .col-lg-4,
-#benefit .col-lg-5,
-#benefit .col-lg-6,
-#benefit .col-lg-7,
-#benefit .col-lg-8,
-#benefit .col-lg-9,
-#benefit .col-lg-auto,
-#benefit .col-md,
-#benefit .col-md-1,
-#benefit .col-md-10,
-#benefit .col-md-11,
-#benefit .col-md-12,
-#benefit .col-md-2,
-#benefit .col-md-3,
-#benefit .col-md-4,
-#benefit .col-md-5,
-#benefit .col-md-6,
-#benefit .col-md-7,
-#benefit .col-md-8,
-#benefit .col-md-9,
-#benefit .col-md-auto,
-#benefit .col-sm,
-#benefit .col-sm-1,
-#benefit .col-sm-10,
-#benefit .col-sm-11,
-#benefit .col-sm-12,
-#benefit .col-sm-2,
-#benefit .col-sm-3,
-#benefit .col-sm-4,
-#benefit .col-sm-5,
-#benefit .col-sm-6,
-#benefit .col-sm-7,
-#benefit .col-sm-8,
-#benefit .col-sm-9,
-#benefit .col-sm-auto,
-#benefit .col-xl,
-#benefit .col-xl-1,
-#benefit .col-xl-10,
-#benefit .col-xl-11,
-#benefit .col-xl-12,
-#benefit .col-xl-2,
-#benefit .col-xl-3,
-#benefit .col-xl-4,
-#benefit .col-xl-5,
-#benefit .col-xl-6,
-#benefit .col-xl-7,
-#benefit .col-xl-8,
-#benefit .col-xl-9,
-#benefit .col-xl-auto {
+#course .col,
+#course .col-1,
+#course .col-10,
+#course .col-11,
+#course .col-12,
+#course .col-2,
+#course .col-3,
+#course .col-4,
+#course .col-5,
+#course .col-6,
+#course .col-7,
+#course .col-8,
+#course .col-9,
+#course .col-auto,
+#course .col-lg,
+#course .col-lg-1,
+#course .col-lg-10,
+#course .col-lg-11,
+#course .col-lg-12,
+#course .col-lg-2,
+#course .col-lg-3,
+#course .col-lg-4,
+#course .col-lg-5,
+#course .col-lg-6,
+#course .col-lg-7,
+#course .col-lg-8,
+#course .col-lg-9,
+#course .col-lg-auto,
+#course .col-md,
+#course .col-md-1,
+#course .col-md-10,
+#course .col-md-11,
+#course .col-md-12,
+#course .col-md-2,
+#course .col-md-3,
+#course .col-md-4,
+#course .col-md-5,
+#course .col-md-6,
+#course .col-md-7,
+#course .col-md-8,
+#course .col-md-9,
+#course .col-md-auto,
+#course .col-sm,
+#course .col-sm-1,
+#course .col-sm-10,
+#course .col-sm-11,
+#course .col-sm-12,
+#course .col-sm-2,
+#course .col-sm-3,
+#course .col-sm-4,
+#course .col-sm-5,
+#course .col-sm-6,
+#course .col-sm-7,
+#course .col-sm-8,
+#course .col-sm-9,
+#course .col-sm-auto,
+#course .col-xl,
+#course .col-xl-1,
+#course .col-xl-10,
+#course .col-xl-11,
+#course .col-xl-12,
+#course .col-xl-2,
+#course .col-xl-3,
+#course .col-xl-4,
+#course .col-xl-5,
+#course .col-xl-6,
+#course .col-xl-7,
+#course .col-xl-8,
+#course .col-xl-9,
+#course .col-xl-auto {
   padding-right: 12px;
   padding-left: 12px;
 }
 
-#benefit .row {
+#course .row {
   margin-right: -12px;
   margin-left: -12px;
 }
