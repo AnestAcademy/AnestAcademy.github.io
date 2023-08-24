@@ -1,3 +1,37 @@
+@charset "utf-8";
+
+/**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-text: #dfdfdf;
+  --secondary-text: #c7af8b;
+  --highlight-text: #fff;
+}
+
+html[data-theme='light'] {
+  /* background-color -------------------------------- */
+  --body-background: #F0F2F5;
+  /* text-color -------------------------------------- */
+  --primary-text: #dfdfdf;
+  --secondary-text: #c7af8b;
+  --highlight-text: #fff;
+}
+
+html[data-theme='dark'] {
+  /* background-color -------------------------------- */
+  --body-background: #18191A;
+  /* text-color -------------------------------------- */
+  --primary-text: #dfdfdf;
+  --secondary-text: #c7af8b;
+  --highlight-text: #fff;
+}
+
 body {
   color: #dfdfdf;
   font-size: 16px;
@@ -11,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #c7af8b;
+  color: var(--secondary-text);
   font-weight: 500;
   word-break: break-word;
   word-wrap: break-word;
@@ -87,7 +121,7 @@ h4 {
 }
 
 .color-tan {
-  color: #c7af8b;
+  color: var(--secondary-text);
 }
 
 .color-orange {
@@ -243,7 +277,7 @@ section,
   font-size: 16px;
   display: block;
   padding: 9px 15px;
-  color: #c7af8b;
+  color: var(--secondary-text);
   text-decoration: none;
   font-weight: 500;
 }
@@ -626,12 +660,12 @@ button:focus {
 }
 
 .btn-outline {
-  color: #c7af8b;
-  border-color: #c7af8b;
+  color: var(--secondary-text);
+  border-color: var(--secondary-text);
 }
 
 .btn-outline-bottom-bold {
-  color: #c7af8b;
+  color: var(--secondary-text);
   border: 2px solid #c7af8b !important;
 }
 

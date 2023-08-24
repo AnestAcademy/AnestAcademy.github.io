@@ -236,7 +236,7 @@ h6.sub-title {
 /* ----- Section object ----- */
 
 #object {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -362,8 +362,8 @@ h6.sub-title {
 /*----- Section benefit -----*/
 
 #benefit {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 
@@ -371,7 +371,7 @@ h6.sub-title {
 
 #highlight-course {
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 #highlight-course .text-left p {
@@ -442,6 +442,14 @@ h6.sub-title {
 @media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {}
+
+
+/* ----- Section course detail ----- */
+
+#course-detail {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 
 /* ----- Section faq ----- */
@@ -716,8 +724,8 @@ input:-webkit-autofill {
 
 .timeline:before {
   position: absolute;
-  top: 7px;
-  bottom: 100px;
+  top: 10px;
+  bottom: 95px;
   width: 3px;
   background: #444;
   left: 5px;
