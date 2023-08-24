@@ -374,31 +374,65 @@ h6.sub-title {
   padding-bottom: 80px;
 }
 
+#highlight-course .text-left p {
+  margin: 30px 50px 30px 0;
+}
+
 #highlight-course .list-highlight-course .box {
-  padding: 16px 24px;
   border-radius: 20px;
   background-color: #1d1d1d;
+  margin-bottom: 24px;
+  transition: 0.5s;
+  padding-top: 28px;
 }
 
-#highlight-course .list-highlight-course .box i {
-  color: #c4b08f;
-  background-color: #2d2d2d;
-  width: 94px;
-  padding: 26px 0;
-  border-radius: 20px;
-  margin-top: -44px;
-  font-size: 40px;
-  text-align: center;
-  transition: all 0.5s;
-  transform: scale(1);
+#highlight-course .list-highlight-course .box:hover {
+  cursor: pointer;
+  transform: scale(1.04);
 }
 
-#highlight-course .list-highlight-course .box:hover i {
-  transform: scale(1.08);
+#highlight-course .list-highlight-course .box .icon-cover {
+  background-color: #333;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#highlight-course .list-highlight-course .box p {
-  margin-top: 12px;
+#highlight-course .list-highlight-course .box .icon-cover i {
+  font-size: 48px;
+}
+
+#highlight-course .list-highlight-course .box .box-body {
+  padding: 24px 20px 16px;
+  width: 100%;
+}
+
+#highlight-course .list-highlight-course .box .box-body h4 {
+  font-size: 17px;
+}
+
+#highlight-course .list-highlight-course .box .box-body p {
+  font-size: 14px;
+}
+
+#highlight-course .list-highlight-course .box .box-body .icon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 75px;
+  position: relative;
+}
+
+#highlight-course .list-highlight-course .box .box-body .icon .center-icon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1199.98px) {}
@@ -408,72 +442,6 @@ h6.sub-title {
 @media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {}
-
-
-/*----- Section course -----*/
-
-#course {
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-
-#course .text-left p {
-  margin: 30px 50px 30px 0;
-}
-
-#course .list-course .box {
-  border-radius: 20px;
-  background-color: #1d1d1d;
-  margin-bottom: 24px;
-  transition: 0.5s;
-}
-
-#course .list-course .box:hover {
-  cursor: pointer;
-  transform: scale(1.04);
-}
-
-#course .list-course .box .icon-cover {
-  background-color: #252525;
-  border-radius: 20px 20px 0 0;
-  height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#course .list-course .box .icon-cover i {
-  font-size: 48px;
-}
-
-#course .list-course .box .box-body {
-  padding: 20px;
-  width: 100%;
-}
-
-#course .list-course .box .box-body h4 {
-  font-size: 17px;
-}
-
-#course .list-course .box .box-body p {
-  font-size: 14px;
-}
-
-#course .list-course .box .box-body .icon {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  height: 75px;
-  position: relative;
-}
-
-#course .list-course .box .box-body .icon .center-icon {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
 
 /* ----- Section faq ----- */
