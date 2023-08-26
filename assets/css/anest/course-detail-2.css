@@ -114,8 +114,8 @@
     padding-bottom: 40px;
   }
   #cover .container {
-    padding: 100px 80px;
-    border-radius: 30px;
+    padding: 80px;
+    border-radius: 28px;
   }
   #cover .container {
     max-width: 690px;
@@ -143,8 +143,8 @@
   }
   #cover .container {
     max-width: 540px;
-    padding: 80px 60px 60px;
-    border-radius: 30px;
+    padding: 60px;
+    border-radius: 28px;
   }
   #cover h1 {
     font-size: 50px;
@@ -174,8 +174,8 @@
   }
   #cover .container {
     max-width: 92%;
-    border-radius: 18px;
-    padding: 100px 40px 60px;
+    padding: 60px 30px;
+    border-radius: 24px;
   }
   #cover h1 {
     font-size: 50px;
@@ -287,13 +287,16 @@
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {}
+
+@media (max-width: 575.98px) {
   #object .box {
     margin-bottom: 16px;
   }
+  #object .box:hover {
+    transform: none;
+  }
 }
-
-@media (max-width: 575.98px) {}
 
 
 /*----- Section benefit -----*/
@@ -377,9 +380,20 @@
 
 @media (max-width: 991.98px) {}
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  #highlight-course .list-highlight-course .box .box-body h4 {
+    font-size: 18px;
+  }
+  #highlight-course .list-highlight-course .box .box-body p {
+    font-size: 16px;
+  }
+}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  #highlight-course .list-highlight-course .box {
+    margin-bottom: 16px;
+  }
+}
 
 
 /*----- Section overview -----*/
@@ -443,6 +457,12 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+  #course-detail .collapse-panel {
+    margin-bottom: 16px;
+  }
+}
 
 
 /*----- Section result -----*/
@@ -835,6 +855,23 @@ input:-webkit-autofill {
   position: relative;
   min-height: 85px;
   transition: .5s;
+}
+
+@media (max-width: 991.98px) {
+  .timeline-item {
+    width: calc(100% - 15px);
+  }
+  .timeline-item+.timeline-item {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+  .timeline-item {
+    padding-left: 50px;
+  }
 }
 
 
