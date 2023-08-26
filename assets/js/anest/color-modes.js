@@ -30,6 +30,11 @@
     localStorage.setItem("color-theme", "tan");
   }
 
+  const changeThemeToOrange = () => {
+    document.documentElement.setAttribute("color-theme", "orange");
+    localStorage.setItem("color-theme", "orange");
+  }
+
   const changeThemeToRed = () => {
     document.documentElement.setAttribute("color-theme", "red");
     localStorage.setItem("color-theme", "red");
@@ -40,11 +45,24 @@
     localStorage.setItem("color-theme", "green");
   }
 
+  const changeThemeToTeal = () => {
+    document.documentElement.setAttribute("color-theme", "teal");
+    localStorage.setItem("color-theme", "teal");
+  }
+
+  const changeThemeToCyan = () => {
+    document.documentElement.setAttribute("color-theme", "cyan");
+    localStorage.setItem("color-theme", "cyan");
+  }
+
   if (color === null) color = "tan";
 
   if (color === "tan") changeThemeToTan();
+  if (color === "orange") changeThemeToOrange();
   if (color === "red") changeThemeToRed();
   if (color === "green") changeThemeToGreen();
+  if (color === "teal") changeThemeToTeal();
+  if (color === "cyan") changeThemeToCyan();
 
   // event
   window.addEventListener("DOMContentLoaded", () => {
@@ -67,11 +85,16 @@
           const color = toggle.getAttribute("data-bs-color-value")
           if (color === "tan") {
             changeThemeToTan();
+          } else if (color === "orange") {
+            changeThemeToOrange();
           } else if (color === "red") {
             changeThemeToRed();
-
           } else if (color === "green") {
             changeThemeToGreen();
+          } else if (color === "teal") {
+            changeThemeToTeal();
+          } else if (color === "cyan") {
+            changeThemeToCyan();
           }
         })
       })
