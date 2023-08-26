@@ -30,6 +30,11 @@
     localStorage.setItem("color-theme", "tan");
   }
 
+  const changeThemeToYellow = () => {
+    document.documentElement.setAttribute("color-theme", "yellow");
+    localStorage.setItem("color-theme", "yellow");
+  }
+
   const changeThemeToOrange = () => {
     document.documentElement.setAttribute("color-theme", "orange");
     localStorage.setItem("color-theme", "orange");
@@ -58,6 +63,7 @@
   if (color === null) color = "tan";
 
   if (color === "tan") changeThemeToTan();
+  if (color === "yellow") changeThemeToYellow();
   if (color === "orange") changeThemeToOrange();
   if (color === "red") changeThemeToRed();
   if (color === "green") changeThemeToGreen();
@@ -85,6 +91,8 @@
           const color = toggle.getAttribute("data-bs-color-value")
           if (color === "tan") {
             changeThemeToTan();
+          } else if (color === "yellow") {
+            changeThemeToYellow();
           } else if (color === "orange") {
             changeThemeToOrange();
           } else if (color === "red") {

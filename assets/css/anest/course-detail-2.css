@@ -1,43 +1,3 @@
-/* ----- Common ----- */
-
-.one-ui {
-  padding: 16px 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
-.one-ui h5 {
-  font-weight: 400;
-}
-
-hr {
-  margin-top: 1rem;
-  margin-bottom: .65rem;
-  border-top: 1px solid #555;
-}
-
-.modal-body span {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-
-/* ----- Common ----- */
-
-h1.title {
-  font-size: 55px;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  font-style: normal;
-}
-
-h6.sub-title {
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-style: normal;
-}
-
-
 /* ----- Section cover ----- */
 
 #cover {
@@ -49,9 +9,10 @@ h6.sub-title {
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  padding: 120px 100px;
+  padding: 120px;
   border-radius: 32px;
   max-width: 82%;
+  border: 1px solid var(--secondary-border-color);
 }
 
 #cover h1 {
@@ -255,8 +216,9 @@ h6.sub-title {
   padding: 16px 24px;
   border-radius: 20px;
   margin-bottom: 20px;
-  transition: .5s;
+  transition: .3s;
   align-items: center;
+  border: 1px solid var(--secondary-border-color);
 }
 
 #object .box p {
@@ -270,7 +232,7 @@ h6.sub-title {
 
 #object .box i {
   margin-right: 24px;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 #object .box h5 {
@@ -326,37 +288,12 @@ h6.sub-title {
 }
 
 @media (max-width: 991.98px) {
-  #object {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-  #object h1 {
-    margin-top: 15px;
+  #object .box {
+    margin-bottom: 16px;
   }
 }
 
-@media (max-width: 575.98px) {
-  #object {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-  #object h1 {
-    font-size: 50px;
-  }
-  #object .btn-show-more {
-    margin: 0 0 50px;
-  }
-  #object .text-left {
-    text-align: center !important;
-  }
-  #object .box:hover {
-    transform: translateY(10px);
-  }
-  #object .text {
-    font-size: 15px;
-    padding: 20px 15px;
-  }
-}
+@media (max-width: 575.98px) {}
 
 
 /*----- Section benefit -----*/
@@ -380,10 +317,10 @@ h6.sub-title {
 
 #highlight-course .list-highlight-course .box {
   border-radius: 20px;
-  background-color: #1d1d1d;
   margin-bottom: 24px;
   transition: 0.5s;
   padding-top: 28px;
+  border: 1px solid var(--secondary-border-color);
 }
 
 #highlight-course .list-highlight-course .box:hover {
@@ -392,7 +329,7 @@ h6.sub-title {
 }
 
 #highlight-course .list-highlight-course .box .icon-cover {
-  background-color: #333;
+  background-color: var(--third-background);
   border-radius: 50%;
   height: 86px;
   width: 86px;
@@ -407,12 +344,13 @@ h6.sub-title {
 }
 
 #highlight-course .list-highlight-course .box .box-body {
-  padding: 24px 20px 16px;
+  padding: 20px 20px 16px;
   width: 100%;
 }
 
 #highlight-course .list-highlight-course .box .box-body h4 {
   font-size: 17px;
+  line-height: 1.5;
 }
 
 #highlight-course .list-highlight-course .box .box-body p {
@@ -461,14 +399,14 @@ h6.sub-title {
 
 #course-detail a {
   padding: 10px 16px;
-  border: 2px solid #272727;
+  border: 2px solid var(--third-border-color);
   width: 100%;
   text-align: left;
   display: inline-block;
   border-radius: 12px;
-  background-color: #1d1d1d;
   text-transform: uppercase;
   font-weight: 500;
+  color: var(--primary-text);
 }
 
 #course-detail a:hover {
@@ -496,7 +434,7 @@ h6.sub-title {
 
 #course-detail .card-body {
   padding: 10px 16px;
-  border: 2px solid #333;
+  border: 2px solid var(--fourth-border-color);
   border-top: none;
   background: transparent;
   border-radius: 14px;
@@ -522,7 +460,6 @@ h6.sub-title {
 #result .y {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #1d1d1d;
   border-radius: 32px;
 }
 
@@ -532,7 +469,7 @@ h6.sub-title {
 }
 
 #result .carousel-inner {
-  border-radius: 20px;
+  border-radius: 32px;
 }
 
 #result .carousel img {
@@ -559,6 +496,7 @@ h6.sub-title {
 
 #result .carousel button i {
   font-size: 24px;
+  color: var(--primary-text);
 }
 
 #result .carousel-control-next,
@@ -590,13 +528,12 @@ h6.sub-title {
 
 #faq a {
   padding: 9px 16px;
-  border: 2px solid #272727;
+  border: 2px solid var(--third-border-color);
   width: 100%;
   text-align: left;
   display: inline-block;
-  color: #03bb65;
+  color: var(--primary-text);
   border-radius: 14px;
-  background-color: #1d1d1d;
 }
 
 #faq a:hover {
@@ -624,24 +561,15 @@ h6.sub-title {
 
 #faq .card-body {
   padding: 10px 16px;
-  border: 2px solid #333;
+  border: 2px solid var(--fourth-border-color);
   border-top: none;
   background: transparent;
   border-radius: 14px;
 }
 
-@media (max-width: 991.98px) {
-  #faq .text-left p {
-    margin-bottom: 35px;
-  }
-}
+@media (max-width: 991.98px) {}
 
-@media (max-width: 767.98px) {
-  #faq {
-    padding-top: 80px;
-    padding-bottom: 50px;
-  }
-}
+@media (max-width: 767.98px) {}
 
 
 /* ----- Register ----- */
@@ -842,8 +770,8 @@ input:-webkit-autofill {
   top: 10px;
   bottom: 95px;
   width: 3px;
-  background: #444;
-  left: 21px;
+  background: var(--fourth-border-color);
+  left: 22px;
   margin-left: 0px;
 }
 
@@ -872,10 +800,10 @@ input:-webkit-autofill {
   position: absolute;
   top: 5px;
   left: 15px;
-  border: 2px solid #666;
-  width: 14px;
-  height: 14px;
-  background-color: #f1b200;
+  border: 2px solid var(--fifth-border-color);
+  width: 16px;
+  height: 16px;
+  background-color: var(--secondary-highlight-text);
   border-radius: 50px;
 }
 
