@@ -3,52 +3,76 @@
  */
 
 (() => {
-  'use strict'
+  "use strict"
 
-  let theme = localStorage.getItem('data-theme');
-  //const checkbox = document.getElementById("switch");
+  let theme = localStorage.getItem("data-theme");
+  let color = localStorage.getItem("color-theme");
 
+  // theme
   const changeThemeToDark = () => {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("data-theme", "dark");
-    //checkbox.checked = true;
   }
 
   const changeThemeToLight = () => {
     document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("data-theme", 'light');
-    //checkbox.checked = false;
+    localStorage.setItem("data-theme", "light");
   }
 
-  if (theme === null) {
-    theme = 'dark';
+  if (theme === null) theme = "dark";
+
+  if (theme === "dark") changeThemeToDark();
+  if (theme === "light") changeThemeToLight()
+
+  // color
+  const changeThemeToTan = () => {
+    document.documentElement.setAttribute("color-theme", "tan");
+    localStorage.setItem("color-theme", "tan");
   }
 
-  if (theme === 'dark') {
-    changeThemeToDark();
+  const changeThemeToRed = () => {
+    document.documentElement.setAttribute("color-theme", "red");
+    localStorage.setItem("color-theme", "red");
   }
 
-  if (theme === 'light') {
-    changeThemeToLight();
+  const changeThemeToGreen = () => {
+    document.documentElement.setAttribute("color-theme", "green");
+    localStorage.setItem("color-theme", "green");
   }
 
-  // checkbox.addEventListener('change', () => {
-  //   let theme = localStorage.getItem('data-theme');
-  //   if (theme === 'dark') {
-  //     changeThemeToLight();
-  //   } else {
-  //     changeThemeToDark();
-  //   }
-  // });
+  if (color === null) color = "tan";
 
-  window.addEventListener('DOMContentLoaded', () => {
-    //showActiveTheme(getPreferredTheme())
+  if (color === "tan") changeThemeToTan();
+  if (color === "red") changeThemeToRed();
+  if (color === "green") changeThemeToGreen();
 
-    document.querySelectorAll('[data-bs-theme-value]')
+  // event
+  window.addEventListener("DOMContentLoaded", () => {
+
+    document.querySelectorAll("[data-bs-theme-value]")
       .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          console.log(theme);
+        toggle.addEventListener("click", () => {
+          const theme = toggle.getAttribute("data-bs-theme-value")
+          if (theme === "dark") {
+            changeThemeToDark();
+          } else {
+            changeThemeToLight();
+          }
+        })
+      })
+
+    document.querySelectorAll("[data-bs-color-value]")
+      .forEach(toggle => {
+        toggle.addEventListener("click", () => {
+          const color = toggle.getAttribute("data-bs-color-value")
+          if (color === "tan") {
+            changeThemeToTan();
+          } else if (color === "red") {
+            changeThemeToRed();
+
+          } else if (color === "green") {
+            changeThemeToGreen();
+          }
         })
       })
   })
