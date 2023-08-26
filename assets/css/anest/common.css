@@ -117,6 +117,18 @@ h6.sub-title.sub-title-mb {
   }
 }
 
+@media (max-width: 767.98px) {
+  h1.title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1.title {
+    font-size: 45px;
+  }
+}
+
 
 /*----- Section -----*/
 
