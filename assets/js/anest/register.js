@@ -3,7 +3,7 @@ document.getElementById('time').value = new Date().toLocaleString();
 var $form = $('form#register-form');
 var url = 'https://script.google.com/macros/s/AKfycbw-FFWNPgU8Z35l--_4EZ59PJZdkHUgdqGbCZQoB74XatNjZI6-/exec';
 
-$('#submit-form').on('click', function(e) {
+$('#submit-form-register').on('click', function(e) {
   e.preventDefault();
 
   if ($('#customSwitch').is(":checked")) {

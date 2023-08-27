@@ -247,7 +247,7 @@ section,
 #menu .site-navigation ul li .nav-link {
   font-size: 16px;
   display: block;
-  padding: 9px 15px;
+  padding: 9px 10px;
   color: var(--secondary-highlight-text);
   text-decoration: none;
   font-weight: 500;

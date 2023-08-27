@@ -18,7 +18,7 @@
 }
 
 
-/* ----- Section cover ----- */
+/* Section cover -------------------------------------------------------------------- */
 
 #cover {
   padding-top: 80px;
@@ -212,22 +212,11 @@
 }
 
 
-/* ----- Section object ----- */
+/* Section object ------------------------------------------------------------------- */
 
 #object {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-#object p {
-  margin: 30px 0;
-  font-style: normal;
-}
-
-#object p i {
-  font-size: 8px;
-  position: absolute;
-  margin-top: 5px;
 }
 
 #object .box {
@@ -253,58 +242,6 @@
   font-size: 32px;
 }
 
-#object .box h5 {
-  display: inline;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  margin: 10px 0;
-}
-
-#object .box .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#object .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #252525;
-  border-radius: 20px;
-  line-height: 1.5;
-}
-
-#object .is-displayed {
-  opacity: 1;
-}
-
-#object .box:hover .overlay {
-  opacity: 1;
-}
-
-#object .text {
-  color: #ccc;
-  font-size: 16px;
-  position: absolute;
-  text-align: left;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  padding: 25px 20px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 @media (max-width: 991.98px) {}
 
 @media (max-width: 575.98px) {
@@ -321,7 +258,7 @@
 }
 
 
-/*----- Section benefit -----*/
+/* Section benefit ------------------------------------------------------------------ */
 
 #benefit {
   padding-top: 60px;
@@ -336,7 +273,7 @@
 }
 
 
-/*----- Section highlight course -----*/
+/* Section highlight course --------------------------------------------------------- */
 
 #highlight-course {
   padding-top: 60px;
@@ -347,7 +284,7 @@
   margin: 30px 50px 30px 0;
 }
 
-#highlight-course .list-highlight-course .box {
+#highlight-course .box {
   border-radius: 20px;
   margin-bottom: 24px;
   transition: 0.5s;
@@ -355,12 +292,12 @@
   border: 1px solid var(--secondary-border-color);
 }
 
-#highlight-course .list-highlight-course .box:hover {
+#highlight-course .box:hover {
   cursor: pointer;
   transform: scale(1.04);
 }
 
-#highlight-course .list-highlight-course .box .icon-cover {
+#highlight-course .box .icon-cover {
   background-color: var(--third-background);
   border-radius: 50%;
   height: 86px;
@@ -371,38 +308,22 @@
   justify-content: center;
 }
 
-#highlight-course .list-highlight-course .box .icon-cover i {
+#highlight-course .box .icon-cover i {
   font-size: 48px;
 }
 
-#highlight-course .list-highlight-course .box .box-body {
+#highlight-course .box .box-body {
   padding: 20px 20px 16px;
   width: 100%;
 }
 
-#highlight-course .list-highlight-course .box .box-body h4 {
+#highlight-course .box .box-body h4 {
   font-size: 17px;
   line-height: 1.5;
 }
 
-#highlight-course .list-highlight-course .box .box-body p {
+#highlight-course .box .box-body p {
   font-size: 14px;
-}
-
-#highlight-course .list-highlight-course .box .box-body .icon {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  height: 75px;
-  position: relative;
-}
-
-#highlight-course .list-highlight-course .box .box-body .icon .center-icon {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1199.98px) {}
@@ -410,10 +331,10 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 767.98px) {
-  #highlight-course .list-highlight-course .box .box-body h4 {
+  #highlight-course .box .box-body h4 {
     font-size: 18px;
   }
-  #highlight-course .list-highlight-course .box .box-body p {
+  #highlight-course .box .box-body p {
     font-size: 16px;
   }
 }
@@ -423,13 +344,13 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  #highlight-course .list-highlight-course .box {
+  #highlight-course .box {
     margin-bottom: 16px;
   }
 }
 
 
-/*----- Section overview -----*/
+/* Section overview ----------------------------------------------------------------- */
 
 #overview {
   padding-top: 60px;
@@ -444,14 +365,14 @@
 }
 
 
-/* ----- Section course detail ----- */
+/* Section course detail ------------------------------------------------------------ */
 
 #course-detail {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-#course-detail a {
+#course-detail .accordion a {
   padding: 10px 16px;
   border: 2px solid var(--third-border-color);
   width: 100%;
@@ -463,30 +384,26 @@
   color: var(--primary-text);
 }
 
-#course-detail a:hover {
+#course-detail .accordion a:hover {
   text-decoration: none;
 }
 
-#course-detail .collapsed i {
+#course-detail .accordion .collapsed i {
   transform: rotate(-90deg);
   transition: .6s;
   margin-top: 6px;
 }
 
-#course-detail a i {
+#course-detail .accordion a i {
   transition: .6s;
   margin-top: 6px;
 }
 
-#course-detail .collapse-panel {
+#course-detail .accordion .collapse-panel {
   margin-bottom: 18px;
 }
 
-#course-detail .card {
-  border-radius: 0;
-}
-
-#course-detail .card-body {
+#course-detail .accordion .card-body {
   padding: 10px 16px;
   border: 2px solid var(--fourth-border-color);
   border-top: none;
@@ -494,25 +411,21 @@
   border-radius: 14px;
 }
 
-@media (max-width: 991.98px) {}
-
-@media (max-width: 767.98px) {}
-
 @media (max-width: 575.98px) {
   #course-detail {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  #course-detail .collapse-panel {
+  #course-detail .accordion .collapse-panel {
     margin-bottom: 16px;
   }
-  #course-detail .pt-3 {
+  #course-detail .accordion .pt-3 {
     padding-top: 0 !important;
   }
 }
 
 
-/*----- Section register now -----*/
+/* Section register now ------------------------------------------------------------- */
 
 #register-now {
   padding-top: 30px;
@@ -527,7 +440,7 @@
 }
 
 
-/*----- Section result -----*/
+/* Section result ------------------------------------------------------------------- */
 
 #result {
   padding-top: 60px;
@@ -599,28 +512,22 @@
 }
 
 
-/* ----- Section faq ----- */
+/* Section faq ---------------------------------------------------------------------- */
 
 #faq {
   padding-top: 60px;
-  padding-bottom: 100px;
-}
-
-#faq .text-left h1 {
-  font-size: 55px;
-  letter-spacing: 1px;
-  font-style: normal;
+  padding-bottom: 40px;
 }
 
 #faq .text-left h1 span {
-  font-size: 38px;
+  font-size: 36px;
 }
 
 #faq .text-left p {
   margin-bottom: 40px;
 }
 
-#faq a {
+#faq .accordion a {
   padding: 10px 16px;
   border: 2px solid var(--third-border-color);
   width: 100%;
@@ -630,40 +537,32 @@
   border-radius: 14px;
 }
 
-#faq a:hover {
+#faq .accordion a:hover {
   text-decoration: none;
 }
 
-#faq .collapsed i {
+#faq .accordion .collapsed i {
   transform: rotate(-90deg);
   transition: .6s;
   margin-top: 6px;
 }
 
-#faq a i {
+#faq .accordion a i {
   transition: .6s;
   margin-top: 6px;
 }
 
-#faq .collapse-panel {
+#faq .accordion .collapse-panel {
   margin-bottom: 18px;
 }
 
-#faq .card {
-  border-radius: 0;
-}
-
-#faq .card-body {
+#faq .accordion .card-body {
   padding: 10px 16px;
   border: 2px solid var(--fourth-border-color);
   border-top: none;
   background: transparent;
   border-radius: 14px;
 }
-
-@media (max-width: 991.98px) {}
-
-@media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {
   #faq {
@@ -673,7 +572,177 @@
 }
 
 
-/* ----- Register ----- */
+/* Promotion ------------------------------------------------------------------------ */
+
+#promotion {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#promotion .box {
+  padding: 16px 24px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: .3s;
+  align-items: center;
+  border: 1px solid var(--secondary-border-color);
+}
+
+#promotion .box p {
+  margin: 0;
+}
+
+#promotion .box p span {
+  width: 112px;
+  margin-right: 16px;
+  font-size: 48px;
+  line-height: 1.2;
+  display: inline-block;
+  text-align: right;
+}
+
+
+/* Contact form --------------------------------------------------------------------- */
+
+#contact {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+#contact .box {
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 50px 50px;
+  border-radius: 32px;
+}
+
+#contact img {
+  max-width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#contact .image-1 {
+  left: 300px;
+  bottom: -90px;
+}
+
+#contact .image-2 {
+  left: -35px;
+  top: 300px;
+}
+
+#contact .image-3 {
+  left: 280px;
+  bottom: 40px;
+}
+
+#contact .image-4 {
+  left: auto;
+  right: -200px;
+  bottom: -200px;
+}
+
+#contact .image-5 {
+  left: 150px;
+  top: 200px;
+}
+
+#contact .image-6 {
+  left: -120px;
+  top: 160px;
+}
+
+#contact .form-contact {
+  margin-top: 16px;
+}
+
+#contact .input-group {
+  margin-bottom: 16px;
+}
+
+#contact .form-control {
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 10px 16px;
+  height: calc(1.5em + .75rem + 10px);
+  background-color: var(--body-background);
+  border: 2px solid var(--fourth-border-color);
+}
+
+#contact textarea.form-control {
+  height: auto !important;
+}
+
+#contact .form-control:focus {
+  border-color: var(--third-border-color);
+  box-shadow: 0 0 0 1px var(--third-border-color);
+}
+
+@media (max-width: 1199.98px) {
+  #contact .container {
+    max-width: 930px;
+  }
+  #contact .container h1 {
+    margin-right: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #contact .container {
+    max-width: 690px;
+    padding: 60px 100px 80px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #contact {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    z-index: 1;
+    transition: .5s;
+  }
+  #contact .container {
+    padding: 15px;
+    max-width: 540px;
+    background-color: transparent !important;
+  }
+  #contact .container .wrap {
+    display: none;
+  }
+  #contact .container h1 {
+    font-size: 55px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #contact .container p {
+    text-align: center;
+  }
+  #contact .input-group {
+    margin-bottom: 18px;
+  }
+  #contact .form-control {
+    background-color: #151515;
+  }
+  #contact .form-contact .btn-contact {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #contact .container h1 {
+    font-size: 50px;
+  }
+}
+
+
+/* Register ------------------------------------------------------------------------- */
 
 .divider {
   display: flex;
@@ -857,7 +926,7 @@ input:-webkit-autofill {
 }
 
 
-/*----- Timeline css -----*/
+/* Timeline css --------------------------------------------------------------- ------*/
 
 .timeline {
   margin: 0 auto;
@@ -869,10 +938,10 @@ input:-webkit-autofill {
 .timeline:before {
   position: absolute;
   top: 10px;
-  bottom: 95px;
-  width: 3px;
+  bottom: 65px;
+  width: 4px;
   background: var(--fourth-border-color);
-  left: 22px;
+  left: 6px;
   margin-left: 0px;
 }
 
@@ -889,7 +958,7 @@ input:-webkit-autofill {
 
 .timeline-item {
   position: relative;
-  padding-left: 70px;
+  padding-left: 60px;
   list-style: none;
 }
 
@@ -900,7 +969,7 @@ input:-webkit-autofill {
 .timeline-item:before {
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 0;
   border: 2px solid var(--fifth-border-color);
   width: 16px;
   height: 16px;
@@ -939,9 +1008,6 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 991.98px) {
-  .timeline-item {
-    width: calc(100% - 15px);
-  }
   .timeline-item+.timeline-item {
     margin-top: 20px;
   }
@@ -951,15 +1017,15 @@ input:-webkit-autofill {
 
 @media (max-width: 575.98px) {
   .timeline-item {
-    padding-left: 50px;
+    padding-left: 36px;
   }
   .timeline:before {
-    bottom: 132px;
+    bottom: 115px;
   }
 }
 
 
-/* ----- Col ----- */
+/* Col ------------------------------------------------------------------------------ */
 
 #highlight-course .col,
 #highlight-course .col-1,
@@ -1036,6 +1102,16 @@ input:-webkit-autofill {
 }
 
 #highlight-course .row {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+#promotion .col-md-6 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#promotion .row {
   margin-right: -12px;
   margin-left: -12px;
 }
