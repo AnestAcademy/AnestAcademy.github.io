@@ -31,7 +31,7 @@ html[data-theme='light'] {
   --secondary-background: #fff;
   --third-background: #ebebeb;
   /* background-button-color ------------------------- */
-  --primary-btn-background: #dfdfdf;
+  --primary-btn-background-hover: #dfdfdf;
   /* border-color ------------------------------------ */
   --secondary-border-color: #e4e4e4;
   --third-border-color: #e4e4e4;
@@ -40,6 +40,8 @@ html[data-theme='light'] {
   /* text-color -------------------------------------- */
   --primary-text: #444;
   --highlight-text: #333;
+  /* scroll-bar -------------------------------------- */
+  --scrollbar-thumb-background: #ccc;
 }
 
 html[data-theme='dark'] {
@@ -69,17 +71,19 @@ html[data-theme='dark'] {
   /* background-color -------------------------------- */
   --body-background: #121212;
   --secondary-background: #1d1d1d;
-  --third-background: #333;
+  --third-background: #2e2e2e;
   /* background-button-color ------------------------- */
-  --primary-btn-background: #222;
+  --primary-btn-background-hover: #222;
   /* border-color ------------------------------------ */
   --secondary-border-color: #1d1d1d;
-  --third-border-color: #333;
-  --fourth-border-color: #393939;
+  --third-border-color: #2e2e2e;
+  --fourth-border-color: #333;
   --fifth-border-color: #666;
   /* text-color -------------------------------------- */
   --primary-text: #dfdfdf;
   --highlight-text: #fff;
+  /* scroll-bar -------------------------------------- */
+  --scrollbar-thumb-background: #2e2e2e;
 }
 
 html[color-theme='tan'] {

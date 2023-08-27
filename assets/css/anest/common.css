@@ -114,6 +114,7 @@ h6.sub-title.sub-title-mb {
 @media (max-width: 991.98px) {
   h6.sub-title.sub-title-mb {
     margin-bottom: 40px;
+    line-height: 1.75;
   }
 }
 
@@ -197,7 +198,7 @@ section,
   display: block;
   height: 2px;
   border-radius: 1px;
-  background-color: #e6e6e6;
+  background-color: var(--primary-text);
   width: 35px;
   transition: all 0.25s ease;
 }
@@ -315,11 +316,7 @@ section,
 #footer h6 {
   margin-bottom: 10px;
   margin-top: 20px;
-  font-size: 1.15rem;
-}
-
-#footer h6:hover {
-  color: #ffcf5c;
+  font-size: 20px;
 }
 
 #footer .info ul,
@@ -383,14 +380,17 @@ section,
 }
 
 @media (max-width: 575.98px) {
+  #footer .course {
+    display: none;
+  }
+  #footer .f-top {
+    padding: 3rem 0 2.5rem;
+  }
   #signature .f-bot .clock {
     display: none;
   }
   #signature .f-bot .copyright {
-    text-align: left;
-  }
-  #footer .f-top {
-    padding: 3rem 0 2.5rem;
+    text-align: center;
   }
 }
 
@@ -398,36 +398,19 @@ section,
 /* ----- Scroll bar----- */
 
 #page-top::-webkit-scrollbar-track {
-  background-color: #121212;
   border-radius: 0;
-  border: 1px solid #1d1d1d;
+  background-color: var(--body-background);
+  border: 1px solid var(--scrollbar-thumb-background);
 }
 
 #page-top::-webkit-scrollbar {
-  width: .7rem;
-  background-color: #1d1d1d;
+  width: 10px;
+  background-color: var(--secondary-background);
 }
 
 #page-top::-webkit-scrollbar-thumb {
-  background-color: #1d1d1d;
+  background-color: var(--scrollbar-thumb-background);
   border-radius: 0;
-}
-
-#style-modal::-webkit-scrollbar-track {
-  background-color: #1d1d1d;
-  border-radius: .5rem;
-  border: 1px solid #333;
-}
-
-#style-modal::-webkit-scrollbar {
-  width: .55rem;
-  background-color: #333;
-  border-radius: .5rem;
-}
-
-#style-modal::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 10px;
 }
 
 
@@ -435,26 +418,22 @@ section,
 
 .scroll-to-top {
   position: fixed;
-  right: 15px;
-  bottom: 15px;
+  right: 20px;
+  bottom: 20px;
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   text-align: center;
-  color: #ccc;
-  background-color: #222;
+  color: var(--primary-text);
+  background-color: var(--secondary-background);
+  border: 2px solid var(--fourth-border-color);
   line-height: 38px;
-  font-size: 22px;
   border-radius: 12px;
 }
 
-.scroll-to-top:focus,
 .scroll-to-top:hover {
-  color: #ffcf5c;
-}
-
-.scroll-to-top:hover {
-  background-color: #333;
+  background-color: var(--third-background);
+  color: var(--primary-text);
 }
 
 .scroll-to-top i {
@@ -614,7 +593,7 @@ button:focus {
 
 .btn-success:hover {
   color: var(--secondary-highlight-text) !important;
-  background-color: var(--primary-btn-background) !important;
+  background-color: var(--primary-btn-background-hover) !important;
   border-color: var(--secondary-highlight-text) !important;
 }
 
@@ -648,7 +627,7 @@ button:focus {
 }
 
 .btn-highlight-lg {
-  padding: 18px 80px;
+  padding: 18px 75px;
   font-size: 20px;
   font-weight: 500;
   border-radius: 16px;

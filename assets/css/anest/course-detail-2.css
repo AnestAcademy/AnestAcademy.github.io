@@ -1,3 +1,23 @@
+/**/
+
+.show-ui {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .show-ui {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+
 /* ----- Section cover ----- */
 
 #cover {
@@ -288,6 +308,10 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 575.98px) {
+  #object {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
   #object .box {
     margin-bottom: 16px;
   }
@@ -302,6 +326,13 @@
 #benefit {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 575.98px) {
+  #benefit {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 
@@ -388,6 +419,10 @@
 }
 
 @media (max-width: 575.98px) {
+  #highlight-course {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   #highlight-course .list-highlight-course .box {
     margin-bottom: 16px;
   }
@@ -399,6 +434,13 @@
 #overview {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 575.98px) {
+  #overview {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 
@@ -457,18 +499,35 @@
 @media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {
+  #course-detail {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   #course-detail .collapse-panel {
     margin-bottom: 16px;
+  }
+  #course-detail .pt-3 {
+    padding-top: 0 !important;
   }
 }
 
 
-/*----- Section result -----*/
+/*----- Section register now -----*/
 
 #register-now {
   padding-top: 30px;
   padding-bottom: 60px;
 }
+
+@media (max-width: 575.98px) {
+  #register-now {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+/*----- Section result -----*/
 
 #result {
   padding-top: 60px;
@@ -522,6 +581,23 @@
   width: 10%;
 }
 
+@media (max-width: 767.98px) {
+  #result .carousel .content h4 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #result {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #result .y {
+    padding-top: 38px;
+    padding-bottom: 15px;
+  }
+}
+
 
 /* ----- Section faq ----- */
 
@@ -545,7 +621,7 @@
 }
 
 #faq a {
-  padding: 9px 16px;
+  padding: 10px 16px;
   border: 2px solid var(--third-border-color);
   width: 100%;
   text-align: left;
@@ -588,6 +664,13 @@
 @media (max-width: 991.98px) {}
 
 @media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+  #faq {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
 
 
 /* ----- Register ----- */
@@ -869,6 +952,9 @@ input:-webkit-autofill {
 @media (max-width: 575.98px) {
   .timeline-item {
     padding-left: 50px;
+  }
+  .timeline:before {
+    bottom: 132px;
   }
 }
 
