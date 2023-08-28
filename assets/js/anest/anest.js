@@ -15,7 +15,20 @@ function startTime() {
 
 $(document).ready(function() {
 
-  //Check to see if the window is top if not then display button
+  // Pushpin
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 80) {
+      $('#menu').addClass('fixed-top menu-small bg-color-secondary color-top');
+      $('#menu img').addClass('img-small');
+      $('#cover').addClass('fix');
+    } else {
+      $('#menu').removeClass('fixed-top menu-small bg-color-secondary color-top');
+      $('#menu img').removeClass('img-small');
+      $('#cover').removeClass('fix');
+    }
+  });
+
+  // Check to see if the window is top if not then display button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.scroll-to-top').fadeIn();
@@ -24,7 +37,7 @@ $(document).ready(function() {
     }
   });
 
-  //Click event to scroll to top
+  // Click event to scroll to top
   $('.scroll-to-top').click(function() {
     $('html, body').animate({ scrollTop: 0 }, 1000);
     return false;

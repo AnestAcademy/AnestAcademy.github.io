@@ -21,8 +21,12 @@
 /* Section cover -------------------------------------------------------------------- */
 
 #cover {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
+}
+
+#cover.fix {
+  padding-top: 190px;
 }
 
 #cover .container {
@@ -262,7 +266,7 @@
 
 #benefit {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 575.98px) {
@@ -276,8 +280,8 @@
 /* Section highlight course --------------------------------------------------------- */
 
 #highlight-course {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
 
 #highlight-course .text-left p {
@@ -353,7 +357,7 @@
 /* Section overview ----------------------------------------------------------------- */
 
 #overview {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 
@@ -516,7 +520,7 @@
 
 #faq {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 0;
 }
 
 #faq .text-left h1 span {
@@ -556,6 +560,10 @@
   margin-bottom: 18px;
 }
 
+#faq .accordion .collapse-panel:last-child {
+  margin-bottom: 0;
+}
+
 #faq .accordion .card-body {
   padding: 10px 16px;
   border: 2px solid var(--fourth-border-color);
@@ -575,7 +583,7 @@
 /* Promotion ------------------------------------------------------------------------ */
 
 #promotion {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 
@@ -593,7 +601,7 @@
 }
 
 #promotion .box p span {
-  width: 112px;
+  width: 115px;
   margin-right: 16px;
   font-size: 48px;
   line-height: 1.2;

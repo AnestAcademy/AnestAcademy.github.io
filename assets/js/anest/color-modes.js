@@ -5,26 +5,44 @@
 (() => {
   "use strict"
 
-  let theme = localStorage.getItem("data-theme");
+  let storeTheme = localStorage.getItem("data-theme");
   let color = localStorage.getItem("color-theme");
 
-  // theme
-  const changeThemeToDark = () => {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("data-theme", "dark");
+  // Set theme
+  const getPreferredTheme = () => {
+    if (storeTheme) {
+      return storeTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
-  const changeThemeToLight = () => {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("data-theme", "light");
+  const setTheme = function(theme) {
+    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
   }
 
-  if (theme === null) theme = "dark";
+  setTheme(getPreferredTheme());
 
-  if (theme === "dark") changeThemeToDark();
-  if (theme === "light") changeThemeToLight()
+  const showActiveTheme = (theme) => {
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
 
-  // color
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('pressed');
+    })
+
+    btnToActive.classList.add('pressed');
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (storedTheme !== 'light' || storedTheme !== 'dark') {
+      setTheme(getPreferredTheme());
+    }
+  })
+
+  // Set color
   const changeThemeToTan = () => {
     document.documentElement.setAttribute("color-theme", "tan");
     localStorage.setItem("color-theme", "tan");
@@ -72,16 +90,15 @@
 
   // event
   window.addEventListener("DOMContentLoaded", () => {
+    showActiveTheme(getPreferredTheme());
 
     document.querySelectorAll("[data-bs-theme-value]")
       .forEach(toggle => {
         toggle.addEventListener("click", () => {
-          const theme = toggle.getAttribute("data-bs-theme-value")
-          if (theme === "dark") {
-            changeThemeToDark();
-          } else {
-            changeThemeToLight();
-          }
+          const theme = toggle.getAttribute("data-bs-theme-value");
+          localStorage.setItem('data-theme', theme);
+          setTheme(theme);
+          showActiveTheme(theme);
         })
       })
 
