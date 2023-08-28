@@ -20,51 +20,6 @@
 
 /* Section cover -------------------------------------------------------------------- */
 
-#cover {
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-
-#cover.fix {
-  padding-top: 190px;
-}
-
-#cover .container {
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 120px;
-  border-radius: 32px;
-  max-width: 82%;
-  border: 1px solid var(--secondary-border-color);
-}
-
-#cover h1 {
-  font-size: 65px;
-  margin-top: 12px;
-  letter-spacing: 1px;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-#cover p {
-  margin: 30px 0;
-  letter-spacing: 1px;
-  font-size: 20px;
-  font-style: normal;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-#cover .wrap {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 #cover img {
   max-width: 100%;
   vertical-align: middle;
@@ -677,6 +632,7 @@
   height: calc(1.5em + .75rem + 10px);
   background-color: var(--body-background);
   border: 2px solid var(--fourth-border-color);
+  color: var(--secondary-text);
 }
 
 #contact textarea.form-control {
@@ -752,32 +708,6 @@
 
 /* Register ------------------------------------------------------------------------- */
 
-.divider {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 20px;
-}
-
-.divider:before,
-.divider:after {
-  content: '';
-  height: 2px;
-  background-color: #544e45;
-  flex: 1;
-}
-
-.divider:before {
-  margin-right: 20px;
-}
-
-.divider:after {
-  margin-left: 20px;
-}
-
 .modal {
   padding: 0 !important;
 }
@@ -807,70 +737,60 @@ input:-webkit-autofill {
 } */
 
 #registerModal .modal-content {
-  border-radius: 12px;
-  background-color: #1d1d1d;
-  border: none;
+  border-radius: 20px;
+  background-color: var(--secondary-background);
+  border: var(--secondary-border-color);
 }
 
 #registerModal .modal-header {
   border-bottom: 1px solid transparent !important;
-  padding: 20px 20px 18px 20px;
+  padding: 24px;
 }
 
 #registerModal .modal-header .close {
   font-size: 35px;
   padding: 4px 5px;
-  color: #d4d4d4;
+  color: var(--primary-text);
   text-shadow: none;
 }
 
-#registerModal .modal-header .close:hover {
+
+/* #registerModal .modal-header .close:hover {
   color: #ffcf5c;
-}
+} */
 
 #registerModal .modal-header .close:focus {
   outline: none;
 }
 
 #registerModal .modal-body {
-  padding: 0 1rem;
-  margin-bottom: 2rem;
+  padding: 0 9px;
+  margin-bottom: 24px;
 }
 
 #registerModal .modal-body .custom-control-input:checked~.custom-control-label::before {
   color: #fff;
-  border-color: #c7af8b;
-  background-color: #c7af8b;
-}
-
-#registerModal .modal-body p {
-  line-height: 25px;
-}
-
-#registerModal .modal-body form {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  border-color: var(--secondary-highlight-text);
+  background-color: var(--secondary-highlight-text);
 }
 
 #registerModal .modal-body .form-control {
-  border: 1px solid #333;
-  background-color: #151515;
-  border-radius: 0 8px 8px 0;
-  color: #aaa;
+  border: 1px solid var(--fourth-border-color);
+  background-color: var(--body-background);
+  border-radius: 0 10px 10px 0;
+  color: var(--secondary-text);
 }
 
 #registerModal .modal-body .custom-select {
   height: calc(1.5em + 1rem + 2px);
 }
 
-#registerModal .modal-body .form-control .custom-control-label {
-  font-size: 1rem;
+#registerModal .modal-body .custom-control-label {
+  font-size: 15px;
 }
 
 #registerModal .modal-body .form-control.form-control-lg {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 #registerModal .modal-body .form-control:focus {
@@ -879,44 +799,20 @@ input:-webkit-autofill {
 }
 
 #registerModal .modal-body .input-group-text {
-  border-radius: 8px 0 0 8px;
+  border-radius: 10px 0 0 10px;
   padding: .375rem 1rem;
-  border: 1px solid #333;
-  background-color: #1c1c1c;
-  font-size: 17px;
-  color: #c7af8b;
-}
-
-#registerModal .modal-body input.form-control {
-  border-radius: 0 8px 8px 0;
+  border: 1px solid var(--fourth-border-color);
+  background-color: var(--secondary-background);
+  color: var(--secondary-highlight-text);
 }
 
 #registerModal .modal-body textarea.form-control {
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 #registerModal .modal-body .btn-submit {
-  border: none;
-  font-size: 1rem;
-  border: 1px solid #333;
-  background-color: #151515;
-  border-radius: .5rem;
-  padding: 0 1.25rem;
-  height: calc(2.25em + 7px);
   width: 100%;
   font-weight: 500;
-  color: #c7af8b;
-}
-
-.text label {
-  font-size: 15px;
-}
-
-#registerModal .modal-body .btn-submit:hover {
-  outline: 0;
-  color: #ffcf5c;
-  box-shadow: none;
-  background-color: #282828;
 }
 
 @media (max-width: 575.98px) {

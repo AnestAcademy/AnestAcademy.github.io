@@ -39,6 +39,7 @@ html[data-theme='auto'] {
   --fifth-border-color: #c4c4c4;
   /* text-color -------------------------------------- */
   --primary-text: #444;
+  --secondary-text: #555;
   --highlight-text: #333;
   /* scroll-bar -------------------------------------- */
   --scrollbar-thumb-background: #ccc;
@@ -81,6 +82,7 @@ html[data-theme='light'] {
   --fifth-border-color: #c4c4c4;
   /* text-color -------------------------------------- */
   --primary-text: #444;
+  --secondary-text: #555;
   --highlight-text: #333;
   /* scroll-bar -------------------------------------- */
   --scrollbar-thumb-background: #ccc;
@@ -123,6 +125,7 @@ html[data-theme='dark'] {
   --fifth-border-color: #666;
   /* text-color -------------------------------------- */
   --primary-text: #dfdfdf;
+  --secondary-text: #999;
   --highlight-text: #fff;
   /* scroll-bar -------------------------------------- */
   --scrollbar-thumb-background: #2e2e2e;

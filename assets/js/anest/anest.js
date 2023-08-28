@@ -15,7 +15,7 @@ function startTime() {
 
 $(document).ready(function() {
 
-  // Pushpin
+  // Display menu small
   $(window).scroll(function() {
     if ($(this).scrollTop() > 80) {
       $('#menu').addClass('fixed-top menu-small bg-color-secondary color-top');
