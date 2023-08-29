@@ -46,10 +46,10 @@
             </li>
             <li class="nav-item">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-star-half-alt fa-fw"></i>Giao diện
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="light">
                     <i class="fas fa-sun fa-fw mr-2"></i>Sáng
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
@@ -76,7 +76,7 @@
                   <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="orange"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #fd7e14;"></i>Cam</a>
                   <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="red"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #dc3545;"></i>Đỏ</a>
                   <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="green"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #52b76c;"></i>Xanh lá</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="teal"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #20c997;"></i>Xanh mòng</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="teal"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #20c997;"></i>Xanh mòng két</a>
                   <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="cyan"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #0dcaf0;"></i>Xanh lam</a>
                 </div>
               </li>
@@ -800,7 +800,7 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="mb-0 font-weight-500">ĐĂNG KÝ</h4>
+          <h4 class="mb-0 font-weight-500">ĐĂNG KÝ KHÓA HỌC</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">
               <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -811,14 +811,6 @@
           </button>
         </div>
         <div class="modal-body" id="style-modal">
-          <!-- <hr class="mb-3 mt-0" /> -->
-
-          <!-- <div class="container">
-            <h3 class="text-center mt-4 mb-2">Coming soon...</h3>
-          </div> -->
-          <!-- <div class="container">
-            <h4 class="text-center mt-4 mb-2">Đơn đăng ký đã đóng vì đã đủ số lượng học viên.</h4>
-          </div> -->
           <div class="container">
             <form id="register-form">
               <input type="hidden" name="time" id="time" />
@@ -828,7 +820,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-code fa-fw"></i></div>
                   </div>
-                  <input type="text" class="form-control form-control-lg" name="course" value="Java Core" readonly required>
+                  <input type="text" class="form-control form-control-lg" name="course" value="Khoa hoc Java Web" readonly required>
                 </div>
               </div>
               <div class="form-group">
@@ -855,26 +847,9 @@
                   <input type="text" class="form-control form-control-lg" name="mobile" placeholder="Số điện thoại *" id="mobile">
                 </div>
               </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fab fa-kaggle fa-fw"></i></div>
-                  </div>
-                  <select class="custom-select form-control form-control-lg" name="k" id="k">
-                    <option value="none">Khóa *</option>
-                    <option value="K16">K16</option>
-                    <option value="K17">K17</option>
-                    <option value="K18">K18</option>
-                  </select>
-                </div>
-              </div>
               <div class="form-group text">
                 <label class="color-secondary-highlight">Mong muốn - kỳ vọng của bạn về khoá học<sup><i class="far fa-comment ml-1"></i></sup></label>
                 <textarea class="form-control form-control-lg" name="your_expectations_for_this_course" id="textarea1" rows="2"></textarea>
-              </div>
-              <div class="form-group text">
-                <label class="color-secondary-highlight">Mong muốn - kỳ vọng của bạn về Mentor<sup><i class="far fa-comment ml-1"></i></sup></label>
-                <textarea class="form-control form-control-lg" name="your_expectations_for_mentor" id="textarea2" rows="2"></textarea>
               </div>
 
               <div class="form-group">
@@ -903,8 +878,8 @@
   </div>
 
   <!-- Toast error -->
-  <!-- <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
-    <div id="toastError" class="toast toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
+    <div id="toastError" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
       <div class="toast-body">
         Vui lòng không để trống trường bắt buộc.
         <br /> –&nbsp; Tên
@@ -913,11 +888,11 @@
         <br /> –&nbsp; Khóa
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!-- Toast success -->
   <!-- <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
-    <div id="toastSuccess" class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
+    <div id="toastSuccess" class="toast hide toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
       <div class="toast-body">
         Đăng ký THÀNH CÔNG. Email xác nhận sẽ được gửi đến email đăng ký của bạn trong 1-3 ngày làm việc. Xin cảm ơn!
       </div>

@@ -7,7 +7,7 @@ $('#submit-form-register').on('click', function(e) {
   e.preventDefault();
 
   if ($('#customSwitch').is(":checked")) {
-    if ($('#full_name').val() === '' || $('#email').val() === '' || $('#mobile').val() === '' || $('#k').val() === 'none') {
+    if ($('#full_name').val() === '' || $('#email').val() === '' || $('#mobile').val() === '') {
       $('#toastError').toast('show');
     } else {
       $.ajax({
@@ -23,9 +23,7 @@ $('#submit-form-register').on('click', function(e) {
       $('#full_name').val('');
       $('#email').val('');
       $('#mobile').val('');
-      $('#k').prop('selectedIndex', 0);
       $('#textarea1').val('');
-      $('#textarea2').val('');
     }
   } else {
     alert('Vui lòng xác nhận "Tôi đã đọc".');
