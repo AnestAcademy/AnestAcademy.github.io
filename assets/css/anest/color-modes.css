@@ -131,31 +131,31 @@ html[data-theme='dark'] {
   --scrollbar-thumb-background: #2e2e2e;
 }
 
-html[color-theme='tan'] {
+html[data-color='tan'] {
   --secondary-highlight-text: var(--color-text-tan);
 }
 
-html[color-theme='yellow'] {
+html[data-color='yellow'] {
   --secondary-highlight-text: var(--color-text-yellow);
 }
 
-html[color-theme='orange'] {
+html[data-color='orange'] {
   --secondary-highlight-text: var(--color-text-orange);
 }
 
-html[color-theme='red'] {
+html[data-color='red'] {
   --secondary-highlight-text: var(--color-text-red);
 }
 
-html[color-theme='green'] {
+html[data-color='green'] {
   --secondary-highlight-text: var(--color-text-green);
 }
 
-html[color-theme='teal'] {
+html[data-color='teal'] {
   --secondary-highlight-text: var(--color-text-teal);
 }
 
-html[color-theme='cyan'] {
+html[data-color='cyan'] {
   --secondary-highlight-text: var(--color-text-cyan);
 }
 

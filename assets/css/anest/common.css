@@ -162,7 +162,7 @@ section,
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
-  padding: 120px 150px;
+  padding: 120px;
   border-radius: 32px;
   max-width: 82%;
   border: 1px solid var(--secondary-border-color);
