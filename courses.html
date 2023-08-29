@@ -11,11 +11,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/anest/color-modes.css">
   <link rel="stylesheet" href="assets/css/anest/common.css">
   <link rel="stylesheet" href="assets/css/anest/animation.css">
   <link rel="stylesheet" href="assets/css/anest/courses.css">
   <!-- Title -->
-  <title>Anest - Home</title>
+  <title>Anest - Courses</title>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
@@ -32,23 +33,53 @@
         <div class="site-navigation">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Trang chủ</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-tasks"></i>Khoá học
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#courses"><i class="far fa-edit"></i>Đang mở đơn đăng ký </a>
-                <a class="dropdown-item" href="#courses"><i class="fas fa-bars"></i>Tất cả khóa học</a>
-              </div>
+              <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw"></i>Trang chủ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#findMentorModal"><i class="fas fa-user-plus"></i>Tìm gia sư</a>
+              <a class="nav-link" href="#highlight-course"><i class="fas fa-star-of-david fa-fw"></i>Nổi bật</a>
             </li>
             <li class="nav-item">
-              <!-- <a class="btn btn-outline-while btn-register" href="javascript:void(0)" data-toggle="modal" data-target="#logoutModal">Đăng ký</a> -->
-              <a class="btn btn-outline btn-register" href="#">Đăng ký</a>
+              <a class="nav-link" href="#overview"><i class="fas fa-code fa-fw"></i>Khóa học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promotion"><i class="fas fa-percent fa-fw" style="font-size: 15px;"></i>Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-star-half-alt fa-fw"></i>Giao diện
+                </a>
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="light">
+                    <i class="fas fa-sun fa-fw mr-2"></i>Sáng
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="dark">
+                    <i class="fas fa-moon fa-fw mr-2"></i>Tối
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half mr-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                    </svg>Tự động
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="tan"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #c7af8b;"></i>Tan</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="yellow"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #f8d06d;"></i>Vàng</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="orange"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #fd7e14;"></i>Cam</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="red"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #dc3545;"></i>Đỏ</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="green"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #52b76c;"></i>Xanh lá</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="teal"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #20c997;"></i>Xanh mòng két</a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="cyan"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #0dcaf0;"></i>Xanh lam</a>
+                </div>
+              </li>
             </li>
           </ul>
           <div id="btn-collapse" class="hamburger-menu d-lg-none rotate">
@@ -62,13 +93,15 @@
   </section>
 
   <section id="cover">
-    <div class="container bg-dark-1d text-left">
+    <div class="container bg-color-secondary">
       <div class="row">
-        <div class="col-lg-10">
-          <h1>COURSES READY <span class="highlight">FOR YOU</span></h1>
-          <p>Các khóa học sẵn sàng cho bạn.</p>
+        <div class="col-lg-9">
+          <div class="text-left">
+            <h1>COURSES <span class="color-highlight">READY FOR YOU</span></h1>
+            <p>Các khóa học sẵn sàng cho bạn</p>
+          </div>
         </div>
-        <div class="col-lg-2 text-left">
+        <div class="col-lg-3">
           <div class="wrap">
             <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
             <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
@@ -87,14 +120,13 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="text-left">
-            <h1>Courses</h1>
-            <h6><span class="highlight">READY</span> FOR YOU</h6>
-            <p>Những khóa học sẵn sàng cho bạn tham gia và khám phá.</p>
+            <h1 class="title">C<span class="color-highlight">ourses</span></h1>
+            <h6 class="sub-title sub-title-mb"><span class="color-highlight">READY</span> FOR YOU</h6>
           </div>
         </div>
       </div>
       <div class="row">
-        <!-- <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -107,7 +139,7 @@
             <div class="card-body">
               <div class="card-text">
                 <a class="title" href="c-fundamentals-experience.html">C Fundamentals Experience</a>
-                <p class="text-small">
+                <p>
                   Đây là khóa học trải nghiệm lập trình C miễn phí của học viện ANEST dành cho tân sinh viên K16 đại học FPT...
                 </p>
                 <div class="tags">
@@ -130,8 +162,8 @@
               </div>
             </div>
           </div>
-        </div> -->
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -144,7 +176,7 @@
             <div class="card-body">
               <div class="card-text">
                 <a class="title" href="c-fundamentals.html">C Fundamentals</a>
-                <p class="text-small">
+                <p>
                   Khóa học lập trình cơ bản với ngôn ngữ C dành cho những bạn mới bắt đầu bước chân vào con đường lập trình...
                 </p>
                 <div class="tags">
@@ -168,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -182,7 +214,7 @@
               <div class="card-text">
                 <!-- <a class="title" href="javascript:void(0)">Java Core</a> -->
                 <a class="title" href="java-core-basic.html">Java Core</a>
-                <p class="text-small">
+                <p>
                   Khóa học này sẽ cung cấp cho bạn những khái niệm cốt lõi và cơ bản nhất của Java OOP...
                 </p>
                 <div class="tags">
@@ -212,7 +244,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -225,7 +257,7 @@
             <div class="card-body">
               <div class="card-text">
                 <a class="title" href="javascript:void(0)">Java Web Application</a>
-                <p class="text-small">
+                <p>
                   Khóa học này sẽ cung cấp cho bạn những kiến thức - khái niệm mới về Java Web, giúp bạn làm quen và viết code với Servlet và JSP...
                 </p>
                 <div class="tags">
@@ -252,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -265,7 +297,7 @@
             <div class="card-body">
               <div class="card-text">
                 <a class="title" href="javascript:void(0)">Java Desktop</a>
-                <p class="text-small">
+                <p>
                   Khóa học này sẽ cung cấp cho bạn những kiến thức về component và event trong Java Desktop...
                 </p>
                 <div class="tags">
@@ -292,7 +324,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -305,7 +337,7 @@
             <div class="card-body">
               <div class="card-text">
                 <a class="title" href="javascript:void(0)">HTML/CSS</a>
-                <p class="text-small">
+                <p>
                   Bạn muốn xây dựng nên một trang web đơn giản hay phức tạp đều không thể thiếu HTML/CSS...
                 </p>
                 <div class="tags">
@@ -333,7 +365,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card">
             <div class="card-header">
               <div>
@@ -346,7 +378,7 @@
             <div class="card-body">
               <div class="card-text">
                 <a class="title" href="javascript:void(0)">JavaScript</a>
-                <p class="text-small">
+                <p>
                   Javascript (JS) đang là một trong số các ngôn ngữ được yêu thích và phổ biến nhất hiện nay...
                 </p>
                 <div class="tags">
@@ -450,11 +482,11 @@
       <div class="row f-top">
         <div class="col-12 col-sm-12 col-md-5 info">
           <img src="assets/images/cover/logo.png">
-          <p>Học lập trình cùng <span class="highlight">ANEST</span></p>
+          <p>Học lập trình cùng <span class="color-secondary-highlight font-weight-500">ANEST</span></p>
           <ul>
             <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
             <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 876 107</li>
-            <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>Thôn 8 - Thạch Hoà - Thạch Thất - HN</li>
+            <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>Thôn 3 - Thạch Hoà - Thạch Thất - HN</li>
           </ul>
         </div>
         <div class="col-12 col-sm-12 col-md-4 course">
@@ -481,7 +513,7 @@
               </a>
             </li>
             <li>
-              <a href="courses.html" class="btn btn-lg btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký</a>
+              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký</a>
             </li>
           </ul>
         </div>
@@ -492,7 +524,7 @@
     <div class="container">
       <div class="row f-bot">
         <div class="col-12 col-sm-12 col-md-6 clock">
-          <i class="far fa-clock color-tan fa-fw mr-1"></i><span id=clock></span>
+          <i class="far fa-clock color-secondary-highlight fa-fw mr-1"></i><span id=clock></span>
         </div>
         <div class="col-12 col-sm-12 col-md-6 copyright">
           <span>Copyright © 2020 ANEST ACADEMY</span>
@@ -501,35 +533,13 @@
     </div>
   </section>
 
-
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
   </a>
 
-  <!-- Modal logout-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="text-center">
-            <div class="text-danger mb-4">
-              <i class="fas fa-exclamation-triangle fa-3x"></i>
-            </div>
-            <h4>Tính năng đang phát triển. Vui lòng quay lại sau!</h4>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sm btn-dark-3" data-dismiss="modal">Đóng</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal find mentor -->
   <div class="modal fade" id="findMentorModal" tabindex="-1" role="dialog" aria-labelledby="findMentorModal" aria-hidden="true">
@@ -648,14 +658,15 @@
   <!-- Bootstrap core JavaScript-->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap/popper.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="assets/js/anest/jarallax.min.js"></script>
-  <script src="assets/js/anest/index.js"></script>
   <script src="assets/js/anest/anest.js"></script>
+  <script src="assets/js/anest/color-modes.js"></script>
   <script src="assets/js/anest/animation.js"></script>
+
+  <!-- Custom scripts for current pages-->
+  <script src="assets/js/anest/contact.js"></script>
 </body>
 
 </html>

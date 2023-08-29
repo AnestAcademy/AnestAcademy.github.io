@@ -9,46 +9,6 @@ hr {
 
 /* ----- Section cover ----- */
 
-#cover {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-#cover .container {
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 120px 100px;
-  border-radius: 32px;
-  max-width: 80%;
-}
-
-#cover h1 {
-  font-size: 65px;
-  margin-top: 12px;
-  letter-spacing: 1px;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-#cover p {
-  margin: 30px 0;
-  letter-spacing: 1px;
-  font-size: 20px;
-  font-style: normal;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-#cover .wrap {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 @media (max-width: 1199.98px) {
   #cover .container {
     max-width: 930px;
@@ -104,61 +64,46 @@ hr {
 
 /* ----- Section courses  ----- */
 
-#courses .text-left h1 {
-  font-size: 55px;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  font-style: normal;
-}
-
-#courses h6 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-style: normal;
-}
-
-#courses .text-left p {
-  margin: 30px 0 60px 0;
-}
-
 #courses .card {
-  background-color: #1d1d1d;
+  background-color: var(--secondary-background);
   border-radius: 20px;
-  height: 380px;
+  height: 480px;
+  margin-bottom: 28px;
 }
 
 #courses .card .card-header {
-  color: #c7af8b;
+  color: var(--secondary-text);
   letter-spacing: 1px;
   background-color: transparent;
   border-bottom: none;
   border-radius: 20px 20px 0 0;
-  padding: 12px 20px 10px;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .card-header i {
-  font-size: .75rem;
+  font-size: 16px;
+  margin-right: 5px;
 }
 
 .card-header span {
-  font-size: .8rem;
-  margin-left: .25rem;
+  font-size: 16px;
   font-weight: 500;
 }
 
 #courses .card .card-body {
-  padding: 0 20px 20px 20px;
+  padding: 0 24px 24px 24px;
 }
 
 #courses .card .card-body .card-text .title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 500;
-  color: #dfdfdf;
   line-height: 1.25;
-  margin-bottom: 10px;
-  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  display: block;
+  color: var(--secondary-highlight-text);
 }
 
 #courses .card .card-body .card-text .text-small {
@@ -174,43 +119,43 @@ hr {
 
 #courses .card-text .tags .tag {
   display: inline-block;
-  margin-top: .35rem;
+  margin-top: 8px;
   margin-right: 2px;
-  padding: .15rem .5rem;
-  border-radius: 1rem;
+  padding: 3px 10px;
+  border-radius: 16px;
   text-transform: uppercase;
-  color: #b0b3b8;
-  border: 2px solid #3a3b3c;
+  color: var(--secondary-text);
+  border: 2px solid var(--fourth-border-color);
   font-style: normal;
-  font-weight: 700;
-  font-size: .6rem;
+  font-weight: 600;
+  font-size: 12px;
   transition: .3s;
 }
 
 #courses .card-text .tags .tag:hover {
   text-decoration: none;
-  color: #e4e6eb;
-  border: 2px solid #3a3b3c;
-  background-color: #3a3b3c;
+  color: var(--secondary-text);
+  border: 2px solid var(--fourth-border-color);
+  background-color: var(--fourth-border-color);
   cursor: pointer;
 }
 
 #courses .card .card-body .card-text .price {
   position: absolute;
   bottom: 110px;
-  padding: 0 15px 2px;
-  font-weight: 400;
-  font-size: 1.25rem;
+  padding: 4px 16px 4px;
+  font-weight: 500;
+  font-size: 20px;
   border-radius: 0;
   width: calc(100% - 3.5rem);
   text-align: center;
   background-color: #3a3b3c;
-  background-image: linear-gradient(to right, #1d1d1d, #3a3b3c, #1d1d1d);
+  background-image: linear-gradient(to right, var(--secondary-background), var(--fourth-background), var(--secondary-background));
 }
 
 #courses .card .card-body .user {
   position: absolute;
-  bottom: 20px;
+  bottom: 24px;
 }
 
 #courses .card .card-body .user .media {

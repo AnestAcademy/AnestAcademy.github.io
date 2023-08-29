@@ -30,6 +30,7 @@ html[data-theme='auto'] {
   --body-background: #f0f2f5;
   --secondary-background: #fff;
   --third-background: #ebebeb;
+  --fourth-background: #bebebe;
   /* background-button-color ------------------------- */
   --primary-btn-background-hover: #dfdfdf;
   /* border-color ------------------------------------ */
@@ -73,6 +74,7 @@ html[data-theme='light'] {
   --body-background: #f0f2f5;
   --secondary-background: #fff;
   --third-background: #ebebeb;
+  --fourth-background: #bebebe;
   /* background-button-color ------------------------- */
   --primary-btn-background-hover: #dfdfdf;
   /* border-color ------------------------------------ */
@@ -116,6 +118,7 @@ html[data-theme='dark'] {
   --body-background: #121212;
   --secondary-background: #1d1d1d;
   --third-background: #2e2e2e;
+  --fourth-background: #3a3b3c;
   /* background-button-color ------------------------- */
   --primary-btn-background-hover: #222;
   /* border-color ------------------------------------ */
