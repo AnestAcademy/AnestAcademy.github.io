@@ -1,22 +1,22 @@
 document.getElementById('time').value = new Date().toLocaleString();
 
-var $form = $('form#register-form');
-var url = 'https://script.google.com/macros/s/AKfycbw-FFWNPgU8Z35l--_4EZ59PJZdkHUgdqGbCZQoB74XatNjZI6-/exec';
+var $formRegister = $('form#register-form');
+var urlRegister = 'https://script.google.com/macros/s/AKfycbw-FFWNPgU8Z35l--_4EZ59PJZdkHUgdqGbCZQoB74XatNjZI6-/exec';
 
 $('#submit-form-register').on('click', function(e) {
   e.preventDefault();
 
   if ($('#customSwitch').is(":checked")) {
     if ($('#full_name').val() === '' || $('#email').val() === '' || $('#mobile').val() === '') {
-      $('#toastError').toast('show');
+      $('#toastRegisterError').toast('show');
     } else {
       $.ajax({
-        url: url,
+        url: urlRegister,
         method: "GET",
         dataType: "json",
-        data: $form.serialize()
+        data: $formRegister.serialize()
       }).success(
-        $('#toastSuccess').toast('show')
+        $('#toastRegisterSuccess').toast('show')
       );
 
       $('#registerModal').modal('hide');

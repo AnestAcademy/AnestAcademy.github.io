@@ -3,15 +3,16 @@
  */
 
 (() => {
-  "use strict"
+  'use strict'
 
   /**
    * Set theme ---------------------------------------------------------------------------
    */
 
-  let storedTheme = localStorage.getItem("data-theme");
+  const getStoredTheme = () => localStorage.getItem('data-theme');
 
   const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme();
     if (storedTheme) {
       return storedTheme;
     }
@@ -29,6 +30,7 @@
   setTheme(getPreferredTheme());
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme();
     if (storedTheme !== 'light' || storedTheme !== 'dark') {
       setTheme(getPreferredTheme());
     }
@@ -39,7 +41,7 @@
       element.classList.remove('pressed');
     })
 
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+    const btnToActive = document.querySelector(`[data-bs-theme-value='${theme}']`);
     btnToActive.classList.add('pressed');
   }
 
@@ -48,7 +50,7 @@
    * Set color ---------------------------------------------------------------------------
    */
 
-  let storedColor = localStorage.getItem("data-color");
+  let storedColor = localStorage.getItem('data-color');
 
   const getPreferredColor = () => {
     return storedColor ? storedColor : 'tan';
@@ -64,24 +66,24 @@
   /**
    * Event -------------------------------------------------------------------------------
    */
-  window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener('DOMContentLoaded', () => {
     showActiveTheme(getPreferredTheme());
 
-    document.querySelectorAll("[data-bs-theme-value]")
+    document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
-        toggle.addEventListener("click", () => {
-          const theme = toggle.getAttribute("data-bs-theme-value");
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value');
           localStorage.setItem('data-theme', theme);
           setTheme(theme);
           showActiveTheme(theme);
         })
       });
 
-    document.querySelectorAll("[data-bs-color-value]")
+    document.querySelectorAll('[data-bs-color-value]')
       .forEach(toggle => {
-        toggle.addEventListener("click", () => {
-          const color = toggle.getAttribute("data-bs-color-value");
-          localStorage.setItem("data-color", color);
+        toggle.addEventListener('click', () => {
+          const color = toggle.getAttribute('data-bs-color-value');
+          localStorage.setItem('data-color', color);
           setColor(color);
         })
       });
