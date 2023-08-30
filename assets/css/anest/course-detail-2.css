@@ -135,7 +135,6 @@
   margin-bottom: 20px;
   transition: .3s;
   align-items: center;
-  border: 1px solid var(--secondary-border-color);
 }
 
 #object .box p {
@@ -199,7 +198,7 @@
   border-radius: 20px;
   margin-bottom: 24px;
   transition: 0.5s;
-  padding-top: 28px;
+  padding-top: 26px;
   border: 1px solid var(--secondary-border-color);
 }
 
@@ -224,7 +223,7 @@
 }
 
 #highlight-course .box .box-body {
-  padding: 20px 20px 16px;
+  padding: 18px 18px 14px;
   width: 100%;
 }
 
@@ -234,7 +233,7 @@
 }
 
 #highlight-course .box .box-body p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 @media (max-width: 991.98px) {
@@ -499,7 +498,6 @@
   margin-bottom: 20px;
   transition: .3s;
   align-items: center;
-  border: 1px solid var(--secondary-border-color);
 }
 
 #promotion .box p {
@@ -647,11 +645,6 @@
   padding: 0 !important;
 }
 
-
-/* #registerModal .modal-dialog {
-  max-width: 100%;
-} */
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -699,16 +692,16 @@ input:-webkit-autofill {
 }
 
 #registerModal .modal-body .custom-control-input:checked~.custom-control-label::before {
-  color: #fff;
+  color: var(--white);
   border-color: var(--secondary-highlight-text);
   background-color: var(--secondary-highlight-text);
 }
 
 #registerModal .modal-body .form-control {
-  border: 1px solid var(--fourth-border-color);
-  background-color: var(--body-background);
   border-radius: 0 10px 10px 0;
   color: var(--secondary-text);
+  border: 1px solid var(--fourth-border-color);
+  background-color: var(--body-background);
 }
 
 #registerModal .modal-body .custom-select {
@@ -729,8 +722,8 @@ input:-webkit-autofill {
 }
 
 #registerModal .modal-body .input-group-text {
-  border-radius: 10px 0 0 10px;
   padding: .375rem 1rem;
+  border-radius: 10px 0 0 10px;
   border: 1px solid var(--fourth-border-color);
   background-color: var(--secondary-background);
   color: var(--secondary-highlight-text);
@@ -764,7 +757,7 @@ input:-webkit-autofill {
 }
 
 
-/* Timeline css --------------------------------------------------------------- ------*/
+/* Timeline css --------------------------------------------------------------------- */
 
 .timeline {
   margin: 0 auto;
@@ -778,9 +771,9 @@ input:-webkit-autofill {
   top: 10px;
   bottom: 65px;
   width: 4px;
-  background: var(--fourth-border-color);
   left: 6px;
   margin-left: 0px;
+  background: var(--fourth-border-color);
 }
 
 .timeline-item:before,
@@ -808,31 +801,11 @@ input:-webkit-autofill {
   position: absolute;
   top: 5px;
   left: 0;
-  border: 2px solid var(--fifth-border-color);
   width: 16px;
   height: 16px;
-  background-color: var(--secondary-highlight-text);
   border-radius: 50px;
-}
-
-.timeline-date {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: -2px;
-  width: 90px;
-  text-align: left;
-  overflow: hidden;
-  transition: .5s;
-}
-
-.timeline-date span {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 28px;
-  font-size: 15px;
-  color: #777777;
+  border: 2px solid var(--fifth-border-color);
+  background-color: var(--secondary-highlight-text);
 }
 
 .timeline-content:before {
@@ -865,76 +838,8 @@ input:-webkit-autofill {
 
 /* Col ------------------------------------------------------------------------------ */
 
-#highlight-course .col,
-#highlight-course .col-1,
-#highlight-course .col-10,
-#highlight-course .col-11,
-#highlight-course .col-12,
-#highlight-course .col-2,
-#highlight-course .col-3,
-#highlight-course .col-4,
-#highlight-course .col-5,
-#highlight-course .col-6,
-#highlight-course .col-7,
-#highlight-course .col-8,
-#highlight-course .col-9,
-#highlight-course .col-auto,
-#highlight-course .col-lg,
-#highlight-course .col-lg-1,
-#highlight-course .col-lg-10,
-#highlight-course .col-lg-11,
-#highlight-course .col-lg-12,
-#highlight-course .col-lg-2,
-#highlight-course .col-lg-3,
-#highlight-course .col-lg-4,
-#highlight-course .col-lg-5,
-#highlight-course .col-lg-6,
-#highlight-course .col-lg-7,
-#highlight-course .col-lg-8,
-#highlight-course .col-lg-9,
-#highlight-course .col-lg-auto,
-#highlight-course .col-md,
-#highlight-course .col-md-1,
-#highlight-course .col-md-10,
-#highlight-course .col-md-11,
-#highlight-course .col-md-12,
-#highlight-course .col-md-2,
-#highlight-course .col-md-3,
-#highlight-course .col-md-4,
-#highlight-course .col-md-5,
 #highlight-course .col-md-6,
-#highlight-course .col-md-7,
-#highlight-course .col-md-8,
-#highlight-course .col-md-9,
-#highlight-course .col-md-auto,
-#highlight-course .col-sm,
-#highlight-course .col-sm-1,
-#highlight-course .col-sm-10,
-#highlight-course .col-sm-11,
-#highlight-course .col-sm-12,
-#highlight-course .col-sm-2,
-#highlight-course .col-sm-3,
-#highlight-course .col-sm-4,
-#highlight-course .col-sm-5,
-#highlight-course .col-sm-6,
-#highlight-course .col-sm-7,
-#highlight-course .col-sm-8,
-#highlight-course .col-sm-9,
-#highlight-course .col-sm-auto,
-#highlight-course .col-xl,
-#highlight-course .col-xl-1,
-#highlight-course .col-xl-10,
-#highlight-course .col-xl-11,
-#highlight-course .col-xl-12,
-#highlight-course .col-xl-2,
-#highlight-course .col-xl-3,
-#highlight-course .col-xl-4,
-#highlight-course .col-xl-5,
-#highlight-course .col-xl-6,
-#highlight-course .col-xl-7,
-#highlight-course .col-xl-8,
-#highlight-course .col-xl-9,
-#highlight-course .col-xl-auto {
+#highlight-course .col-lg-3 {
   padding-right: 12px;
   padding-left: 12px;
 }
@@ -944,7 +849,8 @@ input:-webkit-autofill {
   margin-left: -12px;
 }
 
-#promotion .col-md-6 {
+#promotion .col-md-12,
+#promotion .col-lg-6 {
   padding-right: 12px;
   padding-left: 12px;
 }

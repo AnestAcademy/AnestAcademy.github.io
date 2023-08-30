@@ -127,7 +127,7 @@ html[data-theme='dark'] {
   --fourth-border-color: #333;
   --fifth-border-color: #666;
   /* text-color -------------------------------------- */
-  --primary-text: #dfdfdf;
+  --primary-text: #e4e6eb;
   --secondary-text: #999;
   --highlight-text: #fff;
   /* scroll-bar -------------------------------------- */
@@ -167,6 +167,7 @@ html[data-color='cyan'] {
 
 .bg-color-secondary {
   background-color: var(--secondary-background) !important;
+  border: 1px solid var(--secondary-border-color);
 }
 
 .bg-dark-2 {

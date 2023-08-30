@@ -9,190 +9,89 @@ hr {
 
 /* ----- Section courses  ----- */
 
-#courses .card {
-  background-color: var(--secondary-background);
-  border-radius: 20px;
-  height: 480px;
-  margin-bottom: 28px;
+#beginners {
+  padding-top: 120px;
+  padding-bottom: 0;
 }
 
-#courses .card .card-header {
-  color: var(--secondary-text);
-  letter-spacing: 1px;
-  background-color: transparent;
-  border-bottom: none;
-  border-radius: 20px 20px 0 0;
-  padding: 12px 20px;
+#courses .box {
+  border-radius: 20px;
+  margin-bottom: 24px;
+  transition: 0.5s;
+  padding-top: 26px;
+  border: 1px solid var(--secondary-border-color);
+}
+
+#courses .box:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+#courses .box .icon-cover {
+  background-color: var(--third-background);
+  border-radius: 50%;
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses .box .icon-cover i {
+  font-size: 48px;
+}
+
+#courses .box .box-body {
+  padding: 16px 18px 14px;
+  width: 100%;
+}
+
+#courses .box .box-body h4 {
+  font-size: 17px;
+  line-height: 1.5;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses .box .box-body p {
+  font-size: 15px;
+  min-height: 160px;
+}
+
+#courses .box .box-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 18px 12px;
+  font-weight: 400;
+  border-top: 1px solid var(--third-border-color);
 }
 
-.card-header i {
-  font-size: 16px;
-  margin-right: 5px;
-}
-
-.card-header span {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-#courses .card .card-body {
-  padding: 0 24px 24px 24px;
-}
-
-#courses .card .card-body .card-text .title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-top: 4px;
-  margin-bottom: 16px;
-  display: block;
+#courses .box .box-footer .price {
   color: var(--secondary-highlight-text);
 }
 
-#courses .card .card-body .card-text .text-small {
-  color: #b0b3b8;
-  font-size: 13px;
-  margin-bottom: 4px;
+#courses .work {
+  padding-top: 100px;
 }
 
-#courses .card .card-body .card-text .title:hover {
-  color: #c7af8b;
-  text-decoration: none;
-}
+@media (max-width: 991.98px) {}
 
-#courses .card-text .tags .tag {
-  display: inline-block;
-  margin-top: 8px;
-  margin-right: 2px;
-  padding: 3px 10px;
-  border-radius: 16px;
-  text-transform: uppercase;
-  color: var(--secondary-text);
-  border: 2px solid var(--fourth-border-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  transition: .3s;
-}
-
-#courses .card-text .tags .tag:hover {
-  text-decoration: none;
-  color: var(--secondary-text);
-  border: 2px solid var(--fourth-border-color);
-  background-color: var(--fourth-border-color);
-  cursor: pointer;
-}
-
-#courses .card .card-body .card-text .price {
-  position: absolute;
-  bottom: 110px;
-  padding: 4px 16px 4px;
-  font-weight: 500;
-  font-size: 20px;
-  border-radius: 0;
-  width: calc(100% - 3.5rem);
-  text-align: center;
-  background-color: #3a3b3c;
-  background-image: linear-gradient(to right, var(--secondary-background), var(--fourth-background), var(--secondary-background));
-}
-
-#courses .card .card-body .user {
-  position: absolute;
-  bottom: 24px;
-}
-
-#courses .card .card-body .user .media {
-  margin-bottom: 0;
-}
-
-#courses .card .card-body .media .circle {
-  border: 3px solid #28a745;
-  border-radius: 50%;
-  margin-right: .75rem;
-  padding: .35rem;
-}
-
-#courses .card .card-body .media .circle .avatar {
-  width: 3.25rem;
-  border-radius: 50%;
-}
-
-#courses .card .card-body .user .media .circle {
-  border: 3px solid #28a745;
-}
-
-#courses .card .card-body .user .media .circle:hover {
-  border: 3px solid #18d844;
-}
-
-#courses .card .card-body .user .media-body a {
-  color: #dfdfdf;
-  display: block;
-  font-size: 16px;
-}
-
-#courses .card .card-body .user .media-body a.username {
-  color: #b0b3b8;
-  font-size: .8rem;
-  margin-bottom: .25rem;
-}
-
-#courses .card .card-body .user .media-body a:hover,
-#courses .card .card-body .user .media-body a.username:hover {
-  color: #c7af8b;
-  text-decoration: none;
-}
-
-@media (max-width: 991.98px) {
-  #courses .text-left h1 {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  #courses .card .card-header {
-    padding: 12px 25px 10px;
-  }
-  #courses .card .card-body {
-    padding: 0 25px 25px 25px;
-  }
-  #courses .card .card-body .user {
-    bottom: 25px;
-  }
-  #courses .card .card-body .card-text .price {
-    bottom: 115px;
-  }
-}
+@media (max-width: 575.98px) {}
 
 
 /* ----- Section follow  ----- */
 
 #follow {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 0;
 }
 
-#follow .text-right h1 {
-  font-size: 55px;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  font-style: normal;
-}
-
-#follow .text-right h6 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-style: normal;
-}
-
-#follow .text-right p {
-  margin-top: 30px;
-}
-
-#follow a {
-  color: #ccc;
+#follow .media .media-body p {
+  color: var(--secondary-text);
 }
 
 #follow a:hover {
@@ -200,13 +99,12 @@ hr {
 }
 
 #follow .box {
-  padding: 25px 28px 22px;
+  padding: 20px 28px 16px;
   border-radius: 20px;
   margin-top: 30px;
   position: relative;
   transition: .5s;
   display: block;
-  background-color: #1d1d1d;
 }
 
 #follow .box:hover {
@@ -227,20 +125,17 @@ hr {
 #follow .box .media .media-body p {
   margin-bottom: 0;
   font-size: 14px;
+  font-weight: 500;
 }
 
 @media (max-width: 991.98px) {
   #follow {
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 }
 
 @media (max-width: 575.98px) {
-  #follow {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
   #follow .text-right h1 {
     font-size: 50px;
   }
@@ -250,4 +145,150 @@ hr {
   #follow .box:hover {
     transform: translateY(10px);
   }
+}
+
+
+/* Contact form --------------------------------------------------------------------- */
+
+#contact {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#contact .box {
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 50px 50px;
+  border-radius: 32px;
+}
+
+#contact img {
+  max-width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#contact .image-1 {
+  left: 300px;
+  bottom: -90px;
+}
+
+#contact .image-2 {
+  left: -35px;
+  top: 300px;
+}
+
+#contact .image-3 {
+  left: 280px;
+  bottom: 40px;
+}
+
+#contact .image-4 {
+  left: auto;
+  right: -200px;
+  bottom: -200px;
+}
+
+#contact .image-5 {
+  left: 150px;
+  top: 200px;
+}
+
+#contact .image-6 {
+  left: -120px;
+  top: 160px;
+}
+
+#contact .form-contact {
+  margin-top: 16px;
+}
+
+#contact .input-group {
+  margin-bottom: 16px;
+}
+
+#contact .form-control {
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 10px 16px;
+  height: calc(1.5em + .75rem + 10px);
+  background-color: var(--body-background);
+  border: 2px solid var(--fourth-border-color);
+  color: var(--secondary-text);
+}
+
+#contact textarea.form-control {
+  height: auto !important;
+}
+
+#contact .form-control:focus {
+  border-color: var(--third-border-color);
+  box-shadow: 0 0 0 1px var(--third-border-color);
+}
+
+@media (max-width: 1199.98px) {
+  #contact .container {
+    max-width: 954px;
+  }
+  #contact .container h1 {
+    margin-right: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #contact .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #contact .container {
+    padding: 15px;
+    max-width: 540px;
+    background-color: transparent !important;
+  }
+  #contact .container .wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #contact .box {
+    padding: 32px 30px 40px;
+  }
+}
+
+
+/* Col ------------------------------------------------------------------------------ */
+
+#courses .col-sm-6,
+#courses .col-md-6,
+#courses .col-lg-4,
+#courses .col-xl-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#courses .row {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+#follow .col-sm-6,
+#follow .col-md-6,
+#follow .col-lg-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#follow .row {
+  margin-right: -12px;
+  margin-left: -12px;
 }

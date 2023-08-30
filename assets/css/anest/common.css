@@ -70,16 +70,6 @@ h4 {
   border-top: 1px solid var(--third-border-color);
 }
 
-.one-ui {
-  padding: 16px 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
-.one-ui h5 {
-  font-weight: 400;
-}
-
 hr {
   margin-top: 1rem;
   margin-bottom: .65rem;
@@ -131,7 +121,7 @@ h6.sub-title.sub-title-mb {
 }
 
 
-/*----- Section -----*/
+/* Section -------------------------------------------------------------------------- */
 
 section {
   background-position: 50% 50%;
@@ -379,7 +369,14 @@ section,
 
 #menu .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
-  transform: translateX(8px);
+  transform: translateX(6px);
+}
+
+#menu .dropdown-menu .dropdown-item.active,
+.dropdown-item:active {
+  color: var(--primary-text);
+  text-decoration: none;
+  background-color: transparent;
 }
 
 #menu .dropdown-menu .dropdown-item svg.bi-circle-half {
