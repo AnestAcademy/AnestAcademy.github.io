@@ -113,7 +113,7 @@ h6.sub-title.sub-title-mb {
 
 @media (max-width: 991.98px) {
   h6.sub-title.sub-title-mb {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1.75;
   }
 }
@@ -151,7 +151,7 @@ section,
 
 #cover {
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 #cover.fix {
