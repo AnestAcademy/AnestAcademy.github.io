@@ -58,9 +58,6 @@
 }
 
 @media (max-width: 1199.98px) {
-  #cover .container {
-    max-width: 930px;
-  }
   #cover .image-1 {
     left: 320px;
     bottom: -280px;
@@ -88,17 +85,6 @@
 }
 
 @media (max-width: 991.98px) {
-  #cover {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-  #cover .container {
-    padding: 80px;
-    border-radius: 28px;
-  }
-  #cover .container {
-    max-width: 690px;
-  }
   #cover .image-1 {
     bottom: -213px;
   }
@@ -116,18 +102,6 @@
 }
 
 @media (max-width: 767.98px) {
-  #cover {
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
-  #cover .container {
-    max-width: 540px;
-    padding: 60px;
-    border-radius: 28px;
-  }
-  #cover h1 {
-    text-align: center;
-  }
   #cover .image-1 {
     bottom: -280px;
   }
@@ -145,30 +119,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
-  #cover {
-    padding-top: 20px;
-    padding-bottom: 0;
-  }
-  #cover .container {
-    max-width: 92%;
-    padding: 60px 30px 90px;
-    border-radius: 24px;
-  }
-  #cover h1 {
-    text-align: center;
-  }
-  #cover p {
-    text-align: center;
-  }
-  #cover .btn-view-more {
-    padding: 10px 50px;
-    margin: 30px 0;
-  }
-  #cover .text-left {
-    text-align: center !important;
-  }
-}
+@media (max-width: 575.98px) {}
 
 
 /* Section object ------------------------------------------------------------------- */
@@ -201,18 +152,19 @@
   font-size: 32px;
 }
 
-@media (max-width: 991.98px) {}
-
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #object {
     padding-top: 80px;
     padding-bottom: 0;
   }
-  #object .box {
-    margin-bottom: 16px;
-  }
   #object .box:hover {
     transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #object .box {
+    margin-bottom: 16px;
   }
 }
 
@@ -224,7 +176,7 @@
   padding-bottom: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #benefit {
     padding-top: 80px;
     padding-bottom: 0;
@@ -285,11 +237,11 @@
   font-size: 14px;
 }
 
-@media (max-width: 1199.98px) {}
-
-@media (max-width: 991.98px) {}
-
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
+  #highlight-course {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
   #highlight-course .box .box-body h4 {
     font-size: 18px;
   }
@@ -299,10 +251,6 @@
 }
 
 @media (max-width: 575.98px) {
-  #highlight-course {
-    padding-top: 80px;
-    padding-bottom: 0;
-  }
   #highlight-course .box {
     margin-bottom: 16px;
   }
@@ -316,7 +264,7 @@
   padding-bottom: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #overview {
     padding-top: 80px;
     padding-bottom: 0;
@@ -370,11 +318,14 @@
   border-radius: 14px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #course-detail {
     padding-top: 80px;
     padding-bottom: 0;
   }
+}
+
+@media (max-width: 575.98px) {
   #course-detail .accordion .collapse-panel {
     margin-bottom: 16px;
   }
@@ -391,7 +342,7 @@
   padding-bottom: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #register-now {
     padding-top: 60px;
     padding-bottom: 0;
@@ -453,16 +404,16 @@
   width: 10%;
 }
 
-@media (max-width: 767.98px) {
-  #result .carousel .content h4 {
-    margin-top: 50px;
-  }
-}
-
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #result {
     padding-top: 80px;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #result .carousel .content h4 {
+    margin-top: 40px;
   }
   #result .y {
     padding-top: 38px;
@@ -527,7 +478,7 @@
   border-radius: 14px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #faq {
     padding-top: 80px;
     padding-bottom: 0;
@@ -564,7 +515,7 @@
   text-align: right;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   #promotion {
     padding-top: 80px;
     padding-bottom: 0;
@@ -653,7 +604,7 @@
 
 @media (max-width: 1199.98px) {
   #contact .container {
-    max-width: 930px;
+    max-width: 954px;
   }
   #contact .container h1 {
     margin-right: 20px;
@@ -663,17 +614,16 @@
 }
 
 @media (max-width: 991.98px) {
-  #contact .container {
-    max-width: 690px;
-    padding: 60px 100px 80px;
-  }
-}
-
-@media (max-width: 767.98px) {
   #contact {
     padding-top: 60px;
     padding-bottom: 80px;
   }
+  #contact .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767.98px) {
   #contact .container {
     padding: 15px;
     max-width: 540px;
@@ -684,7 +634,11 @@
   }
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  #contact .box {
+    padding: 32px 30px 40px;
+  }
+}
 
 
 /* Register ------------------------------------------------------------------------- */
@@ -706,7 +660,7 @@ input:-webkit-autofill:active {
 }
 
 
-/*Change text in autofill textbox*/
+/* Change text in autofill textbox */
 
 input:-webkit-autofill {
   -webkit-text-fill-color: var(--secondary-text) !important;
@@ -734,11 +688,6 @@ input:-webkit-autofill {
   color: var(--primary-text);
   text-shadow: none;
 }
-
-
-/* #registerModal .modal-header .close:hover {
-  color: #ffcf5c;
-} */
 
 #registerModal .modal-header .close:focus {
   outline: none;

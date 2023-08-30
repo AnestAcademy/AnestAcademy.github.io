@@ -170,14 +170,14 @@ section,
 
 #cover h1 {
   font-size: 65px;
-  margin-top: 12px;
+  margin: 0;
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
 }
 
 #cover p {
-  margin: 30px 0;
+  margin: 30px 0 6px;
   letter-spacing: 1px;
   font-size: 20px;
   font-style: normal;
@@ -199,6 +199,48 @@ section,
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  #cover .container {
+    max-width: 930px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #cover {
+    padding-top: 60px;
+  }
+  #cover .container {
+    max-width: 690px;
+    padding: 80px 80px 90px;
+  }
+  #cover p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #cover {
+    padding-top: 40px;
+  }
+  #cover .container {
+    max-width: 540px;
+    padding: 60px 60px 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #cover {
+    padding-top: 20px;
+  }
+  #cover .container {
+    max-width: 92%;
+    padding: 60px 30px 80px;
+  }
+  #cover .text-left {
+    text-align: center !important;
+  }
 }
 
 
