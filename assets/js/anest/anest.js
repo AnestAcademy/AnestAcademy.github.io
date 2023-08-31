@@ -80,3 +80,7 @@ $(document).mouseup(function(e) {
     $('#btn-collapse').addClass('rotate');
   }
 });
+
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip()
+})

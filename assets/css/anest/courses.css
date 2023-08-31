@@ -20,11 +20,14 @@ hr {
   transition: 0.5s;
   padding-top: 26px;
   border: 1px solid var(--secondary-border-color);
+  color: var(--primary-text);
+  display: block;
 }
 
 #courses .box:hover {
   cursor: pointer;
   transform: scale(1.04);
+  text-decoration: none;
 }
 
 #courses .box .icon-cover {
@@ -90,8 +93,8 @@ hr {
   padding-bottom: 0;
 }
 
-#follow .media .media-body p {
-  color: var(--secondary-text);
+#follow .text-right p {
+  margin-bottom: 50px;
 }
 
 #follow a:hover {
@@ -99,12 +102,9 @@ hr {
 }
 
 #follow .box {
-  padding: 20px 28px 16px;
+  padding: 16px 20px 12px;
   border-radius: 20px;
-  margin-top: 30px;
-  position: relative;
   transition: .5s;
-  display: block;
 }
 
 #follow .box:hover {
@@ -126,6 +126,7 @@ hr {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 500;
+  color: var(--secondary-text);
 }
 
 @media (max-width: 991.98px) {

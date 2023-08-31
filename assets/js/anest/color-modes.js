@@ -62,12 +62,22 @@
 
   setColor(getPreferredColor());
 
+  const showActiveColor = (color) => {
+    document.querySelectorAll('[data-bs-color-value').forEach(element => {
+      element.classList.remove('pressed');
+    })
+
+    const btnToActive = document.querySelector(`[data-bs-color-value='${color}']`);
+    btnToActive.classList.add('pressed');
+  }
+
 
   /**
    * Event -------------------------------------------------------------------------------
    */
   window.addEventListener('DOMContentLoaded', () => {
     showActiveTheme(getPreferredTheme());
+    showActiveColor(getPreferredColor());
 
     document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
@@ -85,6 +95,7 @@
           const color = toggle.getAttribute('data-bs-color-value');
           localStorage.setItem('data-color', color);
           setColor(color);
+          showActiveColor(color);
         })
       });
   })

@@ -11,15 +11,15 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/anest/color-modes.css">
   <link rel="stylesheet" href="assets/css/anest/common.css">
   <link rel="stylesheet" href="assets/css/anest/animation.css">
-  <link rel="stylesheet" href="assets/css/anest/course-detail-2.css">
+  <link rel="stylesheet" href="assets/css/anest/mentor.css">
   <!-- Title -->
-  <title>Anest - Course Detail</title>
+  <title>Anest - Mentor</title>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
-  <!-- Start hero -->
 
   <section id="menu">
     <div class="container">
@@ -35,23 +35,85 @@
               <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw"></i>Trang chủ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#course-detail"><i class="fas fa-tasks fa-fw"></i>Khóa học</a>
+              <a class="nav-link" href="#highlight-course"><i class="fas fa-star-of-david fa-fw"></i>Nổi bật</a>
             </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#mentorInfo"><i class="fas fa-user fa-fw"></i>Mentor</a> -->
-              <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target=""><i class="fas fa-user fa-fw"></i>Mentor</a>
+              <a class="nav-link" href="#overview"><i class="fas fa-code fa-fw"></i>Khóa học</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#faq"><i class="fas fa-question fa-fw"></i>Câu hỏi thường gặp</a>
+              <a class="nav-link" href="#promotion"><i class="fas fa-percent fa-fw" style="font-size: 15px;"></i>Khuyến mãi</a>
             </li>
             <li class="nav-item">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-star-half-alt"></i>Giao diện
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-star-half-alt fa-fw"></i>Giao diện
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="light"><i class="far fa-sun fa-fw mr-2"></i>Sáng</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="dark"><i class="fas fa-sun fa-fw mr-2"></i>Tối</a>
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="light">
+                    <i class="fas fa-sun fa-fw mr-2"></i>Sáng
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="dark">
+                    <i class="fas fa-moon fa-fw mr-2"></i>Tối
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half mr-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                    </svg>Tự động
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <div class="color-theme" style="margin-top: 14px !important;">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Tan" data-bs-color-value="tan" class="color" style="background-color: #c7af8b;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Vàng" data-bs-color-value="yellow" class="color" style="background-color: #f8d06d;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Cam" data-bs-color-value="orange" class="color" style="background-color: #fd7e14;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Đỏ" data-bs-color-value="red" class="color" style="background-color: #dc3545;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="color-theme mb-1">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Lá" data-bs-color-value="green" class="color" style="background-color: #52b76c;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Mòng Két" data-bs-color-value="teal" class="color" style="background-color: #20c997;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Lam" data-bs-color-value="cyan" class="color" style="background-color: #0dcaf0;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Hồng" data-bs-color-value="pink" class="color" style="background-color: #d63384;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </li>
             </li>
@@ -67,13 +129,15 @@
   </section>
 
   <section id="cover">
-    <div class="container bg-dark-1d text-left">
+    <div class="container bg-color-secondary">
       <div class="row">
         <div class="col-lg-9">
-          <h1>Course <span class="highlight">Info_</span></h1>
-          <p>KHÓA HỌC <span class="color-tan">JAVA CORE</span> CƠ BẢN CHO NGƯỜI MỚI BẮT ĐẦU.</p>
+          <div class="text-left">
+            <h1>Mentor <span class="color-highlight">Info_</span></h1>
+            <p>THÔNG TIN GIẢNG VIÊN - NGƯỜI GIẢNG DẠY</p>
+          </div>
         </div>
-        <div class="col-lg-3 text-left">
+        <div class="col-lg-3">
           <div class="wrap">
             <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
             <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
@@ -87,400 +151,13 @@
     </div>
   </section>
 
-  <section id="object">
-    <div class="container text-left">
-      <div class="row">
-        <div class="col-md-12 col-lg-5">
-          <h1 class="title">O<span class="highlight">bject ?</span></h1>
-          <h6 class="sub-title"><span class="highlight">KHOÁ HỌC NÀY</span> DÀNH CHO AI?</h6>
-        </div>
-        <div class="col-md-12 col-lg-7">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex">
-                <i class="fas fa-chevron-circle-right color-tan"></i>
-                <p><span class="color-tan font-weight-500">Học sinh THPT</span> muốn sớm bắt đầu sự nghiệp, nhanh chóng nắm bắt cơ hội việc làm hot nhất thời đại 4.0</p>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex">
-                <i class="fas fa-chevron-circle-right color-tan"></i>
-                <p><span class="color-tan font-weight-500">Sinh viên CNTT</span> chưa vững kiến thức, kỹ năng, muốn học bài bản, cần môi trường học thực tế, đào tạo sát nhu cầu nhân lực doanh nghiệp.</p>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex">
-                <i class="fas fa-chevron-circle-right color-tan"></i>
-                <p><span class="color-tan font-weight-500">Sinh viên hoặc nhân sự trái ngành</span> muốn chuyển ngành sang làm lập trình viên, môi trường làm việc và chế độ đãi ngộ tốt hơn.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="benefit">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 pt-3">
-          <div class="row">
-            <ul class="timeline">
-              <li class="timeline-item">
-                <div class="timeline-content ex-content">
-                  <h4>Hệ thống kiến thức bài bản</h4>
-                  <p>Lộ trình học từ cơ bản đến nâng cao, bám sát yêu cầu tuyển dụng của doanh nghiệp.</p>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content ex-content">
-                  <h4>Nắm vững quy trình "code" một website hoàn chỉnh</h4>
-                  <p>Thực hành 1-3 dự án ngay trong khóa học, làm sản phẩm thực tế có thể bổ sung vào CV và Portfolio.</p>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content ex-content">
-                  <h4>Sở hữu tư duy thuật toán vững chắc, thực tiến</h4>
-                  <p>Với mô hình đào tạo "On job training", vừa học, vừa làm việc trực tiếp với đề bài từ doanh nghiệp.</p>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content ex-content">
-                  <h4>Trang bị toàn diện bộ kỹ năng mềm của một lập trình viên</h4>
-                  <p>Cùng chương trình học bổ sung - luyện phỏng vấn, làm việc nhóm, rèn thuyết trình, sửa CV, portfolio và build hồ sơ LinkedIn.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="text-right">
-            <h1 class="title">B<span class="highlight">enefit</span></h1>
-            <h6 class="sub-title"><span class="highlight">SAU KHÓA HỌC,</span></h6>
-            <h6 class="sub-title mt-3">BẠN NHẬN ĐƯỢC NHỮNG GÌ?</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="highlight-course">
-    <div class="container">
-      <div class="row list-highlight-course">
-
-        <div class="col-12 mb-5">
-          <div class="text-left">
-            <h1 class="title">High<span class="highlight">lights</span></h1>
-            <h6 class="sub-title"><span class="highlight">ĐIỂM NỔI BẬT</span> CỦA KHÓA HỌC</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="box text-center">
-            <div class="icon-cover">
-              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="currentColor" class="bi bi-list-check color-tan" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-              </svg>
-            </div>
-            <div class="box-body">
-              <h4>Lộ trình bài bản, cập nhật công nghệ</h4>
-              <p class="mt-3 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS,... trong chương trình học.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="box text-center">
-            <div class="icon-cover">
-              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="currentColor" class="bi bi-code-slash color-tan" viewBox="0 0 16 16">
-                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
-              </svg>
-            </div>
-            <div class="box-body">
-              <h4>Học tập thực tế, làm thực chiến</h4>
-              <p class="mt-3 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS,... trong chương trình học.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="box text-center">
-            <div class="icon-cover">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-question-circle color-tan" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-              </svg>
-            </div>
-            <div class="box-body">
-              <h4>Giảng viên, mentor support 24/7</h4>
-              <p class="mt-3 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS,... trong chương trình học.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="box text-center">
-            <div class="icon-cover">
-              <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="currentColor" class="bi bi-arrow-repeat color-tan" viewBox="0 0 16 16">
-                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-              </svg>
-            </div>
-            <div class="box-body">
-              <h4>Hỗ trợ trọn đời sau khóa học</h4>
-              <p class="mt-3 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS,... trong chương trình học.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="overview">
-    <div class="container text-left">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <h1 class="title text-center">O<span class="highlight">verview</span></h1>
-          <h6 class="sub-title text-center"><span class="highlight">TỔNG QUAN</span> KHOÁ HỌC</h6>
-          <p class="mt-5 text-center">
-            Lộ trình học lập trình X-Career và X-Career Plus là những chương trình đào tạo thực chiến để trở thành lập trình viên chuyên nghiệp, kéo dài từ 8 - 12 tháng dành cho những ai muốn tìm kiếm cơ hội việc làm trong lĩnh vực công nghệ thông tin. Với châm ngôn
-            đào tạo "Bài bản - Thực chiến - Tối ưu", chương trình đào tạo bao gồm 3 giai đoạn chính: Nền tảng - Chuyên sâu và Thực chiến.
-          </p>
-          <p class="text-center">
-            Trong giai đoạn đầu, học viên sẽ cùng tham gia kỳ học nền tảng cơ bản về lập trình. Sau khi hoàn thành phần Nền tảng, học viên được tự do lựa chọn khối ngành chuyên sâu về Web hoặc Blockchain tùy thuộc vào sở thích và định hướng phát triển của bản thân.
-            Bạn có thể tham khảo cấu phần lộ trình cho từng định hướng chuyên sâu theo bảng dưới đây.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="course-detail">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 pt-3">
-          <div class="accordion" id="accordion">
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                MODULE 1: LẬP TRÌNH CƠ BẢN <i class="fas fa-chevron-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-1" data-parent="#accordion">
-                <div class="card card-body">
-                  Có. Hiện nay Java vẫn rất phổ biến và mạnh mẽ, ở Việt Nam vẫn đang có rất nhiều công ty tuyển dụng lập trình viên Java với mức lương tương đối cao.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                MODULE 2: ADVANCED PROGRAMMING WITH JAVA <i class="fas fa-chevron-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-2" data-parent="#accordion">
-                <div class="card card-body">
-                  Java rất rộng và là một ngôn ngữ bậc cao, giải quyết được rất nhiều bài toán trong thực tế. Nhưng để có thể làm trọn vẹn và giúp bạn sau này có thể tiến xa hơn thì cần phải học thêm vài ngôn ngữ lập trình khác nữa. Ví dụ theo đường lập trình Java Web
-                  thì cần học thêm HTML/CSS, Javascript...
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                MODULE 3: WEB BACK-END DEVELOPMENT WITH JSP & SERVLET <i class="fas fa-chevron-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-3" data-parent="#accordion">
-                <div class="card card-body">
-                  Bạn sẽ được hỗ trợ 24/7 qua các kênh online như nhóm facebook, inbox trực tiếp facebook cá nhân Mentor... hoặc được hỗ trợ trực tiếp tại trung tâm.
-                  <br /> Các bạn sẽ được support về việc học qua group không chỉ là môn đang học mà còn các môn lập trình khác.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                MODULE 4: WEB BACK-END DEVELOPMENT WITH SPRING MVC <i class="fas fa-chevron-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-4" data-parent="#accordion">
-                <div class="card card-body">
-                  Học phí sẽ được thu trực tiếp trong 3 buổi đầu hoặc nhận chuyển khoản trước, hoàn trả 100% nếu cuối khóa bạn cảm thấy không hài lòng. Bạn có thể đóng trước lúc đăng ký để giữ chỗ, ưu tiên xếp lớp cho ai đóng học phí trước và chắc chắn đi học.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-5" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                MODULE 5: WEB FRONT-END DEVELOPMENT WITH ANGULAR <i class="fas fa-chevron-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-5" data-parent="#accordion">
-                <div class="card card-body">
-                  Bạn sẽ được hoàn trả lại học phí - chỉ thu số tiền ứng với số buổi bạn đã học.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-6" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                MODULE 6: PROJECT & JOB <i class="fas fa-chevron-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-6" data-parent="#accordion">
-                <div class="card card-body">
-                  Không hiểu tại đâu - lúc nào bạn nên hỏi luôn Mentor ngay lúc đó, Mentor sẽ có trách nhiệm giải đáp và hỗ trợ ngay tại chỗ cho bạn.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="text-right">
-            <h1 class="title">S<span class="highlight">yllabus</span></h1>
-            <h6 class="sub-title"><span class="highlight">CHƯƠNG TRÌNH GIẢNG DẠY</span></h6>
-            <h6 class="sub-title mt-3">6 THÁNG (900 giờ)</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="result">
-    <div class="container text-left">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="mb-5">
-            <h1 class="title text-center">R<span class="highlight">esult</span></h1>
-            <h6 class="sub-title text-center"><span class="highlight">SẢN PHẨM</span> BẠN CÓ THỂ LÀM ĐƯỢC</h6>
-          </div>
-          <div id="carouselResult" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="5000">
-                <div class="y">
-                  <div class="x">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img src="assets/images/course/html-css.jpg" width="100%" alt="">
-                      </div>
-                      <div class="col-md-6 content">
-                        <div>
-                          <h4>Website trình bày thông tin </h4>
-                          <p>Tạo được các website để trình bày thông tin, website chia sẻ thông tin, newsletter.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-interval="5000">
-                <div class="y">
-                  <div class="x">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img src="assets/images/course/html-css.jpg" width="100%" alt="">
-                      </div>
-                      <div class="col-md-6 content">
-                        <div>
-                          <h4>Website trình bày thông tin </h4>
-                          <p>Tạo được các website để trình bày thông tin, website chia sẻ thông tin, newsletter.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselResult" data-slide="prev">
-              <i class="fas fa-chevron-left"></i>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselResult" data-slide="next">
-              <i class="fas fa-chevron-right"></i>
-              <span class="sr-only">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="text-left">
-            <h1>Q <span class="highlight">&</span> A</h1>
-            <p>Những câu hỏi thường gặp. Bạn hỏi - chúng tôi trả lời.</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12">
-          <div class="accordion" id="accordion">
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                Có nên lựa chọn học Java? <i class="fas fa-angle-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-1" data-parent="#accordion">
-                <div class="card card-body">
-                  Có. Hiện nay Java vẫn rất phổ biến và mạnh mẽ, ở Việt Nam vẫn đang có rất nhiều công ty tuyển dụng lập trình viên Java với mức lương tương đối cao.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                Học một mình ngôn ngữ Java là đủ? <i class="fas fa-angle-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-2" data-parent="#accordion">
-                <div class="card card-body">
-                  Java rất rộng và là một ngôn ngữ bậc cao, giải quyết được rất nhiều bài toán trong thực tế. Nhưng để có thể làm trọn vẹn và giúp bạn sau này có thể tiến xa hơn thì cần phải học thêm vài ngôn ngữ lập trình khác nữa. Ví dụ theo đường lập trình Java Web
-                  thì cần học thêm HTML/CSS, Javascript...
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                Khi có câu hỏi hoặc thắc mắc liên quan đến bài học - tôi sẽ được hỗ trợ qua kênh nào? <i class="fas fa-angle-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-3" data-parent="#accordion">
-                <div class="card card-body">
-                  Bạn sẽ được hỗ trợ 24/7 qua các kênh online như nhóm facebook, inbox trực tiếp facebook cá nhân Mentor... hoặc được hỗ trợ trực tiếp tại trung tâm.
-                  <br /> Các bạn sẽ được support về việc học qua group không chỉ là môn đang học mà còn các môn lập trình khác.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                Tiền học phí sẽ đóng khi nào? <i class="fas fa-angle-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-4" data-parent="#accordion">
-                <div class="card card-body">
-                  Học phí sẽ được thu trực tiếp trong 3 buổi đầu hoặc nhận chuyển khoản trước, hoàn trả 100% nếu cuối khóa bạn cảm thấy không hài lòng. Bạn có thể đóng trước lúc đăng ký để giữ chỗ, ưu tiên xếp lớp cho ai đóng học phí trước và chắc chắn đi học.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-5" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                Nếu trong quá trình học mà có việc bận phải nghỉ giữa chừng thì sao? <i class="fas fa-angle-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-5" data-parent="#accordion">
-                <div class="card card-body">
-                  Bạn sẽ được hoàn trả lại học phí - chỉ thu số tiền ứng với số buổi bạn đã học.
-                </div>
-              </div>
-            </div>
-            <div class="collapse-panel">
-              <a data-toggle="collapse" href="#collapse-6" role="button" aria-expanded="false" aria-controls="collapse" class="collapsed">
-                Nếu trong quá trình học mà có những chỗ không hiểu thì sao? <i class="fas fa-angle-down float-right"></i>
-              </a>
-              <div class="collapse" id="collapse-6" data-parent="#accordion">
-                <div class="card card-body">
-                  Không hiểu tại đâu - lúc nào bạn nên hỏi luôn Mentor ngay lúc đó, Mentor sẽ có trách nhiệm giải đáp và hỗ trợ ngay tại chỗ cho bạn.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <section id="footer">
     <div class="container">
       <div class="row f-top">
         <div class="col-12 col-sm-12 col-md-5 info">
           <img src="assets/images/cover/logo.png">
-          <p>Học lập trình cùng <span class="highlight">ANEST</span></p>
+          <p>Học lập trình cùng <span class="color-secondary-highlight font-weight-500">ANEST</span></p>
           <ul>
             <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
             <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 876 107</li>
@@ -511,7 +188,7 @@
               </a>
             </li>
             <li>
-              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký</a>
+              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký khoá học</a>
             </li>
           </ul>
         </div>
@@ -522,7 +199,7 @@
     <div class="container">
       <div class="row f-bot">
         <div class="col-12 col-sm-12 col-md-6 clock">
-          <i class="far fa-clock color-tan fa-fw mr-1"></i><span id=clock></span>
+          <i class="far fa-clock color-secondary-highlight fa-fw mr-1"></i><span id=clock></span>
         </div>
         <div class="col-12 col-sm-12 col-md-6 copyright">
           <span>Copyright © 2020 ANEST ACADEMY</span>
@@ -533,237 +210,21 @@
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
   </a>
-
-  <!-- Modal Mentor -->
-  <div class="modal fade" id="mentorInfo" tabindex="-1" role="dialog" aria-labelledby="mentorInfoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="mb-0">Giới thiệu về Mentor</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-12">
-              <span>Thông tin cá nhân:</span>
-              <br /> –&nbsp; Họ và tên: <a class="color-yellow" href="https://www.facebook.com/profile.php?id=100006259172279" target="_blank">Tô Hoàng Anh</a>
-              <br /> –&nbsp; Sinh viên FPT University - Khoá 12
-              <br /> –&nbsp; Người thành lập CLB FISE, CLB chuyên về giảng dạy - chia sẻ kiến thức - hỗ trợ các bạn sinh viên học tốt hơn các môn lập trình.
-              <br /> –&nbsp; Founder & Mentor học viện lập trình ANEST.<br />
-              <hr /> <span>Kinh nghiệm:</span>
-              <br /> –&nbsp; Có kinh nghiệm hơn 2 năm dạy thêm về lập trình cho sinh viên FPT.
-              <br /> –&nbsp; Có gần 3 năm kinh nghiệm làm việc với Java.
-              <br /> –&nbsp; Hiện tại đang làm Backend-End & Web Developer tại FPT Software.<br />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <hr /> <span>Thông tin thêm:</span>
-              <br /> –&nbsp; Thành tích sinh viên học trên lớp sau khoá học rất tốt, điểm trung bình rất cao.
-              <br /> –&nbsp; Tỷ lệ sinh viên phản hồi hài lòng sau khoá học về Mentor và chất lượng khóa học rất cao (>90%).
-              <br /> –&nbsp; Tỷ lệ sinh viên tham gia các khóa học tiếp theo rất là cao (>80%).
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sm btn-dark-3" data-dismiss="modal">Đóng</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal info -->
-  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4>Thông tin liên hệ</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body px-3 py-0">
-          <div class="row">
-            <div class="col-12">
-              <table>
-                <tr>
-                  <td>–&nbsp; Facebook</td>
-                  <td class="pl-2"><a href="https://www.facebook.com/QuyQuoc02" target="_blank" class="color-yellow">&nbsp; Phùng Quý Quốc</a></td>
-                </tr>
-                <tr>
-                  <td>–&nbsp; Số điện thoại</td>
-                  <td class="pl-3">0911 092 002</td>
-                </tr>
-                <!--                 <tr>
-                  <td>–&nbsp; Email</td>
-                  <td class="pl-3">anhdt0407@gmail.com</td>
-                </tr> -->
-              </table>
-              <!-- –&nbsp; Facebook: <a href="https://www.facebook.com/s2.mask" target="_blank" class="color-yellow">&nbsp;Đinh Tuấn Anh</a><br /> –&nbsp; Số điện thoại:&nbsp; 0973 876 107<br /> –&nbsp; Email:&nbsp; anhdt0407@gmail.com -->
-              <hr />
-              <table>
-                <tr>
-                  <td>–&nbsp; Facebook</td>
-                  <td class="pl-2"><a href="https://www.facebook.com/linh.pnh12" target="_blank" class="color-yellow">&nbsp; Phan Nhật Linh</a></td>
-                </tr>
-                <tr>
-                  <td>–&nbsp; Số điện thoại</td>
-                  <td class="pl-3">0904 430 526</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-danger">Đăng xuất</button> -->
-          <button type="button" class="btn btn-sm btn-dark-3" data-dismiss="modal">Đóng</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal register -->
-  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="mb-0">ĐĂNG KÝ</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">
-              <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
-                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div class="modal-body" id="style-modal">
-          <hr class="mb-3 mt-0" />
-          <!-- <div class="container">
-            <h3 class="text-center mt-4 mb-2">Coming soon...</h3>
-          </div> -->
-          <!-- <div class="container">
-            <h4 class="text-center mt-4 mb-2">Đơn đăng ký đã đóng vì đã đủ số lượng học viên.</h4>
-          </div> -->
-          <div class="container">
-            <form id="register-form">
-              <input type="hidden" name="time" id="time" />
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" value="true" class="custom-control-input" id="customSwitch" name="terms" required>
-                    <label class="custom-control-label" for="customSwitch">Tôi đã đọc</label>
-                  </div>
-                  <small class="form-text text-muted">
-                    – Trước khi điền vào đơn đăng ký, hãy chắc chắn bạn đã đọc rõ các thông tin về Mentor, FAQ và tất cả thông tin khoá học.
-                  </small>
-                  <small class="form-text text-muted">
-                    – Đơn đăng ký sẽ đóng bất kỳ khi nào đủ số lượng đăng ký lớp.
-                  </small>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fas fa-code fa-fw"></i></div>
-                  </div>
-                  <input type="text" class="form-control form-control-lg" name="course" value="Java Core" readonly required>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fas fa-user-edit fa-fw"></i></div>
-                  </div>
-                  <input type="text" class="form-control form-control-lg" name="full_name" placeholder="Họ và tên *" id="full_name">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="far fa-envelope fa-fw"></i></div>
-                  </div>
-                  <input type="text" class="form-control form-control-lg" name="email" placeholder="Email *" id="email">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fas fa-phone-alt fa-fw"></i></div>
-                  </div>
-                  <input type="text" class="form-control form-control-lg" name="mobile" placeholder="Số điện thoại *" id="mobile">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fab fa-kaggle fa-fw"></i></div>
-                  </div>
-                  <select class="custom-select form-control form-control-lg" name="k" id="k">
-                    <option value="none">Khóa *</option>
-                    <option value="K16">K16</option>
-                    <option value="K17">K17</option>
-                    <option value="K18">K18</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group text">
-                <label class="color-tan">Mong muốn - kỳ vọng của bạn về khoá học<sup><i class="far fa-comment ml-1"></i></sup></label>
-                <textarea class="form-control form-control-lg" name="your_expectations_for_this_course" id="textarea1" rows="2"></textarea>
-              </div>
-              <div class="form-group text">
-                <label class="color-tan">Mong muốn - kỳ vọng của bạn về Mentor<sup><i class="far fa-comment ml-1"></i></sup></label>
-                <textarea class="form-control form-control-lg" name="your_expectations_for_mentor" id="textarea2" rows="2"></textarea>
-              </div>
-              <button type="submit" id="submit-form" class="btn-submit tan">
-                ĐĂNG KÝ
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Toast error -->
-  <!-- <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
-    <div id="toastError" class="toast toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
-      <div class="toast-body">
-        Vui lòng không để trống trường bắt buộc.
-        <br /> –&nbsp; Tên
-        <br /> –&nbsp; Email
-        <br /> –&nbsp; Số điện thoại
-        <br /> –&nbsp; Khóa
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Toast success -->
-  <!-- <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
-    <div id="toastSuccess" class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
-      <div class="toast-body">
-        Đăng ký THÀNH CÔNG. Email xác nhận sẽ được gửi đến email đăng ký của bạn trong 1-3 ngày làm việc. Xin cảm ơn!
-      </div>
-    </div>
-  </div> -->
 
   <!-- Bootstrap core JavaScript-->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap/popper.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="assets/js/anest/anest.js"></script>
   <script src="assets/js/anest/color-modes.js"></script>
   <script src="assets/js/anest/animation.js"></script>
 
-  <!-- Custom scripts for current pages-->
-  <script src="assets/js/anest/register.js"></script>
 </body>
 
 </html>

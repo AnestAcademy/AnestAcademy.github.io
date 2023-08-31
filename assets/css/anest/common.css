@@ -357,6 +357,7 @@ section,
 
 #menu .dropdown-menu {
   border-radius: .75rem;
+  min-width: 195px;
   background-color: var(--secondary-background);
   border: 1px solid var(--third-border-color);
 }
@@ -390,6 +391,38 @@ section,
 }
 
 #menu .dropdown-menu .dropdown-item.pressed svg {
+  display: inline-block;
+}
+
+#menu .dropdown-menu .color-theme {
+  display: flex;
+  justify-content: center;
+  padding: 8px 14px 8;
+}
+
+#menu .dropdown-menu .color-theme .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+#menu .dropdown-menu .color-theme .color i {
+  color: #fff;
+  width: auto !important;
+  margin: 0 !important;
+  display: none;
+}
+
+#menu .dropdown-menu .color-theme .color svg {
+  color: #fff;
+  display: none;
+}
+
+#menu .dropdown-menu .color-theme .color.pressed svg {
   display: inline-block;
 }
 

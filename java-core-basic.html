@@ -14,13 +14,12 @@
   <link rel="stylesheet" href="assets/css/anest/color-modes.css">
   <link rel="stylesheet" href="assets/css/anest/common.css">
   <link rel="stylesheet" href="assets/css/anest/animation.css">
-  <link rel="stylesheet" href="assets/css/anest/course-detail-2.css">
+  <link rel="stylesheet" href="assets/css/anest/course-detail.css">
   <!-- Title -->
   <title>Anest - Course Detail</title>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
-  <!-- Start hero -->
 
   <section id="menu">
     <div class="container">
@@ -71,13 +70,50 @@
                     </svg>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="tan"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #c7af8b;"></i>Tan</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="yellow"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #f8d06d;"></i>Vàng</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="orange"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #fd7e14;"></i>Cam</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="red"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #dc3545;"></i>Đỏ</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="green"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #52b76c;"></i>Xanh lá</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="teal"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #20c997;"></i>Xanh mòng két &nbsp;&nbsp;</a>
-                  <a class="dropdown-item" href="javascript:void(0)" data-bs-color-value="cyan"><i class="fas fa-circle fa-fw mr-2" style="font-size: 14px; color: #0dcaf0;"></i>Xanh lam</a>
+                  <div class="color-theme" style="margin-top: 14px !important;">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Tan" data-bs-color-value="tan" class="color" style="background-color: #c7af8b;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Vàng" data-bs-color-value="yellow" class="color" style="background-color: #f8d06d;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Cam" data-bs-color-value="orange" class="color" style="background-color: #fd7e14;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Đỏ" data-bs-color-value="red" class="color" style="background-color: #dc3545;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="color-theme mb-1">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Lá" data-bs-color-value="green" class="color" style="background-color: #52b76c;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Mòng Két" data-bs-color-value="teal" class="color" style="background-color: #20c997;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Lam" data-bs-color-value="cyan" class="color" style="background-color: #0dcaf0;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Hồng" data-bs-color-value="pink" class="color" style="background-color: #d63384;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </li>
             </li>
@@ -678,7 +714,7 @@
               </a>
             </li>
             <li>
-              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký</a>
+              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký khoá học</a>
             </li>
           </ul>
         </div>
