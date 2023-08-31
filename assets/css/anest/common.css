@@ -369,7 +369,7 @@ section,
 
 #menu .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
-  transform: translateX(6px);
+  transform: translateX(8px);
 }
 
 #menu .dropdown-menu .dropdown-item.active,
@@ -391,30 +391,6 @@ section,
 
 #menu .dropdown-menu .dropdown-item.pressed svg {
   display: inline-block;
-}
-
-#menu .btn-register {
-  border-radius: 8px;
-  font-size: 16px;
-  padding: 9px 32px;
-  font-weight: 500;
-  border: 2px solid;
-  margin-left: 15px;
-  text-transform: uppercase;
-  transition: .5s;
-}
-
-#menu .btn-register:hover {
-  color: #ffcf5c !important;
-  border-color: #ffcf5c;
-  background-color: #333;
-}
-
-@media (max-width: 991.98px) {
-  #menu .btn-register {
-    margin-top: 15px;
-    padding: 8px 43px;
-  }
 }
 
 

@@ -43,7 +43,7 @@ hr {
 }
 
 #courses .box .box-body {
-  padding: 16px 18px 14px;
+  padding: 16px 18px 12px;
   width: 100%;
 }
 
@@ -58,7 +58,7 @@ hr {
 
 #courses .box .box-body p {
   font-size: 15px;
-  min-height: 160px;
+  min-height: 132px;
 }
 
 #courses .box .box-footer {
@@ -108,7 +108,7 @@ hr {
 }
 
 #follow .box:hover {
-  transform: translateY(15px);
+  transform: translateY(12px);
 }
 
 #follow .box .media i {
