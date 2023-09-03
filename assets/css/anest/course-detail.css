@@ -486,7 +486,7 @@
 }
 
 
-/* Promotion ------------------------------------------------------------------------ */
+/* Section promotion ---------------------------------------------------------------- */
 
 #promotion {
   padding-top: 100px;
@@ -522,7 +522,7 @@
 }
 
 
-/* Contact form --------------------------------------------------------------------- */
+/* Section contact ------------------------------------------------------------------ */
 
 #contact {
   padding-top: 100px;
@@ -614,7 +614,7 @@
 
 @media (max-width: 991.98px) {
   #contact {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
   #contact .container {
@@ -753,7 +753,7 @@ input:-webkit-autofill {
     overflow-y: auto;
   }
   #registerModal .modal-body form {
-    margin-top: 40px;
+    margin-top: 0;
   }
 }
 

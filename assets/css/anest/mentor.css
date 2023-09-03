@@ -1,0 +1,66 @@
+/* Section mentor ------------------------------------------------------------------- */
+
+#mentor {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+#mentor .mentor-pill {
+  padding: 16px 12px 16px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#mentor .mentor-pill .media {
+  align-items: center;
+}
+
+#mentor .mentor-pill .media .circle {
+  margin-right: 16px;
+}
+
+#mentor .mentor-pill .media .circle .avatar {
+  width: 90px;
+  border-radius: 12px
+}
+
+#mentor .mentor-pill .media .media-body .mentor-summary h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  margin-top: 4px;
+}
+
+#mentor .mentor-pill .media .media-body .mentor-summary p {
+  margin: 0;
+}
+
+#mentor .mentor-pill .media .icon i {
+  font-size: 32px;
+  display: none;
+}
+
+#mentor .mentor-pill.active .media .icon i {
+  display: block;
+}
+
+#mentor .tab-content .tab-pane {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+/* Col ------------------------------------------------------------------------------ */
+
+#mentor .col-sm-6,
+#mentor .col-md-4,
+#mentor .col-md-8,
+#mentor .col-lg-4,
+#mentor .col-xl-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#mentor .row {
+  margin-right: -12px;
+  margin-left: -12px;
+}

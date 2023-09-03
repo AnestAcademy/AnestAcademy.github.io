@@ -1,0 +1,187 @@
+/* Section mentor ------------------------------------------------------------------- */
+
+#mentor {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+
+.single-advisor-profile {
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  z-index: 1;
+  border: 1px solid var(--secondary-border-color);
+}
+
+.single-advisor-profile .advisor-thumb {
+  position: relative;
+  z-index: 1;
+  border-radius: 20px 20px 0 0;
+  padding: 24px 24px 0 24px;
+  margin: 0 auto;
+  background-color: var(--secondary-background);
+  overflow: hidden;
+}
+
+.single-advisor-profile .advisor-thumb img {
+  border-radius: 16px 0 0 0;
+  width: 260px;
+}
+
+.single-advisor-profile .advisor-thumb::after {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: absolute;
+  width: 150%;
+  height: 80px;
+  bottom: -45px;
+  left: -25%;
+  content: "";
+  background-color: var(--third-background);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+@media only screen and (max-width: 575px) {
+  .single-advisor-profile .advisor-thumb::after {
+    height: 160px;
+    bottom: -90px;
+  }
+}
+
+.single-advisor-profile .advisor-thumb .social-info {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  right: 30px;
+  text-align: right;
+}
+
+.single-advisor-profile .advisor-thumb .social-info a {
+  font-size: 14px;
+  color: #020710;
+  padding: 0 5px;
+}
+
+.single-advisor-profile .advisor-thumb .social-info a:hover,
+.single-advisor-profile .advisor-thumb .social-info a:focus {
+  color: #3f43fd;
+}
+
+.single-advisor-profile .advisor-thumb .social-info a:last-child {
+  padding-right: 0;
+}
+
+.single-advisor-profile .single-advisor-details-info {
+  position: relative;
+  z-index: 1;
+  padding: 24px 24px 18px 24px;
+  text-align: right;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--third-background);
+}
+
+.single-advisor-profile .single-advisor-details-info::after {
+  background-color: var(--secondary-highlight-text);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 3px;
+  content: "";
+  top: 6px;
+  right: 24px;
+}
+
+.single-advisor-profile .single-advisor-details-info h4 {
+  margin-bottom: 8px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.single-advisor-profile .single-advisor-details-info p {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.single-advisor-profile:hover .advisor-thumb::after,
+.single-advisor-profile:focus .advisor-thumb::after {
+  background-color: var(--secondary-highlight-text);
+}
+
+.single-advisor-profile:hover .advisor-thumb .social-info a,
+.single-advisor-profile:focus .advisor-thumb .social-info a {
+  color: #ffffff;
+}
+
+.single-advisor-profile:hover .advisor-thumb .social-info a:hover,
+.single-advisor-profile:hover .advisor-thumb .social-info a:focus,
+.single-advisor-profile:focus .advisor-thumb .social-info a:hover,
+.single-advisor-profile:focus .advisor-thumb .social-info a:focus {
+  color: #ffffff;
+}
+
+.single-advisor-profile:hover .single-advisor-details-info,
+.single-advisor-profile:focus .single-advisor-details-info {
+  background-color: var(--secondary-highlight-text);
+}
+
+.single-advisor-profile:hover .single-advisor-details-info::after,
+.single-advisor-profile:focus .single-advisor-details-info::after {
+  background-color: #ffffff;
+}
+
+.single-advisor-profile:hover .single-advisor-details-info h4,
+.single-advisor-profile:focus .single-advisor-details-info h4 {
+  color: #ffffff;
+}
+
+.single-advisor-profile:hover .single-advisor-details-info p,
+.single-advisor-profile:focus .single-advisor-details-info p {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-advisor-profile .single-advisor-details-info h4 {
+    font-size: 14px;
+  }
+  .single-advisor-profile .single-advisor-details-info p {
+    font-size: 12px;
+  }
+}
+
+
+/* Mentor detail -------------------------------------------------------------------- */
+
+#mentor-detail {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+#mentor-detail .mentor-detail-info {
+  padding: 24px;
+  border-radius: 20px;
+}
+
+
+/* Col ------------------------------------------------------------------------------ */
+
+#mentor .col-sm-6,
+#mentor .col-md-4,
+#mentor .col-md-8,
+#mentor .col-lg-4,
+#mentor .col-xl-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#mentor .row {
+  margin-right: -12px;
+  margin-left: -12px;
+}

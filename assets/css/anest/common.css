@@ -73,7 +73,7 @@ h4 {
 hr {
   margin-top: 1rem;
   margin-bottom: .65rem;
-  border-top: 1px solid #555;
+  border-top: 1px solid var(--fourth-border-color);
 }
 
 .modal-body span {
@@ -270,6 +270,7 @@ section,
 
 #menu .site-navigation.show ul {
   left: 0;
+  z-index: 999;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -362,6 +363,11 @@ section,
   border: 1px solid var(--third-border-color);
 }
 
+#menu .dropdown-menu .dropdown-header {
+  padding: 4px 18px 0;
+  font-size: 14px;
+}
+
 #menu .dropdown-menu .dropdown-item {
   color: var(--primary-text);
   padding: 3px 18px 3px 16px;
@@ -371,6 +377,7 @@ section,
 #menu .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
   transform: translateX(8px);
+  color: var(--secondary-highlight-text);
 }
 
 #menu .dropdown-menu .dropdown-item.active,
