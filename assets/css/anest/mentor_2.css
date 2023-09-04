@@ -168,11 +168,21 @@
 }
 
 #mentor-detail .experiences .box {
-  padding: 14px 20px;
+  padding: 4px 20px;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: all 0.3s ease 0s;
   align-items: center;
+}
+
+#mentor-detail .experiences .box .box-content {
+  padding: 8px 0 10px;
+  border-bottom: 1px solid #353535;
+  align-items: center;
+}
+
+#mentor-detail .experiences .box .box-content:last-child {
+  border-bottom: none;
 }
 
 #mentor-detail .experiences .box p {
@@ -195,6 +205,12 @@
 
 #mentor-detail .experiences.certificate .box p span {
   width: auto;
+  margin-right: 24px;
+}
+
+#mentor-detail .experiences.certificate .box p.certificate-name {
+  width: 100%;
+  text-align: right;
 }
 
 
@@ -230,6 +246,7 @@
   margin-left: -12px;
 }
 
+#mentor-detail .right .col-12,
 #mentor-detail .right .col-md-2,
 #mentor-detail .right .col-md-3,
 #mentor-detail .right .col-md-4,
