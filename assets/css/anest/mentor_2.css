@@ -168,7 +168,7 @@
 }
 
 #mentor-detail .experiences .box {
-  padding: 14px 20px;
+  padding: 12px 20px;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: all 0.3s ease 0s;
@@ -195,6 +195,12 @@
 
 #mentor-detail .experiences.certificate .box p span {
   width: auto;
+  margin-right: 24px;
+}
+
+#mentor-detail .experiences.certificate .box p.certificate-name {
+  width: 100%;
+  text-align: right;
 }
 
 
@@ -230,6 +236,7 @@
   margin-left: -12px;
 }
 
+#mentor-detail .right .col-12,
 #mentor-detail .right .col-md-2,
 #mentor-detail .right .col-md-3,
 #mentor-detail .right .col-md-4,
