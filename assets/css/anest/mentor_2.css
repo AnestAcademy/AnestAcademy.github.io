@@ -146,29 +146,15 @@
   margin-top: 24px;
 }
 
-#mentor-detail .profile .box {
+
+/* #mentor-detail .profile .box {
   padding: 16px 20px;
   margin-bottom: 20px;
   height: 90px;
-}
-
-#mentor-detail .profile .social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#mentor-detail .profile .social a svg {
-  color: var(--primary-text);
-}
-
-#mentor-detail .profile .social a svg:hover {
-  color: var(--secondary-highlight-text);
-  transition: 0.3s;
-}
+} */
 
 #mentor-detail .experiences .box {
-  padding: 4px 20px;
+  padding: 4px 24px;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: all 0.3s ease 0s;
@@ -177,7 +163,7 @@
 
 #mentor-detail .experiences .box .box-content {
   padding: 8px 0 10px;
-  border-bottom: 1px solid #353535;
+  border-bottom: 1px solid var(--fourth-border-color);
   align-items: center;
 }
 
@@ -195,7 +181,7 @@
 }
 
 #mentor-detail .experiences .box p span {
-  width: 100px;
+  width: auto;
   margin-right: 16px;
   font-size: 48px;
   line-height: 1.2;
@@ -205,11 +191,47 @@
 
 #mentor-detail .experiences.certificate .box p span {
   width: auto;
-  margin-right: 24px;
+  font-size: 42px;
+  margin-right: 30px;
 }
 
 #mentor-detail .experiences.certificate .box p.certificate-name {
   width: 100%;
+  text-align: right;
+}
+
+
+/**/
+
+#mentor-detail .profile .box {
+  padding: 6px 24px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
+  align-items: center;
+  height: auto;
+}
+
+#mentor-detail .profile .box .box-content {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--fourth-border-color);
+  align-items: center;
+}
+
+#mentor-detail .profile .box .box-content:last-child {
+  border-bottom: none;
+}
+
+#mentor-detail .profile .box p {
+  margin: 0;
+  width: 100%;
+}
+
+#mentor-detail .profile .box p span {
+  font-size: 18px;
+}
+
+#mentor-detail .profile .box p.workplace {
   text-align: right;
 }
 
