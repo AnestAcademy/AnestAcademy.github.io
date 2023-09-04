@@ -16,7 +16,7 @@ hr {
 
 #courses .box {
   border-radius: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   transition: 0.5s;
   padding-top: 26px;
   border: 1px solid var(--secondary-border-color);

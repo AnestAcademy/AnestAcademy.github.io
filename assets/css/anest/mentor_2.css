@@ -123,14 +123,15 @@
 
 #mentor-detail {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 #mentor-detail .sub-title-info {
   font-size: 22px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-weight: 400;
+  padding: 0 20px;
 }
 
 #mentor-detail .box-text {
@@ -139,6 +140,10 @@
 
 #mentor-detail .box-text p {
   margin: 0;
+}
+
+#mentor-detail .profile {
+  margin-top: 24px;
 }
 
 #mentor-detail .profile .box {
@@ -176,6 +181,7 @@
 
 #mentor-detail .experiences .box sup {
   font-size: 65%;
+  font-weight: 400;
 }
 
 #mentor-detail .experiences .box p span {
@@ -215,11 +221,27 @@
 #mentor-detail .col-md-6,
 #mentor-detail .col-md-12,
 #mentor-detail .col-lg-6 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#mentor-detail .row {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+#mentor-detail .right .col-md-2,
+#mentor-detail .right .col-md-3,
+#mentor-detail .right .col-md-4,
+#mentor-detail .right .col-md-5,
+#mentor-detail .right .col-md-6,
+#mentor-detail .right .col-md-12,
+#mentor-detail .right .col-lg-6 {
   padding-right: 10px;
   padding-left: 10px;
 }
 
-#mentor-detail .row {
+#mentor-detail .right .row {
   margin-right: -10px;
   margin-left: -10px;
 }
