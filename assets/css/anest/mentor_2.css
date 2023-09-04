@@ -1,7 +1,7 @@
 /* Section mentor ------------------------------------------------------------------- */
 
 #mentor {
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 0;
 }
 
@@ -21,10 +21,11 @@
   margin: 0 auto;
   background-color: var(--secondary-background);
   overflow: hidden;
+  text-align: center;
 }
 
 .single-advisor-profile .advisor-thumb img {
-  border-radius: 16px 0 0 0;
+  border-radius: 16px 16px 0 0;
   width: 260px;
 }
 
@@ -42,41 +43,10 @@
   transform: rotate(-15deg);
 }
 
-@media only screen and (max-width: 575px) {
-  .single-advisor-profile .advisor-thumb::after {
-    height: 160px;
-    bottom: -90px;
-  }
-}
-
-.single-advisor-profile .advisor-thumb .social-info {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  bottom: 0;
-  right: 30px;
-  text-align: right;
-}
-
-.single-advisor-profile .advisor-thumb .social-info a {
-  font-size: 14px;
-  color: #020710;
-  padding: 0 5px;
-}
-
-.single-advisor-profile .advisor-thumb .social-info a:hover,
-.single-advisor-profile .advisor-thumb .social-info a:focus {
-  color: #3f43fd;
-}
-
-.single-advisor-profile .advisor-thumb .social-info a:last-child {
-  padding-right: 0;
-}
-
 .single-advisor-profile .single-advisor-details-info {
   position: relative;
   z-index: 1;
-  padding: 24px 24px 18px 24px;
+  padding: 16px 24px 18px 24px;
   text-align: right;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -93,38 +63,26 @@
   width: 50px;
   height: 3px;
   content: "";
-  top: 6px;
+  top: 0;
   right: 24px;
 }
 
 .single-advisor-profile .single-advisor-details-info h4 {
-  margin-bottom: 8px;
-  -webkit-transition-duration: 500ms;
+  margin-bottom: 6px;
   transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
 }
 
 .single-advisor-profile .single-advisor-details-info p {
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
   margin-bottom: 0;
   font-size: 16px;
+  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
 }
 
 .single-advisor-profile:hover .advisor-thumb::after,
 .single-advisor-profile:focus .advisor-thumb::after {
   background-color: var(--secondary-highlight-text);
-}
-
-.single-advisor-profile:hover .advisor-thumb .social-info a,
-.single-advisor-profile:focus .advisor-thumb .social-info a {
-  color: #ffffff;
-}
-
-.single-advisor-profile:hover .advisor-thumb .social-info a:hover,
-.single-advisor-profile:hover .advisor-thumb .social-info a:focus,
-.single-advisor-profile:focus .advisor-thumb .social-info a:hover,
-.single-advisor-profile:focus .advisor-thumb .social-info a:focus {
-  color: #ffffff;
 }
 
 .single-advisor-profile:hover .single-advisor-details-info,
@@ -147,12 +105,16 @@
   color: #ffffff;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .single-advisor-profile .single-advisor-details-info h4 {
-    font-size: 14px;
+@media screen and (max-width: 991.98px) {
+  .single-advisor-profile .advisor-thumb img {
+    width: 100%;
   }
-  .single-advisor-profile .single-advisor-details-info p {
-    font-size: 12px;
+}
+
+@media only screen and (max-width: 575px) {
+  .single-advisor-profile .advisor-thumb::after {
+    height: 120px;
+    bottom: -80px;
   }
 }
 
@@ -160,13 +122,73 @@
 /* Mentor detail -------------------------------------------------------------------- */
 
 #mentor-detail {
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 
-#mentor-detail .mentor-detail-info {
-  padding: 24px;
+#mentor-detail .sub-title-info {
+  font-size: 22px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+#mentor-detail .box-text {
+  text-align: center;
+}
+
+#mentor-detail .box-text p {
+  margin: 0;
+}
+
+#mentor-detail .profile .box {
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  height: 90px;
+}
+
+#mentor-detail .profile .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#mentor-detail .profile .social a svg {
+  color: var(--primary-text);
+}
+
+#mentor-detail .profile .social a svg:hover {
+  color: var(--secondary-highlight-text);
+  transition: 0.3s;
+}
+
+#mentor-detail .experiences .box {
+  padding: 14px 20px;
   border-radius: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
+  align-items: center;
+}
+
+#mentor-detail .experiences .box p {
+  margin: 0;
+}
+
+#mentor-detail .experiences .box sup {
+  font-size: 65%;
+}
+
+#mentor-detail .experiences .box p span {
+  width: 100px;
+  margin-right: 16px;
+  font-size: 48px;
+  line-height: 1.2;
+  display: inline-block;
+  text-align: right;
+}
+
+#mentor-detail .experiences.certificate .box p span {
+  width: auto;
 }
 
 
@@ -184,4 +206,20 @@
 #mentor .row {
   margin-right: -12px;
   margin-left: -12px;
+}
+
+#mentor-detail .col-md-2,
+#mentor-detail .col-md-3,
+#mentor-detail .col-md-4,
+#mentor-detail .col-md-5,
+#mentor-detail .col-md-6,
+#mentor-detail .col-md-12,
+#mentor-detail .col-lg-6 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#mentor-detail .row {
+  margin-right: -10px;
+  margin-left: -10px;
 }

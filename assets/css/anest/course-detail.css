@@ -223,7 +223,7 @@
 }
 
 #highlight-course .box .box-body {
-  padding: 18px 18px 14px;
+  padding: 18px 20px 14px;
   width: 100%;
 }
 
@@ -494,7 +494,7 @@
 }
 
 #promotion .box {
-  padding: 16px 24px;
+  padding: 14px 20px;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: .3s;
