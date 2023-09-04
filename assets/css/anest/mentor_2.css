@@ -134,13 +134,14 @@
   padding: 0 20px;
 }
 
-#mentor-detail .box-text {
+
+/* #mentor-detail .box-text {
   text-align: center;
 }
 
 #mentor-detail .box-text p {
   margin: 0;
-}
+} */
 
 #mentor-detail .profile {
   margin-top: 24px;
