@@ -86,6 +86,26 @@ hr {
 }
 
 
+/* Responsive title ----------------------------------------------------------------- */
+
+.show-ui {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .show-ui {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+
 /* Title ---------------------------------------------------------------------------- */
 
 h1.title {
@@ -238,7 +258,7 @@ section,
 }
 
 
-/*----- Nav bar -----*/
+/* Nav bar --------------------------------------------------------------------------- */
 
 #menu {
   padding: 32px 0;
@@ -438,7 +458,7 @@ section,
 }
 
 
-/* ----- Footer ----- */
+/* Footer ---------------------------------------------------------------------------- */
 
 #footer {
   background-color: var(--secondary-background);
@@ -538,7 +558,7 @@ section,
 }
 
 
-/* ----- Scroll bar----- */
+/* Scroll bar ------------------------------------------------------------------------ */
 
 #page-top::-webkit-scrollbar-track {
   border-radius: 0;
@@ -557,7 +577,7 @@ section,
 }
 
 
-/* ----- Button scroll to top ----- */
+/* Button scroll to top -------------------------------------------------------------- */
 
 .scroll-to-top {
   position: fixed;
@@ -584,7 +604,7 @@ section,
 }
 
 
-/* ----- Bootstrap component custom css ----- */
+/* Bootstrap component custom css ---------------------------------------------------- */
 
 
 /* ----- Modal ----- */

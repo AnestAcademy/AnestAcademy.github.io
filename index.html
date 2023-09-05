@@ -11,6 +11,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/anest/color-modes.css">
   <link rel="stylesheet" href="assets/css/anest/common.css">
   <link rel="stylesheet" href="assets/css/anest/animation.css">
   <link rel="stylesheet" href="assets/css/anest/index.css">
@@ -32,23 +33,88 @@
         <div class="site-navigation">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Trang chủ</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-tasks"></i>Khoá học
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="courses.html"><i class="far fa-edit"></i>Đang mở đơn đăng ký </a>
-                <a class="dropdown-item" href="courses.html"><i class="fas fa-bars"></i>Tất cả khóa học</a>
-              </div>
+              <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw"></i>Trang chủ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#findMentorModal"><i class="fas fa-user-plus"></i>Tìm gia sư</a>
+              <a class="nav-link" href="#course"><i class="fas fa-code fa-fw"></i>Khóa học</a>
             </li>
             <li class="nav-item">
-              <!-- <a class="btn btn-outline-while btn-register" href="javascript:void(0)" data-toggle="modal" data-target="#logoutModal">Đăng ký</a> -->
-              <a class="btn btn-outline btn-register" href="courses.html">Đăng ký</a>
+              <a class="nav-link" href="#mentor"><i class="fas fa-user fa-fw"></i>Giảng viên - Mentor</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-star-half-alt fa-fw"></i>Giao diện
+                </a>
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="light">
+                    <i class="fas fa-sun fa-fw mr-2"></i>Sáng
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="dark">
+                    <i class="fas fa-moon fa-fw mr-2"></i>Tối
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half mr-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                    </svg>Tự động
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Màu sắc</h6>
+                  <div class="color-theme" style="margin-top: 8px !important;">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Tan" data-bs-color-value="tan" class="color" style="background-color: #c7af8b;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Vàng" data-bs-color-value="yellow" class="color" style="background-color: #f8d06d;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Cam" data-bs-color-value="orange" class="color" style="background-color: #fd7e14;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Đỏ" data-bs-color-value="red" class="color" style="background-color: #dc3545;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="color-theme mb-1">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Lá" data-bs-color-value="green" class="color" style="background-color: #03bb63;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Mòng Két" data-bs-color-value="teal" class="color" style="background-color: #20c997;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Lam" data-bs-color-value="cyan" class="color" style="background-color: #0dcaf0;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Hồng" data-bs-color-value="pink" class="color" style="background-color: #d63384;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
             </li>
           </ul>
           <div id="btn-collapse" class="hamburger-menu d-lg-none rotate">
@@ -62,14 +128,15 @@
   </section>
 
   <section id="cover">
-    <div class="container bg-dark-1d text-left">
+    <div class="container bg-color-secondary">
       <div class="row">
         <div class="col-lg-9">
-          <h1>WE ARE <span class="highlight">ANEST.</span></h1>
-          <p>TIẾT KIỆM THỜI GIAN VÀ TIỀN BẠC CỦA BẠN BẰNG SỰ LỰA CHỌN ĐÚNG ĐẮN_</p>
+          <div class="text-left">
+            <h1>WE ARE <span class="color-highlight">ANEST.</span></h1>
+            <p>TIẾT KIỆM THỜI GIAN CỦA BẠN BẰNG SỰ LỰA CHỌN ĐÚNG ĐẮN_</p>
+          </div>
         </div>
-        <div class="col-lg-3 text-left">
-          <div class="align-left"><a class="btn btn-view-more" href="javascript:void(0)" data-toggle="modal" data-target="#aboutModal">Xem thêm</a></div>
+        <div class="col-lg-3">
           <div class="wrap">
             <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
             <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
@@ -84,80 +151,40 @@
   </section>
 
   <section id="description">
-    <div class="container text-left">
+    <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-5">
-          <h1 class="title">Why <span class="highlight">ANEST?</span></h1>
-          <h6 class="sub-title"><span class="highlight">WE CREATE</span> AWESOME COURSE</h6>
-          <p>
-            <i class="fas fa-quote-left"></i> &nbsp;&nbsp; Chúng tôi giảng dạy dựa trên kinh nghiệm thực tế.
-            </br>Bạn đang ở đúng nơi cần lựa chọn.&nbsp;
-            <i class="fas fa-quote-right"></i>
-          </p>
-          <div class="align-left">
-            <a class="btn btn-outline-bottom-bold btn-highlight btn-success" href="javascript:void(0)" onclick="showMore()">Xem thêm</a>
+          <div class="text-left">
+            <h1 class="title">Why <span class="color-highlight">ANEST?</span></h1>
+            <h6 class="sub-title"><span class="color-highlight">WE CREATE</span> AWESOME COURSE</h6>
+            <p class="quote">
+              <i class="fas fa-quote-left"></i> &nbsp;&nbsp; Chúng tôi giảng dạy dựa trên kinh nghiệm thực tế.
+              </br>Bạn đang ở đúng nơi cần lựa chọn.&nbsp;
+              <i class="fas fa-quote-right"></i>
+            </p>
+            <div>
+              <a class="btn btn-outline-bottom-bold btn-highlight btn-success" href="javascript:void(0)" onclick="showMore()">Xem thêm</a>
+            </div>
           </div>
         </div>
         <div class="col-md-12 col-lg-7">
           <div class="row">
             <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex">
-                <div>
-                  <i class="fas fa-users fa-fw color-violet-red"></i>
-                </div>
-                <div class="title">
-                  <h5>Giảng viên</h5>
-                </div>
-                <div class="overlay">
-                  <div class="text">
-                    Có nhiều kinh nghiệm chuyên môn thực tế, giảng dạy và truyền đạt. Nhiệt tình và tận tâm với học viên, giúp bạn học tập hiệu quả nhất.
-                  </div>
-                </div>
+              <div class="box bg-color-secondary d-flex">
+                <i class="fas fa-chevron-circle-right color-secondary-highlight"></i>
+                <p><span class="color-secondary-highlight font-weight-500">Học sinh THPT</span> muốn sớm bắt đầu sự nghiệp, nhanh chóng nắm bắt cơ hội việc làm hot nhất thời đại 4.0</p>
               </div>
             </div>
             <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex w-85">
-                <div>
-                  <i class="fas fa-file-alt fa-fw color-orange"></i>
-                </div>
-                <div class="title">
-                  <h5>Giáo trình</h5>
-                </div>
-                <div class="overlay">
-                  <div class="text">
-                    Tất cả giáo trình do ANEST tự biên soạn, phù hợp với học viên và có tính thực tiễn, cân bằng giữa lý thuyết và thực hành.
-                  </div>
-                </div>
+              <div class="box bg-color-secondary d-flex">
+                <i class="fas fa-chevron-circle-right color-secondary-highlight"></i>
+                <p><span class="color-secondary-highlight font-weight-500">Sinh viên CNTT</span> chưa vững kiến thức, kỹ năng, muốn học bài bản, cần môi trường học thực tế, đào tạo sát nhu cầu nhân lực doanh nghiệp.</p>
               </div>
             </div>
             <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex w-70">
-                <div>
-                  <i class="fas fa-hand-holding-usd fa-fw color-yellow"></i>
-                </div>
-                <div class="title">
-                  <h5>Học phí</h5>
-                </div>
-                <div class="overlay">
-                  <div class="text">
-                    Chỉ cần trả tiền một lần bạn có thể học lại bao nhiêu lần tùy ý. Giảm giá cho các khóa học nâng cao tiếp theo của khóa học đã tham gia.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="box bg-dark-1d d-flex w-55">
-                <div>
-                  <i class="fas fa-question-circle fa-fw color-aquamarine"></i>
-                </div>
-                <div class="title">
-                  <h5>Hỗ trợ</h5>
-                </div>
-                <div class="overlay">
-                  <div class="text">
-                    Sẵn sàng hỗ trợ 24/7 cho học viên qua các kênh online hoặc trực tiếp ngoài giờ lên lớp.
-                  </div>
-                </div>
+              <div class="box bg-color-secondary d-flex">
+                <i class="fas fa-chevron-circle-right color-secondary-highlight"></i>
+                <p><span class="color-secondary-highlight font-weight-500">Sinh viên hoặc nhân sự trái ngành</span> muốn chuyển ngành sang làm lập trình viên, môi trường làm việc và chế độ đãi ngộ tốt hơn.
               </div>
             </div>
           </div>
@@ -179,10 +206,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-6 m-auto text-right">
-          <h1 class="title"><span class="highlight">Everything</span> you need.</h1>
-          <h6 class="sub-title"><span class="highlight">WE ARE HERE</span> FOR YOU</h6>
-          <p>ANEST có tất cả các khóa học mà bạn cần từ cơ bản đến nâng cao.</p>
+        <div class="col-md-12 col-lg-6 m-auto">
+          <div class="text-right">
+            <h1 class="title"><span class="color-highlight">Everything</span> you need.</h1>
+            <h6 class="sub-title"><span class="color-highlight">WE ARE HERE</span> FOR YOU</h6>
+            <p>ANEST có tất cả các khóa học mà bạn cần từ cơ bản đến nâng cao.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -285,6 +314,120 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="course">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="text-left">
+            <h1 class="title">Courses</h1>
+            <h6 class="sub-title"><span class="color-highlight">READY</span> FOR YOU</h6>
+            <p>Những khóa học sẵn sàng cho bạn tham gia và khám phá.</p>
+            <a class="btn btn-outline-bottom-bold btn-highlight btn-success" href="courses.html">Xem thêm</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="list-course card-row" id="style-online">
+            <div class="card bg-color-secondary">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="icon">
+                    <i class="fab fa-html5" style="color: var(--color-text-orange); margin-top: 8px;"></i>
+                  </div>
+                  <div class="course-name">
+                    <h5>Front-end Developer</h5>
+                  </div>
+                </div>
+                <div class="tags">
+                  <a href="" class="tag">Beginner</a>
+                  <a href="" class="tag">Student</a>
+                  <a href="" class="tag">Worker</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-color-secondary">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="icon">
+                    <i class="fab fa-node-js" style="color: var(--color-text-yellow)"></i>
+                  </div>
+                  <div class="course-name">
+                    <h5>Javascript Essentials</h5>
+                  </div>
+                </div>
+                <div class="tags">
+                  <a href="" class="tag">Người mới bắt đầu</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-color-secondary">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="icon">
+                    <svg style="color: var(--blue)" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                      <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"></path>
+                    </svg>
+                  </div>
+                  <div class="course-name">
+                    <h5>C Essentials</h5>
+                  </div>
+                </div>
+                <div class="tags">
+                  <a href="" class="tag">Beginner</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-color-secondary">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="icon">
+                    <svg style="color: var(--purple)" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                      <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"></path>
+                    </svg>
+                  </div>
+                  <div class="course-name">
+                    <h5>Database / SQL</h5>
+                  </div>
+                </div>
+                <div class="tags">
+                  <a href="" class="tag">Beginner</a>
+                  <a href="" class="tag">Worker</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-color-secondary">
+              <div class="card-header">
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="icon">
+                    <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                  </div>
+                  <div class="course-name">
+                    <h5>Java SE Developer Advanced</h5>
+                  </div>
+                </div>
+                <div class="tags">
+                  <a href="" class="tag">Worker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
       </div>
     </div>
   </section>
@@ -508,7 +651,7 @@
       <div class="row f-top">
         <div class="col-12 col-sm-12 col-md-5 info">
           <img src="assets/images/cover/logo.png">
-          <p>Học lập trình cùng <span class="highlight">ANEST</span></p>
+          <p>Học lập trình cùng <span class="color-secondary-highlight font-weight-500">ANEST</span></p>
           <ul>
             <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
             <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 876 107</li>
@@ -539,7 +682,7 @@
               </a>
             </li>
             <li>
-              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký</a>
+              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký khoá học</a>
             </li>
           </ul>
         </div>
@@ -550,7 +693,7 @@
     <div class="container">
       <div class="row f-bot">
         <div class="col-12 col-sm-12 col-md-6 clock">
-          <i class="far fa-clock color-tan fa-fw mr-1"></i><span id=clock></span>
+          <i class="far fa-clock color-secondary-highlight fa-fw mr-1"></i><span id=clock></span>
         </div>
         <div class="col-12 col-sm-12 col-md-6 copyright">
           <span>Copyright © 2020 ANEST ACADEMY</span>
@@ -559,35 +702,12 @@
     </div>
   </section>
 
-
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
   </a>
-
-  <!-- Modal logout-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="text-center">
-            <div class="text-danger mb-4">
-              <i class="fas fa-exclamation-triangle fa-3x"></i>
-            </div>
-            <h4>Tính năng đang phát triển. Vui lòng quay lại sau!</h4>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-md btn-dark-3" data-dismiss="modal">Đóng</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal about-->
   <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
@@ -649,7 +769,7 @@
 
   <!-- Toast error -->
   <div style="position: fixed; top: 100px; right: 20px; z-index: 9999;">
-    <div id="toastError" class="toast toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+    <div id="toastError" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
       <div class="toast-body">
         Vui lòng điền đầy đủ tất cả thông tin.
       </div>
@@ -658,7 +778,7 @@
 
   <!-- Toast success -->
   <div style="position: fixed; top: 100px; right: 20px; z-index: 9999;">
-    <div id="toastSuccess" class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
+    <div id="toastSuccess" class="toast hide toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
       <div class="toast-body">
         Gửi thông tin thành công, chúng tôi sẽ phản hồi lại nhanh nhất có thể. Xin cảm ơn!
       </div>
@@ -668,14 +788,16 @@
   <!-- Bootstrap core JavaScript-->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap/popper.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="assets/js/anest/index.js"></script>
   <script src="assets/js/anest/anest.js"></script>
   <script src="assets/js/anest/jarallax.min.js"></script>
   <script src="assets/js/anest/animation.js"></script>
+  <script src="assets/js/anest/color-modes.js"></script>
+  <script src="assets/js/anest/index.js"></script>
+
+  <!-- Custom scripts for current pages-->
   <script src="assets/js/anest/contact.js"></script>
 </body>
 

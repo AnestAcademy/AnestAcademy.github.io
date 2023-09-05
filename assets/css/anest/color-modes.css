@@ -42,6 +42,7 @@ html[data-theme='auto'] {
   /* text-color -------------------------------------- */
   --primary-text: #444;
   --secondary-text: #555;
+  --third-text: #888;
   --highlight-text: #333;
   /* scroll-bar -------------------------------------- */
   --scrollbar-thumb-background: #ccc;
@@ -87,6 +88,7 @@ html[data-theme='light'] {
   /* text-color -------------------------------------- */
   --primary-text: #444;
   --secondary-text: #555;
+  --third-text: #888;
   --highlight-text: #333;
   /* scroll-bar -------------------------------------- */
   --scrollbar-thumb-background: #ccc;
@@ -132,6 +134,7 @@ html[data-theme='dark'] {
   /* text-color -------------------------------------- */
   --primary-text: #e4e6eb;
   --secondary-text: #999;
+  --third-text: #888;
   --highlight-text: #fff;
   /* scroll-bar -------------------------------------- */
   --scrollbar-thumb-background: #2e2e2e;

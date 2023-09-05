@@ -1,23 +1,3 @@
-/**/
-
-.show-ui {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
-@media (max-width: 991.98px) {
-  .show-ui {
-    display: none;
-  }
-  .hidden {
-    display: block;
-  }
-}
-
-
 /* Section cover -------------------------------------------------------------------- */
 
 #cover img {

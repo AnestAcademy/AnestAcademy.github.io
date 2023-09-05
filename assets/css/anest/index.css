@@ -1,198 +1,59 @@
-/* ----- Common ----- */
-
-h1.title {
-  font-size: 55px;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  font-style: normal;
-}
-
-h6.sub-title {
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-style: normal;
-}
-
-.media {
-  align-items: center;
-}
+/* Section cover --------------------------------------------------------------------- */
 
 
-/* ----- Section cover ----- */
-
-@media (max-width: 1199.98px) {
-  #cover .container {
-    max-width: 930px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #cover {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  #cover .container {
-    max-width: 690px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  #cover {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  #cover .container {
-    max-width: 540px;
-    padding: 100px 50px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  #cover {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  #cover .container {
-    max-width: 92%;
-    padding: 100px 40px 80px;
-  }
-  #cover h1 {
-    font-size: 50px;
-    text-align: center;
-  }
-  #cover p {
-    text-align: center;
-  }
-  #cover .btn-view-more {
-    padding: 10px 50px;
-    margin: 30px 0;
-  }
-  #cover .text-left {
-    text-align: center !important;
-  }
-}
-
-
-/* ----- Section description ----- */
+/* Section description --------------------------------------------------------------- */
 
 #description {
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 0;
 }
 
-#description p {
+#description .quote {
   margin: 40px 0 40px;
-  font-style: normal;
   font-style: italic;
 }
 
-#description p i {
+#description .quote i {
   font-size: 8px;
   position: absolute;
   margin-top: 5px;
 }
 
 #description .box {
-  padding: 25px 50px;
+  padding: 16px 24px;
   border-radius: 20px;
   margin-bottom: 20px;
-  position: relative;
-  transition: .5s;
+  transition: .3s;
+  align-items: center;
+}
+
+#description .box p {
+  margin: 0;
 }
 
 #description .box:hover {
-  /* transform: scale(1.08); */
-  transform: translateX(32px);
+  transform: translateX(24px);
   cursor: pointer;
 }
 
 #description .box i {
-  margin-right: 50px;
-  font-size: 50px;
-}
-
-#description .box h5 {
-  display: inline;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  margin: 10px 0;
-}
-
-#description .box .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#description .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #252525;
-  border-radius: 20px;
-  line-height: 1.5;
-}
-
-#description .is-displayed {
-  opacity: 1;
-}
-
-#description .box:hover .overlay {
-  opacity: 1;
-}
-
-#description .text {
-  color: #ccc;
-  font-size: 16px;
-  position: absolute;
-  text-align: left;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  padding: 25px 20px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-right: 24px;
+  font-size: 32px;
 }
 
 @media (max-width: 991.98px) {
   #description {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 0;
   }
-  #description h1 {
-    margin-top: 15px;
+  #description .box:hover {
+    transform: none;
   }
 }
 
 @media (max-width: 575.98px) {
-  #description {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-  #description h1 {
-    font-size: 50px;
-  }
-  #description .btn-show-more {
-    margin: 0 0 50px;
-  }
-  #description .text-left {
-    text-align: center !important;
-  }
-  #description .box:hover {
-    transform: translateY(10px);
-  }
-  #description .text {
-    font-size: 15px;
-    padding: 20px 15px;
+  #description .box {
+    margin-bottom: 16px;
   }
 }
 
@@ -449,6 +310,129 @@ h6.sub-title {
     -webkit-transform: none;
     transform: none;
   }
+}
+
+
+/* -------------------------------- */
+
+.card-row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 20px;
+  padding: 24px 0;
+}
+
+.card-row .card {
+  flex-basis: 260px;
+  height: 380px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: -5rem;
+  transition: .3s;
+  margin-right: 0.25rem;
+  border-radius: 20px;
+  box-shadow: -15px 15px 20px 0px var(--body-background);
+}
+
+.card-row .card:first-child {
+  margin-left: 0;
+}
+
+.card-row .card:focus-within,
+.card-row .card:hover {
+  -webkit-transform: translateY(-16px);
+  transform: translateY(-16px);
+}
+
+.card-row .card:focus-within~.card,
+.card-row .card:hover~.card {
+  -webkit-transform: translateX(5.25rem);
+  transform: translateX(5.25rem);
+}
+
+.card-row .card .card-header {
+  background-color: transparent;
+  border-bottom: none;
+  border-radius: .55rem .55rem 0 0;
+  padding: 1rem 1.5rem;
+}
+
+.card-row .card .card-body {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-row .card .card-body .icon {
+  background-color: var(--third-background);
+  border-radius: 50%;
+  height: 70px;
+  flex-basis: 70px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-row .card .card-body .icon i {
+  font-size: 45px;
+}
+
+.card-row .card .card-body .course-name {
+  display: flex;
+  align-items: center;
+}
+
+.card-row .card .card-body .course-name h5 {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.card-row .card .card-body .tags {
+  margin-top: 20px;
+}
+
+.card-row .card .card-body .tags .tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: var(--third-text);
+  border: 2px solid var(--fourth-border-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  transition: .3s;
+}
+
+.card-row .card .card-body .tags .tag:hover {
+  color: var(--secondary-highlight-text);
+  text-decoration: none;
+}
+
+#style-online::-webkit-scrollbar-track {
+  border-radius: .5rem;
+  background-color: var(--body-background);
+  border: 1px solid var(--fourth-background);
+}
+
+#style-online::-webkit-scrollbar {
+  height: .5rem;
+  background-color: var(--fourth-background);
+  border-radius: .5rem;
+}
+
+#style-online::-webkit-scrollbar-thumb {
+  background-color: var(--fourth-background);
+  border-radius: 10px;
 }
 
 
