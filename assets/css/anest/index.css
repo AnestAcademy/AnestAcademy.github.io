@@ -436,19 +436,15 @@
 }
 
 
-/* ----- Section follow  ----- */
+/* Section follow  ------------------------------------------------------------------ */
 
 #follow {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 0;
 }
 
 #follow .text-right p {
-  margin-top: 30px;
-}
-
-#follow a {
-  color: #ccc;
+  margin-bottom: 50px;
 }
 
 #follow a:hover {
@@ -456,13 +452,9 @@
 }
 
 #follow .box {
-  padding: 20px 28px 16px;
+  padding: 16px 20px 12px;
   border-radius: 20px;
-  margin-top: 30px;
-  position: relative;
   transition: .5s;
-  display: block;
-  background-color: #1d1d1d;
 }
 
 #follow .box:hover {
@@ -475,26 +467,26 @@
 }
 
 #follow .box .media .media-body h4 {
-  font-size: 16px;
+  font-size: 17px;
+  margin-top: -1px;
   margin-bottom: 4px;
 }
 
 #follow .box .media .media-body p {
   margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-text);
 }
 
 @media (max-width: 991.98px) {
   #follow {
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 }
 
 @media (max-width: 575.98px) {
-  #follow {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
   #follow .text-right h1 {
     font-size: 50px;
   }
