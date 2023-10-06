@@ -1,5 +1,9 @@
 /* Section mentor ------------------------------------------------------------------- */
 
+sup {
+  top: -20px;
+}
+
 #mentor {
   padding-top: 100px;
   padding-bottom: 0;
@@ -127,7 +131,7 @@
 }
 
 #mentor-detail .sub-title-info {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: 400;
@@ -177,7 +181,7 @@
 }
 
 #mentor-detail .experiences .box sup {
-  font-size: 65%;
+  font-size: 48%;
   font-weight: 400;
 }
 
@@ -229,7 +233,7 @@
 }
 
 #mentor-detail .profile .box p span {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #mentor-detail .profile .box p.workplace {

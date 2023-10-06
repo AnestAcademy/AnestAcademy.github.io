@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="assets/images/cover/favicon.ico">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/anest/color-modes.css">
+  <link rel="stylesheet" href="assets/css/anest/common.css">
+  <link rel="stylesheet" href="assets/css/anest/animation.css">
+  <link rel="stylesheet" href="assets/css/anest/courses_2.css">
+  <!-- Title -->
+  <title>Anest - Courses</title>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
+
+  <section id="menu">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg justify-content">
+        <div class="site-branding">
+          <a href="index.html">
+            <img src="assets/images/cover/logo.png">
+          </a>
+        </div>
+        <div class="site-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw"></i>Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuCourses" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-tasks"></i>Khoá học
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuCourses">
+                <a class="dropdown-item" href="#beginners"><i class="fas fa-angle-right fa-fw"></i>Người mới bắt đầu &nbsp;&nbsp;</a>
+                <a class="dropdown-item" href="#workers"><i class="fas fa-angle-right fa-fw"></i>Người đi làm</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#follow"><i class="far fa-edit fa-fw"></i>Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-star-half-alt fa-fw"></i>Giao diện
+                </a>
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="light">
+                    <i class="fas fa-sun fa-fw mr-2"></i>Sáng
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="dark">
+                    <i class="fas fa-moon fa-fw mr-2"></i>Tối
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" data-bs-theme-value="auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half mr-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                    </svg>Tự động
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Màu sắc</h6>
+                  <div class="color-theme" style="margin-top: 8px !important;">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Tan" data-bs-color-value="tan" class="color" style="background-color: #c7af8b;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Vàng" data-bs-color-value="yellow" class="color" style="background-color: #f8d06d;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Cam" data-bs-color-value="orange" class="color" style="background-color: #fd7e14;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Đỏ" data-bs-color-value="red" class="color" style="background-color: #dc3545;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="color-theme mb-1">
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Lá" data-bs-color-value="green" class="color" style="background-color: #03bb63;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Xanh Mòng Két" data-bs-color-value="teal" class="color" style="background-color: #20c997;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Lam" data-bs-color-value="cyan" class="color" style="background-color: #0dcaf0;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Màu Hồng" data-bs-color-value="pink" class="color" style="background-color: #d63384;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </li>
+          </ul>
+          <div id="btn-collapse" class="hamburger-menu d-lg-none rotate">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="cover">
+    <div class="container bg-color-secondary">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="text-left">
+            <h1>COURSES <span class="color-highlight"> FOR YOU</span></h1>
+            <p>Các khóa học sẵn sàng cho bạn</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="wrap">
+            <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
+            <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
+            <img src="assets/images/3.svg" alt="Mobirise" class="image-3 animated-elements3">
+            <img src="assets/images/4.svg" alt="Mobirise" class="image-4 animated-elements4">
+            <img src="assets/images/5.svg" alt="Mobirise" class="image-5 animated-elements5">
+            <img src="assets/images/6.svg" alt="Mobirise" class="image-6 animated-elements6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div id="beginners" class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-4">
+          <div class="text-left">
+            <h1 class="title">for<span class="color-highlight"> Beginners</span></h1>
+            <h6 class="sub-title"><span class="color-highlight">KHOÁ HỌC</span></h6>
+            <h6 class="sub-title mt-3">DÀNH CHO HỌC SINH - SINH VIÊN</h6>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box bg-color-secondary d-flex">
+                <div class="icon">
+                  <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                </div>
+                <div class="des">
+                  <h4>Java SE Developer Advanced</h4>
+                  <p class="mt-2 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS</p>
+                  <div class="box-footer">
+                    <div class="duration">
+                      <i class="far fa-clock mr-1"></i><span>24h</span>
+                    </div>
+                    <div class="price">
+                      2.000.000 VNĐ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-color-secondary d-flex">
+                <div class="icon">
+                  <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                </div>
+                <div class="des">
+                  <h4>Java SE Developer Advanced</h4>
+                  <p class="mt-2 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS</p>
+                  <div class="box-footer">
+                    <div class="duration">
+                      <i class="far fa-clock mr-1"></i><span>24h</span>
+                    </div>
+                    <div class="price">
+                      2.000.000 VNĐ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-color-secondary d-flex">
+                <div class="icon">
+                  <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                </div>
+                <div class="des">
+                  <h4>Java SE Developer Advanced</h4>
+                  <p class="mt-2 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS</p>
+                  <div class="box-footer">
+                    <div class="duration">
+                      <i class="far fa-clock mr-1"></i><span>24h</span>
+                    </div>
+                    <div class="price">
+                      2.000.000 VNĐ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="workers" class="container work">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box bg-color-secondary d-flex">
+                <div class="icon">
+                  <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                </div>
+                <div class="des">
+                  <h4>Java SE Developer Advanced</h4>
+                  <p class="mt-2 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS</p>
+                  <div class="box-footer">
+                    <div class="duration">
+                      <i class="far fa-clock mr-1"></i><span>24h</span>
+                    </div>
+                    <div class="price">
+                      2.000.000 VNĐ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-color-secondary d-flex">
+                <div class="icon">
+                  <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                </div>
+                <div class="des">
+                  <h4>Java SE Developer Advanced</h4>
+                  <p class="mt-2 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS</p>
+                  <div class="box-footer">
+                    <div class="duration">
+                      <i class="far fa-clock mr-1"></i><span>24h</span>
+                    </div>
+                    <div class="price">
+                      2.000.000 VNĐ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="box bg-color-secondary d-flex">
+                <div class="icon">
+                  <i class="fab fa-java" style="color: var(--color-text-red)"></i>
+                </div>
+                <div class="des">
+                  <h4>Java SE Developer Advanced</h4>
+                  <p class="mt-2 mb-0 text-left">MindX xây dựng lộ trình X-Career từ cơ bản đến nâng cao, có 1 kỳ học chuyên sâu về một nền tảng Website hoặc Blockchain, cập nhật những công nghệ mới nhất như JavaScript, NodeJS</p>
+                  <div class="box-footer">
+                    <div class="duration">
+                      <i class="far fa-clock mr-1"></i><span>24h</span>
+                    </div>
+                    <div class="price">
+                      2.000.000 VNĐ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="text-right">
+            <h1 class="title">for<span class="color-highlight"> Workers</span></h1>
+            <h6 class="sub-title sub-title-mb"><span class="color-highlight">KHOÁ HỌC</span> DÀNH CHO NGƯỜI ĐI LÀM</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="follow">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-right">
+            <h1 class="title">Follow <span class="color-highlight">US</span></h1>
+            <h6 class="sub-title"><span class="color-highlight">KEEP</span> IN TOUCH</h6>
+            <p>Cập nhật những tin tức - bài học miễn phí nhanh nhất.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="https://www.facebook.com/groups/anest.learning" target="_blank">
+            <div class="box bg-color-secondary">
+              <div class="media">
+                <i class="fab fa-facebook color-blue"></i>
+                <div class="media-body">
+                  <h4>Facebook</h4>
+                  <p>NEWS FEED</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="https://www.youtube.com/channel/UCP_JjK3orweIJ23HZ8kniJA" target="_blank">
+            <div class="box bg-color-secondary">
+              <div class="media">
+                <i class="fab fa-youtube color-red"></i>
+                <div class="media-body">
+                  <h4>YouTube</h4>
+                  <p>VIDEO</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="mailto:anest.academy@gmail.com">
+            <div class="box bg-color-secondary">
+              <div class="media">
+                <i class="far fa-envelope color-gg"></i>
+                <div class="media-body">
+                  <h4>Gmail</h4>
+                  <p>ANEST.ACADEMY</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="tel:0973876107">
+            <div class="box bg-color-secondary">
+              <div class="media">
+                <i class="fas fa-phone-square-alt color-green"></i>
+                <div class="media-body">
+                  <h4>Mobile</h4>
+                  <p>0973 876 107</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box bg-color-secondary">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <h1 class="title">Contact <span class="color-highlight">US</span></h1>
+                <p>Gửi thông tin và nhận tư vấn hoàn toàn miễn phí các khoá học phù hợp nhất với bạn.</p>
+                <div class="wrap">
+                  <img src="assets/images/1.svg" alt="Mobirise" class="image-1 animated-elements1">
+                  <img src="assets/images/2.svg" alt="Mobirise" class="image-2 animated-elements2">
+                  <img src="assets/images/3.svg" alt="Mobirise" class="image-3 animated-elements3">
+                  <img src="assets/images/4.svg" alt="Mobirise" class="image-4 animated-elements4">
+                  <img src="assets/images/5.svg" alt="Mobirise" class="image-5 animated-elements5">
+                  <img src="assets/images/6.svg" alt="Mobirise" class="image-6 animated-elements6">
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <form id="contact-form">
+                  <input type="hidden" name="time" id="time-contact" />
+                  <div class="form-contact">
+                    <div class="form-row">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="name" id="name-contact" placeholder="Họ và tên">
+                        </div>
+                      </div>
+                      <div class="col-md-7">
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="email" id="email-contact" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="phone-number" id="phone-number-contact" placeholder="Số điện thoại">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="2" name="content" id="content-contact" placeholder="Nhập nội dung"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-1 mb-2" id="submit-form-contact">
+                        <i class="fab fa-telegram-plane fa-fw mr-1"></i>Gửi thông tin
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row f-top">
+        <div class="col-12 col-sm-12 col-md-5 info">
+          <img src="assets/images/cover/logo.png">
+          <p>Học lập trình cùng <span class="color-secondary-highlight font-weight-500">ANEST</span></p>
+          <ul>
+            <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
+            <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 876 107</li>
+            <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>Thôn 3 - Thạch Hoà - Thạch Thất - HN</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 course">
+          <h6>KHÓA HỌC</h6>
+          <p>Các khóa học lập trình sẵn sàng</p>
+          <ul>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Database</li>
+            <li>HTML/CSS</li>
+            <li>VueJS</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 social">
+          <h6>FOLLOW US</h6>
+          <p>Cập nhật những tin tức - bài học nhanh nhất</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/groups/anest.learning" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCP_JjK3orweIJ23HZ8kniJA" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký khoá học</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="signature">
+    <div class="container">
+      <div class="row f-bot">
+        <div class="col-12 col-sm-12 col-md-6 clock">
+          <i class="far fa-clock color-secondary-highlight fa-fw mr-1"></i><span id=clock></span>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 copyright">
+          <span>Copyright © 2020 ANEST ACADEMY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top" href="#page-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="assets/js/anest/anest.js"></script>
+  <script src="assets/js/anest/color-modes.js"></script>
+  <script src="assets/js/anest/animation.js"></script>
+
+  <!-- Custom scripts for current pages-->
+  <script src="assets/js/anest/contact.js"></script>
+</body>
+
+</html>

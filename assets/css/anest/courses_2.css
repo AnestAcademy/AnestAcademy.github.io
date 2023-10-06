@@ -14,76 +14,122 @@ hr {
   padding-bottom: 0;
 }
 
-#courses .box {
+#beginners .box {
+  padding: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
-  transition: 0.5s;
-  padding-top: 26px;
-  border: 1px solid var(--secondary-border-color);
-  color: var(--primary-text);
-  display: block;
+  transition: .3s;
+  align-items: center;
 }
 
-#courses .box:hover {
+#beginners .box:hover {
+  transform: translateX(20px);
   cursor: pointer;
-  transform: scale(1.04);
-  text-decoration: none;
 }
 
-#courses .box .icon-cover {
+@media (max-width: 991.98px) {
+  #beginners {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  #beginners .box:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #beginners .box {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 575.98px) {}
+
+
+/**/
+
+#workers {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#workers .box {
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: .3s;
+  align-items: center;
+}
+
+#workers .box:hover {
+  transform: translateX(20px);
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  #workers {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  #workers .box:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #workers .box {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 575.98px) {}
+
+
+/**/
+
+#courses .box .icon {
   background-color: var(--third-background);
-  border-radius: 50%;
-  height: 86px;
-  width: 86px;
-  margin: 0 auto;
+  border-radius: 18px;
+  height: 140px;
+  flex-basis: 140px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#courses .box .icon-cover i {
-  font-size: 48px;
+#courses .box .icon i {
+  font-size: 100px;
 }
 
-#courses .box .box-body {
-  padding: 16px 18px 12px;
-  width: 100%;
+#courses .box .des h4 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
 }
 
-#courses .box .box-body h4 {
-  font-size: 17px;
-  line-height: 1.5;
-  min-height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#courses .box .box-body p {
-  font-size: 15px;
-  min-height: 132px;
+#courses .box .des>p {
+  font-size: 16px;
 }
 
 #courses .box .box-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 18px 12px;
+  padding: 10px 0 0;
   font-weight: 400;
-  border-top: 1px solid var(--third-border-color);
+  line-height: 1;
 }
 
 #courses .box .box-footer .price {
   color: var(--secondary-highlight-text);
 }
-
-#courses .work {
-  padding-top: 100px;
-}
-
-@media (max-width: 991.98px) {}
-
-@media (max-width: 575.98px) {}
 
 
 /* Section follow  ------------------------------------------------------------------ */
@@ -273,23 +319,23 @@ hr {
 #courses .col-md-6,
 #courses .col-lg-4,
 #courses .col-xl-3 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 #courses .row {
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 #follow .col-sm-6,
 #follow .col-md-6,
 #follow .col-lg-3 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 #follow .row {
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: -12px;
+  margin-left: -12px;
 }

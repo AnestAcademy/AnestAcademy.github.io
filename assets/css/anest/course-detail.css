@@ -122,7 +122,7 @@
 }
 
 #object .box:hover {
-  transform: translateX(24px);
+  transform: translateX(20px);
   cursor: pointer;
 }
 
@@ -821,22 +821,22 @@ input:-webkit-autofill {
 
 #highlight-course .col-md-6,
 #highlight-course .col-lg-3 {
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #highlight-course .row {
-  margin-right: -12px;
-  margin-left: -12px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 #promotion .col-md-12,
 #promotion .col-lg-6 {
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #promotion .row {
-  margin-right: -12px;
-  margin-left: -12px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
