@@ -10,12 +10,12 @@ hr {
 /* Section courses  ----------------------------------------------------------------- */
 
 #beginners {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 0;
 }
 
 #beginners .box {
-  padding: 20px;
+  padding: 18px;
   border-radius: 20px;
   margin-bottom: 20px;
   transition: .3s;
@@ -93,9 +93,9 @@ hr {
 
 #courses .box .icon {
   background-color: var(--third-background);
-  border-radius: 18px;
-  height: 140px;
-  flex-basis: 140px;
+  border-radius: 12px;
+  height: 106px;
+  flex-basis: 106px;
   flex-grow: 0;
   flex-shrink: 0;
   margin-right: 20px;
@@ -105,13 +105,13 @@ hr {
 }
 
 #courses .box .icon i {
-  font-size: 100px;
+  font-size: 75px;
 }
 
 #courses .box .des h4 {
   font-size: 20px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #courses .box .des>p {
@@ -129,6 +129,7 @@ hr {
 
 #courses .box .box-footer .price {
   color: var(--secondary-highlight-text);
+  font-weight: 500;
 }
 
 
