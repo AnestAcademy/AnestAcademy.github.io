@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/anest/animation.css">
   <link rel="stylesheet" href="assets/css/anest/mentor.css">
   <!-- Title -->
-  <title>Anest - Mentor</title>
+  <title>Anest - Mentors</title>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
@@ -35,13 +35,7 @@
               <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw"></i>Trang chủ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#highlight-course"><i class="fas fa-star-of-david fa-fw"></i>Nổi bật</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#overview"><i class="fas fa-code fa-fw"></i>Khóa học</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#promotion"><i class="fas fa-percent fa-fw" style="font-size: 15px;"></i>Khuyến mãi</a>
+              <a class="nav-link" href="#mentor"><i class="fas fa-user-friends fa-fw mr-1"></i>Giảng viên - Mentor</a>
             </li>
             <li class="nav-item">
               <li class="nav-item dropdown">
@@ -157,95 +151,409 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="text-right">
-            <h1 class="title">Mentor<span class="color-highlight"> info</span></h1>
-            <h6 class="sub-title sub-title-mb"><span class="color-highlight">THÔNG TIN - GIỚI THIỆU VỀ</span> MENTOR</h6>
+            <h1 class="title">Lecturers<span class="color-highlight"> & </span>Mentors</h1>
+            <h6 class="sub-title sub-title-mb">DANH SÁCH<span class="color-highlight"> GIẢNG VIÊN - NGƯỜI HƯỚNG DẪN</span></h6>
           </div>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-md-4">
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <div class="mentor-pill bg-color-secondary active" id="v-mentor-1-tab" data-toggle="pill" data-target="#v-mentor-1" type="button" role="tab" aria-controls="v-mentor-1" aria-selected="true">
-              <div class="media">
-                <div class="circle">
-                  <img class="avatar" src="assets/images/mentor/avatar.png" alt="avatar">
-                </div>
-                <div class="media-body">
-                  <div class="mentor-summary">
-                    <h4>Đinh Tuấn Anh</h4>
-                    <p>Giảng viên JAVA</p>
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item col-12 col-sm-6 col-lg-3" role="presentation">
+            <div class="single-advisor-profile" id="pills-mentor-1-tab" data-toggle="pill" data-target="#pills-mentor-1" type="button" role="tab" aria-controls="pills-mentor-1" aria-selected="true">
+              <!-- Team Thumb-->
+              <div class="advisor-thumb">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+              </div>
+              <!-- Team Details-->
+              <div class="single-advisor-details-info">
+                <h4>Đinh Tuấn Anh</h4>
+                <p class="designation" style="font-size: 14px;">Giảng viên</p>
+                <p class="designation">Java / Spring / Angular</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item col-12 col-sm-6 col-lg-3" role="presentation">
+            <div class="single-advisor-profile" id="pills-mentor-2-tab" data-toggle="pill" data-target="#pills-mentor-2" type="button" role="tab" aria-controls="pills-mentor-2" aria-selected="false">
+              <!-- Team Thumb-->
+              <div class="advisor-thumb">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+              </div>
+              <!-- Team Details-->
+              <div class="single-advisor-details-info">
+                <h4>Trương Minh Vương</h4>
+                <p class="designation" style="font-size: 14px;">Giảng viên</p>
+                <p class="designation">Angular / React</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item col-12 col-sm-6 col-lg-3" role="presentation">
+            <div class="single-advisor-profile" id="pills-mentor-3-tab" data-toggle="pill" data-target="#pills-mentor-3" type="button" role="tab" aria-controls="pills-mentor-3" aria-selected="false">
+              <!-- Team Thumb-->
+              <div class="advisor-thumb">
+                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+              </div>
+              <!-- Team Details-->
+              <div class="single-advisor-details-info">
+                <h4>Hà Hoàng Huy</h4>
+                <p class="designation" style="font-size: 14px;">Giảng viên</p>
+                <p class="designation">Java / SQL / HTML-CSS</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item col-12 col-sm-6 col-lg-3" role="presentation">
+            <div class="single-advisor-profile" id="pills-mentor-4-tab" data-toggle="pill" data-target="#pills-mentor-4" type="button" role="tab" aria-controls="pills-mentor-4" aria-selected="false">
+              <!-- Team Thumb-->
+              <div class="advisor-thumb">
+                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+              </div>
+              <!-- Team Details-->
+              <div class="single-advisor-details-info">
+                <h4>Tô Hoàng Anh</h4>
+                <p class="designation" style="font-size: 14px;">Giảng viên</p>
+                <p class="designation">Java / SQL / HTML-CSS</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="mentor-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-mentor-1" role="tabpanel" aria-labelledby="pills-mentor-1-tab">
+              <div class="row">
+                <div class="col-md-12 col-lg-5">
+                  <div class="text-left">
+                    <h1 class="title">Đinh<span class="color-highlight"> Tuấn Anh</span></h1>
+                    <h6 class="sub-title mt-4"><span class="color-highlight">GIẢNG VIÊN BỘ MÔN</span></h6>
+                    <h6 class="sub-title mt-3">JAVA / SPRING / ANGULAR</h6>
                   </div>
                 </div>
-                <div class="icon">
-                  <i class="fas fa-caret-right"></i>
+                <div class="col-md-12 col-lg-7 right">
+
+                  <!-- Profile -->
+                  <!-- <div class="row profile justify-content-end">
+                    <div class="col-12 col-md-6">
+                      <div class="box box-text bg-color-secondary border-radius-20">
+                        <p class="font-weight-500">KỸ SƯ KỸ THUẬT PHẦN MỀM</p>
+                        <p>FPT University</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="box box-text bg-color-secondary border-radius-20">
+                        <p class="font-weight-500">TECHNICAL ARCHITECT</p>
+                        <p>FPT Software</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="box box-text bg-color-secondary border-radius-20">
+                        <p class="font-weight-500">GIẢNG VIÊN</p>
+                        <p>FPT Software Academy</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="box box-text bg-color-secondary border-radius-20">
+                        <p class="font-weight-500">GIẢNG VIÊN</p>
+                        <p>FPT University</p>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <!-- Profile -->
+                  <div class="row profile">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <!-- <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">KỸ SƯ KỸ THUẬT PHẦN MỀM</span></p>
+                          <p class="workplace">FPT University</p>
+                        </div> -->
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">TECHNICAL ARCHITECT</span></p>
+                          <p class="workplace">FPT Software</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">GIẢNG VIÊN</span></p>
+                          <p class="workplace">FPT University</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">GIẢNG VIÊN</span></p>
+                          <p class="workplace">FPT Software Academy</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">8<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm làm việc với Javascript, HTML/CSS.</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">6<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm làm việc với vị trí Front-end Developer, các dự án về Angular, VueJS.</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">8<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm làm việc với Java và các dự án Java.</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">5<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm làm việc với các framework Spring MVC, Spring Boot.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm giảng dạy</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">3<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm giảng dạy tại Đại học FPT Hà Nội.</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">3<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm giảng dạy tại FPT Software Academy. Học viện lập trình trực thuộc FPT Software.</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">3<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm giảng dạy tại ANEST Academy.
+                          </p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">8<sup class="ml-1">năm</sup></span></p>
+                          <p>kinh nghiệm giảng dạy cho sinh viên FPT.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Certificate -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Chứng chỉ chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences certificate">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">OCA</span></p>
+                          <p class="certificate-name">Oracle Certified Associate Java SE 8 Programmer</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-400">IBSTPI</span></p>
+                          <p class="certificate-name">The International Board of Standards for Training, Performance and Instruction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mentor-pill bg-color-secondary" id="v-mentor-2-tab" data-toggle="pill" data-target="#v-mentor-2" type="button" role="tab" aria-controls="v-mentor-2" aria-selected="true">
-              <div class="media">
-                <div class="circle">
-                  <img class="avatar" src="assets/images/mentor/avatar.png" alt="avatar">
-                </div>
-                <div class="media-body">
-                  <div class="mentor-summary">
-                    <h4>Hà Hoàng Huy</h4>
-                    <p>Giảng viên JAVA</p>
+
+            <div class="tab-pane fade" id="pills-mentor-2" role="tabpanel" aria-labelledby="pills-mentor-2-tab">
+              <div class="row">
+                <div class="col-md-12 col-lg-5">
+                  <div class="text-left">
+                    <h1 class="title">Trương<span class="color-highlight"> Minh Vương</span></h1>
+                    <h6 class="sub-title"><span class="color-highlight">GIẢNG VIÊN BỘ MÔN</span></h6>
+                    <h6 class="sub-title mt-3">ANGULAR / REACT</h6>
                   </div>
                 </div>
-                <div class="icon">
-                  <i class="fas fa-caret-right"></i>
+                <div class="col-md-12 col-lg-7 right">
+                  <!-- Profile -->
+                  <div class="row profile">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">KỸ SƯ KỸ THUẬT PHẦN MỀM</span></p>
+                          <p class="workplace">FPT University</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">FRONT-END DEVELOPER</span></p>
+                          <p class="workplace">FPT Software</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences justify-content-end">
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm giảng dạy</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences justify-content-end">
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Chứng chỉ chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences certificate justify-content-end">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mentor-pill bg-color-secondary" id="v-mentor-3-tab" data-toggle="pill" data-target="#v-mentor-3" type="button" role="tab" aria-controls="v-mentor-3" aria-selected="true">
-              <div class="media">
-                <div class="circle">
-                  <img class="avatar" src="assets/images/mentor/avatar.png" alt="avatar">
-                </div>
-                <div class="media-body">
-                  <div class="mentor-summary">
-                    <h4>Trương Minh Vương</h4>
-                    <p>Giảng viên FRONT-END</p>
+
+            <div class="tab-pane fade" id="pills-mentor-3" role="tabpanel" aria-labelledby="pills-mentor-3-tab">
+              <div class="row">
+                <div class="col-md-12 col-lg-5">
+                  <div class="text-left">
+                    <h1 class="title">Hà<span class="color-highlight"> Hoàng Huy</span></h1>
+                    <h6 class="sub-title"><span class="color-highlight">GIẢNG VIÊN BỘ MÔN</span></h6>
+                    <h6 class="sub-title mt-3">JAVA / SQL / HTML-CSS</h6>
                   </div>
                 </div>
-                <div class="icon">
-                  <i class="fas fa-caret-right"></i>
+                <div class="col-md-12 col-lg-7 right">
+                  <!-- Profile -->
+                  <div class="row profile">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">KỸ SƯ KỸ THUẬT PHẦN MỀM</span></p>
+                          <p class="workplace">HaUI University</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">BACK-END DEVELOPER</span></p>
+                          <p class="workplace">FPT Software</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences justify-content-end">
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm giảng dạy</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences justify-content-end">
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Chứng chỉ chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences certificate justify-content-end">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mentor-pill bg-color-secondary" id="v-mentor-4-tab" data-toggle="pill" data-target="#v-mentor-4" type="button" role="tab" aria-controls="v-mentor-4" aria-selected="true">
-              <div class="media">
-                <div class="circle">
-                  <img class="avatar" src="assets/images/mentor/avatar.png" alt="avatar">
-                </div>
-                <div class="media-body">
-                  <div class="mentor-summary">
-                    <h4>Tô Hoàng Anh</h4>
-                    <p>Giảng viên JAVA</p>
+
+            <div class="tab-pane fade" id="pills-mentor-4" role="tabpanel" aria-labelledby="pills-mentor-4-tab">
+              <div class="row">
+                <div class="col-md-12 col-lg-5">
+                  <div class="text-left">
+                    <h1 class="title">Tô<span class="color-highlight"> Hoàng Anh</span></h1>
+                    <h6 class="sub-title"><span class="color-highlight">GIẢNG VIÊN BỘ MÔN</span></h6>
+                    <h6 class="sub-title mt-3">JAVA / SQL / HTML-CSS</h6>
                   </div>
                 </div>
-                <div class="icon">
-                  <i class="fas fa-caret-right"></i>
+                <div class="col-md-12 col-lg-7 right">
+                  <!-- Profile -->
+                  <div class="row profile">
+                    <div class="col-12">
+                      <div class="box bg-color-secondary">
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">KỸ SƯ KỸ THUẬT PHẦN MỀM</span></p>
+                          <p class="workplace">FPT University</p>
+                        </div>
+                        <div class="d-flex box-content">
+                          <p><span class="color-secondary-highlight font-weight-500">BACK-END DEVELOPER</span></p>
+                          <p class="workplace">FPT Software</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences justify-content-end">
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Kinh nghiệm giảng dạy</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences justify-content-end">
+                  </div>
+                  <!-- - -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-right">
+                        <h6 class="sub-title-info">Chứng chỉ chuyên môn</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row experiences certificate justify-content-end">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-8">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active bg-color-secondary" id="v-mentor-1" role="tabpanel" aria-labelledby="v-mentor-1-tab">
-              <span>Thông tin cá nhân:</span>
-              <br /> –&nbsp; Họ và tên: <a class="color-yellow" href="https://www.facebook.com/profile.php?id=100006259172279" target="_blank">Tô Hoàng Anh</a>
-              <br /> –&nbsp; Sinh viên FPT University - Khoá 12
-              <hr /> <span>Trình độ học vấn:</span>
-              <hr /> <span>Kinh nghiệm chuyên môn:</span>
-              <hr /> <span>Kinh nghiệm giảng dạy:</span>
-              <hr /> <span>Chứng chỉ:</span>
-            </div>
-            <div class="tab-pane fade bg-color-secondary" id="v-mentor-2" role="tabpanel" aria-labelledby="v-mentor-2-tab">...</div>
-            <div class="tab-pane fade bg-color-secondary" id="v-mentor-3" role="tabpanel" aria-labelledby="v-mentor-3-tab">...</div>
-            <div class="tab-pane fade bg-color-secondary" id="v-mentor-4" role="tabpanel" aria-labelledby="v-mentor-4-tab">...</div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -255,47 +563,22 @@
   <section id="footer">
     <div class="container">
       <div class="row f-top">
-        <div class="col-12 col-sm-12 col-md-5 info">
+        <div class="col-12 col-sm-12 col-md-4 info">
           <img src="assets/images/cover/logo.png">
           <p>Học lập trình cùng <span class="color-secondary-highlight font-weight-500">ANEST</span></p>
-          <ul>
-            <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
-            <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 --- ---</li>
-            <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>Thôn 3 - Thạch Hoà - Thạch Thất - HN</li>
-          </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 course">
-          <h6>KHÓA HỌC</h6>
-          <p>Các khóa học lập trình sẵn sàng</p>
-          <ul>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>Database</li>
-            <li>HTML/CSS</li>
-            <li>VueJS</li>
-          </ul>
+        <div class="col-12 col-sm-12 col-md-4 social text-right">
+          <h6>MOBILE</h6>
+          <p>0973 876 107</p>
         </div>
-        <div class="col-12 col-sm-12 col-md-3 social">
-          <h6>FOLLOW US</h6>
-          <p>Cập nhật những tin tức - bài học nhanh nhất</p>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/groups/anest.learning" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a href="https://www.youtube.com/channel/UCP_JjK3orweIJ23HZ8kniJA" target="_blank">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký khoá học</a>
-            </li>
-          </ul>
+        <div class="col-12 col-sm-12 col-md-4 course text-right">
+          <h6>EMAIL</h6>
+          <p>anest.academy@gmail.com</p>
         </div>
       </div>
     </div>
   </section>
-  <section id="signature">
+  <section id="signature" class="d-none">
     <div class="container">
       <div class="row f-bot">
         <div class="col-12 col-sm-12 col-md-6 clock">

@@ -38,7 +38,7 @@
               <a class="nav-link" href="#highlight-course"><i class="fas fa-star-of-david fa-fw"></i>Nổi bật</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#overview"><i class="fas fa-code fa-fw"></i>Khóa học</a>
+              <a class="nav-link" href="#overview"><i class="fas fa-code fa-fw mr-1"></i>Khóa học</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#promotion"><i class="fas fa-percent fa-fw" style="font-size: 15px;"></i>Khuyến mãi</a>
@@ -596,25 +596,31 @@
         <div class="col-md-12 col-lg-6">
           <div class="box bg-color-secondary d-flex">
             <p><span class="color-secondary-highlight font-weight-500">-5%</span></p>
-            <p>học phí toàn khóa học cho học viên đăng ký sớm và đóng phí ghi danh tham gia khóa học sớm.</p>
+            <p>học phí toàn khóa học cho học viên đăng ký và đóng học phí tham gia khóa học sớm nhất.</p>
           </div>
         </div>
         <div class="col-md-12 col-lg-6">
           <div class="box bg-color-secondary d-flex">
             <p><span class="color-secondary-highlight font-weight-500">-5%</span></p>
-            <p>học phí toàn khóa học cho học viên hoàn thành toàn bộ học phí trước khi bắt đầu khai giảng.</p>
+            <p>học phí toàn khóa học cho học viên hoàn thành toàn bộ 100% học phí trước khi bắt đầu khoá học.</p>
           </div>
         </div>
         <div class="col-md-12 col-lg-6">
           <div class="box bg-color-secondary d-flex">
             <p><span class="color-secondary-highlight font-weight-500">-5%</span></p>
-            <p>học phí toàn khóa học cho học viên nộp học phí và tham gia học theo nhóm 2 người.
+            <p>học phí toàn khóa học cho học viên tham gia khoá học theo nhóm 2 người trở lên.
           </div>
         </div>
         <div class="col-md-12 col-lg-6">
           <div class="box bg-color-secondary d-flex">
             <p><span class="color-secondary-highlight font-weight-500">-10%</span></p>
-            <p>đối với học viên đang là sinh viên Đại học FPT.
+            <p>học phí toàn khóa học đối với học viên đang là sinh viên Đại học FPT.
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="box bg-color-secondary d-flex">
+            <p><span class="color-secondary-highlight font-weight-500">-10%</span></p>
+            <p>học phí toàn khóa học đối với học viên đã từng tham gia ít nhất 1 khoá học trước đó của học viện.
           </div>
         </div>
       </div>
@@ -682,47 +688,22 @@
   <section id="footer">
     <div class="container">
       <div class="row f-top">
-        <div class="col-12 col-sm-12 col-md-5 info">
+        <div class="col-12 col-sm-12 col-md-4 info">
           <img src="assets/images/cover/logo.png">
           <p>Học lập trình cùng <span class="color-secondary-highlight font-weight-500">ANEST</span></p>
-          <ul>
-            <li><i class="far fa-envelope fa-fw mr-2"></i>anest.academy@gmail.com</li>
-            <li><i class="fas fa-phone fa-fw mr-2"></i>(+84) 0973 --- ---</li>
-            <li><i class="fas fa-map-marker-alt fa-fw mr-2"></i>Thôn 3 - Thạch Hoà - Thạch Thất - HN</li>
-          </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-4 course">
-          <h6>KHÓA HỌC</h6>
-          <p>Các khóa học lập trình sẵn sàng</p>
-          <ul>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>Database</li>
-            <li>HTML/CSS</li>
-            <li>VueJS</li>
-          </ul>
+        <div class="col-12 col-sm-12 col-md-4 social text-right">
+          <h6>MOBILE</h6>
+          <p>0973 876 107</p>
         </div>
-        <div class="col-12 col-sm-12 col-md-3 social">
-          <h6>FOLLOW US</h6>
-          <p>Cập nhật những tin tức - bài học nhanh nhất</p>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/groups/anest.learning" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a href="https://www.youtube.com/channel/UCP_JjK3orweIJ23HZ8kniJA" target="_blank">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a href="courses.html" class="btn btn-outline-bottom-bold btn-highlight btn-highlight-icon btn-success mt-4"><i class="fas fa-edit fa-fw mr-1"></i>Đăng ký khoá học</a>
-            </li>
-          </ul>
+        <div class="col-12 col-sm-12 col-md-4 course text-right">
+          <h6>EMAIL</h6>
+          <p>anest.academy@gmail.com</p>
         </div>
       </div>
     </div>
   </section>
-  <section id="signature">
+  <section id="signature" class="d-none">
     <div class="container">
       <div class="row f-bot">
         <div class="col-12 col-sm-12 col-md-6 clock">
@@ -734,6 +715,16 @@
       </div>
     </div>
   </section>
+
+  <!-- Spinner -->
+  <div id="loading-spinner" class="loader-container" style="display: none;">
+    <div class="loader">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border spinner-color" role="status" style="width: 3rem; height: 3rem;">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top" href="#page-top">
@@ -846,7 +837,7 @@
               </div>
               <div class="form-group">
                 <label class="color-secondary-highlight">Mong muốn - kỳ vọng của bạn về khoá học<sup><i class="far fa-comment ml-1"></i></sup></label>
-                <textarea class="form-control form-control-lg" name="your_expectations_for_this_course" id="textarea1" rows="2"></textarea>
+                <textarea class="form-control form-control-lg" name="your_expectations_for_this_course" id="textarea1" rows="3"></textarea>
               </div>
               <div class="form-group">
                 <div class="input-group">
@@ -873,44 +864,57 @@
     </div>
   </div>
 
-  <!-- Toast register error -->
-  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
-    <div id="toastRegisterError" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+  <!-- Toast form register invalid -->
+  <div style="position: fixed; top: 80px; right: 20px; z-index: 9999;">
+    <div id="toastFormRegisterInvalid" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
       <div class="toast-body">
         Vui lòng không để trống trường bắt buộc.
-        <br /> –&nbsp; Tên
+        <br /> –&nbsp; Họ và tên
         <br /> –&nbsp; Email
         <br /> –&nbsp; Số điện thoại
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast API error -->
+  <div style="position: fixed; top: 80px; right: 20px; z-index: 9999;">
+    <div id="toastAPIError" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+      <div class="toast-body">
+        Có lỗi xảy ra trong quá trình gửi thông tin. Vui lòng thử lại sau.
       </div>
     </div>
   </div>
 
   <!-- Toast register success -->
-  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
+  <div style="position: fixed; top: 80px; right: 20px; z-index: 9999;">
     <div id="toastRegisterSuccess" class="toast hide toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
       <div class="toast-body">
-        Đăng ký THÀNH CÔNG. Email xác nhận sẽ được gửi đến email đăng ký của bạn trong 1-3 ngày làm việc. Xin cảm ơn!
+        Đăng ký khoá học THÀNH CÔNG.
+        <br /> Email xác nhận sẽ được gửi đến địa chỉ email đã đăng ký của bạn trong thời gian sớm nhất.
+        <br /> Xin cảm ơn!
       </div>
     </div>
   </div>
 
-  <!-- Toast contact error -->
-  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
-    <div id="toastContactError" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+  <!-- Toast form contact invalid -->
+  <div style="position: fixed; top: 80px; right: 20px; z-index: 9999;">
+    <div id="toastFormInvalid" class="toast hide toast-error" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
       <div class="toast-body">
         Vui lòng không để trống trường bắt buộc.
-        <br /> –&nbsp; Tên
+        <br /> –&nbsp; Họ và tên
         <br /> –&nbsp; Email
         <br /> –&nbsp; Số điện thoại
+        <br /> –&nbsp; Nội dung
       </div>
     </div>
   </div>
 
   <!-- Toast contact success -->
-  <div style="position: fixed; top: 55px; right: 38px; z-index: 9999;">
+  <div style="position: fixed; top: 80px; right: 20px; z-index: 9999;">
     <div id="toastContactSuccess" class="toast hide toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
       <div class="toast-body">
-        Gửi thông tin thành công. Chúng tôi sẽ liên hệ lại ngay với bạn.
+        Gửi thông tin thành công. Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.
+        <br /> Xin cảm ơn!
       </div>
     </div>
   </div>
